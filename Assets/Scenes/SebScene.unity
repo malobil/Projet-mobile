@@ -276,8 +276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f4938885ff9f2489e51ac795c17e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myWitchTimer: 120
   timerText: {fileID: 1256240049}
+  timerMinutes: 1
+  timerSecondes: 5
 --- !u!1 &1256240047
 GameObject:
   m_ObjectHideFlags: 0
