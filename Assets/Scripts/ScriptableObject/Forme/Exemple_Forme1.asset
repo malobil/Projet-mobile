@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5de10bebc352c3840bed17031de6b299, type: 3}
-  m_Name: Exemple_Forme
+  m_Name: Exemple_Forme1
   m_EditorClassIdentifier: 
-  formeImage: {fileID: 0}
+  formeImage: {fileID: 21300000, guid: 14689d10c3384a5418ed3154e42c91a0, type: 3}
   toxicRatio: 0
