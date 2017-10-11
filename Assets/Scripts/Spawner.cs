@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
 	public Image ingredientImage ;
 	public Image formImage ;
 
+	private Scriptable_Ingredient choosenItem ;
 	private int randomNumberIngredient ;
 	private int randomNumberForm ;
 
@@ -20,7 +21,8 @@ public class Spawner : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		
+		PopIngredient() ;
+		PopForm() ;
 	}
 	
 	// Update is called once per frame
@@ -42,11 +44,13 @@ public class Spawner : MonoBehaviour
 	void PopIngredient()
 	{
 		randomNumberIngredient = Random.Range(0, associateList.itemList.Length) ;
-		ingredientImage.sprite = associateList.itemList[randomNumberIngredient].ingredientImage ;
+		choosenItem = associateList.itemList[randomNumberIngredient] ;
+		ingredientImage.sprite = choosenItem.ingredientImage ;
 	}
 
-	public void Test()
+	public void OnClick()
 	{
+		LevelManager.Instance().ScoreUpdate(choosenItem.toxicValor) ;
 		Debug.Log("Click") ;
 	}
 }
