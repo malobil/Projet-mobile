@@ -19,20 +19,26 @@ public class Spawner : MonoBehaviour
 
 
 	// Use this for initialization
-	void Start () 
+	/*void Start () 
 	{
 		PopIngredient() ;
 		PopForm() ;
-	}
+	}*/
 	
+	void OnEnable()
+	{
+		PopIngredient() ;
+		PopForm() ;
+		Debug.Log("Enable") ;
+	}
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetKeyDown("p"))
+		/*if(Input.GetKeyDown("p"))
 		{
 			PopIngredient() ;
 			PopForm() ;
-		}
+		}*/
 	}
 
 	void PopForm()
@@ -51,6 +57,7 @@ public class Spawner : MonoBehaviour
 	public void OnClick()
 	{
 		LevelManager.Instance().ScoreUpdate(choosenItem.toxicValor) ;
-		Debug.Log("Click") ;
+		LevelManager.Instance().DisableObject() ;
+		//Debug.Log("Click") ;
 	}
 }

@@ -135,6 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonList:
+  - {fileID: 699479154}
+  - {fileID: 237464195}
+  timeIngredientShow: 2
+  timeHide: 2
 --- !u!4 &148222416
 Transform:
   m_ObjectHideFlags: 0
@@ -151,6 +156,11 @@ Transform:
 --- !u!224 &224324235 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224030339953677256, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1654683605}
+--- !u!1 &237464195 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1418875176977242, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9,
     type: 2}
   m_PrefabInternal: {fileID: 1654683605}
 --- !u!1001 &565489732
@@ -250,12 +260,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1418875176977242, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9, type: 2}
   m_IsPrefabParent: 0
 --- !u!224 &640931168 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224030339953677256, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9,
+    type: 2}
+  m_PrefabInternal: {fileID: 565489732}
+--- !u!1 &699479154 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1418875176977242, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9,
     type: 2}
   m_PrefabInternal: {fileID: 565489732}
 --- !u!1 &791271769
@@ -420,6 +439,10 @@ Prefab:
     - target: {fileID: 1418875176977242, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9, type: 2}
       propertyPath: m_Name
       value: Button_Left_Item (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418875176977242, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b7ae06d426c2ac4b8d219f46b0bddd9, type: 2}
