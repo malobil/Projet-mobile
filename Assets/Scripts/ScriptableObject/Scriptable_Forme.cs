@@ -6,6 +6,6 @@ using UnityEngine.UI ;
 [CreateAssetMenu(menuName="Formes")]
 public class Scriptable_Forme : ScriptableObject 
 {
-	public Image formeImage ;
+	public Sprite formeImage ;
 	public float toxicRatio ;
 }

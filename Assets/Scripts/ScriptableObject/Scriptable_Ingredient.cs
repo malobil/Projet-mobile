@@ -6,6 +6,6 @@ using UnityEngine.UI ;
 [CreateAssetMenu(menuName="Ingredient")]
 public class Scriptable_Ingredient : ScriptableObject 
 {
-	public Image ingredientImage ;
+	public Sprite ingredientImage ;
 	public float toxicValor ;
 }
