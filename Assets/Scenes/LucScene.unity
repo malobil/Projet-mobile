@@ -351,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreToxic: 0
+  scoreText: {fileID: 1497653773}
 --- !u!1 &1763113383
 GameObject:
   m_ObjectHideFlags: 0
