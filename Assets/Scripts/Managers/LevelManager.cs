@@ -9,12 +9,10 @@ public class LevelManager : MonoBehaviour {
 
 	public float scoreNeed ;
 
-	public List<GameObject> buttonList = new List<GameObject>() ;
-
 	public float timeIngredientShow ;
 	public float timeHide ;
 
-	public Text textEndLevel, textToxicNeed ;
+	public Text textEndLevel;
 
 	public Text timerText;
 	public float timerMinutes;
@@ -22,11 +20,21 @@ public class LevelManager : MonoBehaviour {
 
 	private float scoreToxic = 0f;
 
+	////----Timers (hide)---///
+
 	private float currentTimeHide ;
 	private float currentTimeShow ;
 
+	////----Statuts---///
+
 	private bool isHide = true ;
 	private bool levelIsEnd = false ;
+
+	////----Spawner and object list---///
+
+	public List<GameObject> listOfobjectPresent = new List<GameObject>() ;
+	public List<GameObject> spawnerList = new List<GameObject>() ;
+
 
 	private static LevelManager instance ;
     public static LevelManager Instance () 
@@ -52,21 +60,14 @@ void Awake ()
 	void Start () 
 	{
 		currentTimeHide = timeHide ;
-		textToxicNeed.text = "Score necessaire : " + scoreNeed.ToString("") ;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetKeyDown("s"))
-		{
-			EnableObject() ;
-		}
-
 		TimerShow() ;
 		TimerHide() ;
 		TimerGeneral() ;
-		
 	}
 
 	void TimerGeneral()
@@ -87,6 +88,7 @@ void Awake ()
         	if(timerMinutes == 0 && timerSecondes == 0)
         	{
         		EndLevel() ;
+        		UnpopObject() ;
         	}
 
         	if (timerMinutes >= 1 && timerSecondes <= 0)
@@ -104,7 +106,6 @@ void Awake ()
 
 	void EndLevel()
 	{
-		DisableObject() ;
 		textEndLevel.gameObject.SetActive(true) ;
 		if(scoreToxic >= scoreNeed)
 		{	
@@ -124,12 +125,15 @@ void Awake ()
 	{
 		if(currentTimeHide > 0 && isHide && !levelIsEnd)
 		{
+			Debug.Log("time show ") ;
 			currentTimeHide -= Time.deltaTime ;
 		}
 		else if(currentTimeHide < 0 && isHide)
 		{
-			EnableObject() ;
+			
 			//Debug.Log("time bef show < 0") ;
+			PopObject() ;
+			isHide = false ;
 			currentTimeHide = 0 ;
 			currentTimeShow = timeIngredientShow ;
 		}
@@ -139,12 +143,14 @@ void Awake ()
 	{
 		if(currentTimeShow > 0 && !isHide && !levelIsEnd)
 		{
+			Debug.Log("time hide ") ;
 			currentTimeShow -= Time.deltaTime ;
 		}
 		else if(currentTimeShow < 0 && !isHide)
 		{
-			DisableObject() ;
 			//Debug.Log("time bef hide < 0") ;
+			UnpopObject() ;
+			isHide = true ;
 			currentTimeShow = 0 ;
 			currentTimeHide = timeHide ;
 		}
@@ -154,28 +160,54 @@ void Awake ()
 	{
 		scoreToxic += toxicAdded;
 		PoisonAdded() ;
-		//Debug.Log(scoreToxic);
+		Debug.Log(scoreToxic);
 	}
 
-	public void DisableObject()
+	public void AddObjectToList(GameObject gOPop)
 	{
-		for(int i = 0 ; i < buttonList.Count ; i++)
-		{
-			buttonList[i].SetActive(false) ;
-		}
-
-		currentTimeHide = timeHide ;
-		isHide = true ;
+		listOfobjectPresent.Add(gOPop) ;
 	}
 
-	public void EnableObject()
+	public void RetireObjectToList(GameObject gORetire)
 	{
-		for(int i = 0 ; i < buttonList.Count ; i++)
+		for(int u = 0 ; u < listOfobjectPresent.Count ; u++)
 		{
-			buttonList[i].SetActive(true) ;
+			if(listOfobjectPresent[u] == gORetire)
+			{
+				listOfobjectPresent.Remove(gORetire) ;
+			}
+		}
+	}
+
+	void PopObject()
+	{	
+		for(int y = 0 ; y < spawnerList.Count ; y++)
+		{	
+			Debug.Log("Pop") ;
+			spawnerList[y].GetComponent<Spawner>().PopFormAndIngredient() ;
+		}
+	}
+
+	void UnpopObject()
+	{
+		if(listOfobjectPresent.Count != 0)
+			{
+				for(int i = 0 ; i < listOfobjectPresent.Count ; i++)
+				{
+					if(listOfobjectPresent[i] != null && listOfobjectPresent[i].GetComponent<Formes_Et_Ingredients>().ReturnIsDrag())
+					{
+						listOfobjectPresent[i].GetComponent<Formes_Et_Ingredients>().AddPoint() ;
+					}
+				}
+				
+			}
+
+		for(int y = 0 ; y < listOfobjectPresent.Count ; y++)
+		{
+			Destroy(listOfobjectPresent[y].gameObject) ;
 		}
 
-		isHide = false ;
+		listOfobjectPresent.Clear() ;
 	}
 
 	void PoisonAdded ()

@@ -3,61 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI ;
 
-public class Spawner : MonoBehaviour 
+public class Spawner : MonoBehaviour
 {
 
 	public Scriptable_IngredientList associateList ;
 
 	public Scriptable_FormeByLevel associateFormList ;
 
-	public Image ingredientImage ;
-	public Image formImage ;
+	public GameObject prefab ;
 
 	private Scriptable_Ingredient choosenItem ;
+	private GameObject objectPop ;
+
 	private int randomNumberIngredient ;
 	private int randomNumberForm ;
 
+	
 
 	// Use this for initialization
 	/*void Start () 
 	{
-		PopIngredient() ;
-		PopForm() ;
+		PopFormAndIngredient() ;
 	}*/
 	
-	void OnEnable()
-	{
-		PopIngredient() ;
-		PopForm() ;
-		//Debug.Log("Enable") ;
-	}
 	// Update is called once per frame
 	void Update () 
 	{
-		/*if(Input.GetKeyDown("p"))
+		if(Input.GetKeyDown("p"))
 		{
-			PopIngredient() ;
-			PopForm() ;
-		}*/
+			PopFormAndIngredient() ;
+		}
 	}
 
-	void PopForm()
+	public void PopFormAndIngredient()
 	{
-		randomNumberForm = Random.Range(0, associateFormList.formList.Length) ;
-		formImage.sprite = associateFormList.formList[randomNumberForm].formeImage ;
-	}
+		randomNumberForm = Random.Range(0, associateFormList.formList.Length) ; // choose a random form
+		randomNumberIngredient = Random.Range(0, associateList.itemList.Length) ; // choose a random ingredient
 
-	void PopIngredient()
-	{
-		randomNumberIngredient = Random.Range(0, associateList.itemList.Length) ;
-		choosenItem = associateList.itemList[randomNumberIngredient] ;
-		ingredientImage.sprite = choosenItem.ingredientImage ;
-	}
+		objectPop = Instantiate(prefab, transform.position,Quaternion.identity,transform.parent) ; // pop and stock the form pop
+		choosenItem = associateList.itemList[randomNumberIngredient] ; // stock the item choose
+		
+		objectPop.GetComponent<Image>().sprite = associateFormList.formList[randomNumberForm].formeImage ; // Change form pop sprite
+		objectPop.transform.GetChild(0).GetComponent<Image>().sprite = choosenItem.ingredientImage ; // change ingredient pop sprite
 
-	public void OnClick()
-	{
-		LevelManager.Instance().ScoreUpdate(choosenItem.toxicValor) ;
-		gameObject.SetActive(false) ;
-		//Debug.Log("Click") ;
+		objectPop.GetComponent<Formes_Et_Ingredients>().SetToxicValueAndform(choosenItem.toxicValor,associateFormList.formList[randomNumberForm]) ;
+
+		LevelManager.Instance().AddObjectToList(objectPop) ;
 	}
+	
 }
