@@ -1,14 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI ; 
 
 public class LevelManager : MonoBehaviour {
 
+	public float scoreNeed ;
 
 	public List<GameObject> buttonList = new List<GameObject>() ;
 
 	public float timeIngredientShow ;
 	public float timeHide ;
+
+	public Text textEndLevel, textToxicNeed ;
+
+	public Text timerText;
+	public float timerMinutes;
+	public float timerSecondes;
 
 	private float scoreToxic = 0f;
 
@@ -16,6 +24,7 @@ public class LevelManager : MonoBehaviour {
 	private float currentTimeShow ;
 
 	private bool isHide = true ;
+	private bool levelIsEnd = false ;
 
 	private static LevelManager instance ;
     public static LevelManager Instance () 
@@ -41,6 +50,7 @@ void Awake ()
 	void Start () 
 	{
 		currentTimeHide = timeHide ;
+		textToxicNeed.text = "Score necessaire : " + scoreNeed.ToString("") ;
 	}
 	
 	// Update is called once per frame
@@ -53,12 +63,64 @@ void Awake ()
 
 		TimerShow() ;
 		TimerHide() ;
+		TimerGeneral() ;
 		
+	}
+
+	void TimerGeneral()
+	{
+		timerSecondes-=Time.deltaTime;
+		
+
+			if(timerSecondes < 0)
+        	{
+            	timerSecondes = 0;
+        	}
+
+        	if(timerMinutes < 0)
+        	{
+            	timerMinutes = 0;
+        	}
+
+        	if(timerMinutes == 0 && timerSecondes == 0)
+        	{
+        		EndLevel() ;
+        	}
+
+        	if (timerMinutes >= 1 && timerSecondes <= 0)
+        	{
+            	timerMinutes--;
+            	timerSecondes = 60.0f;
+        	}
+
+
+        	if ( timerSecondes <= 59)
+        	{
+				timerText.text=timerMinutes.ToString ("") + ":" + timerSecondes.ToString ("00");
+        	}
+	}
+
+	void EndLevel()
+	{
+		DisableObject() ;
+		textEndLevel.gameObject.SetActive(true) ;
+		if(scoreToxic >= scoreNeed)
+		{	
+			textEndLevel.color = Color.green ;
+			textEndLevel.text = "VICTOIRE ! =')" ;
+		}
+		else
+		{
+			textEndLevel.color = Color.red ;
+			textEndLevel.text = "DEFAITE ! ='( " ;
+		}
+
+		levelIsEnd = true ;
 	}
 
 	void TimerShow()
 	{
-		if(currentTimeHide > 0 && isHide)
+		if(currentTimeHide > 0 && isHide && !levelIsEnd)
 		{
 			currentTimeHide -= Time.deltaTime ;
 		}
@@ -73,7 +135,7 @@ void Awake ()
 
 	void TimerHide()
 	{
-		if(currentTimeShow > 0 && !isHide)
+		if(currentTimeShow > 0 && !isHide && !levelIsEnd)
 		{
 			currentTimeShow -= Time.deltaTime ;
 		}
