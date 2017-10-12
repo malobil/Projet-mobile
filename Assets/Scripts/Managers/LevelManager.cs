@@ -5,6 +5,8 @@ using UnityEngine.UI ;
 
 public class LevelManager : MonoBehaviour {
 
+	public Image potionState ;
+
 	public float scoreNeed ;
 
 	public List<GameObject> buttonList = new List<GameObject>() ;
@@ -151,6 +153,7 @@ void Awake ()
 	public void ScoreUpdate (float toxicAdded) 
 	{
 		scoreToxic += toxicAdded;
+		PoisonAdded() ;
 		//Debug.Log(scoreToxic);
 	}
 
@@ -175,5 +178,8 @@ void Awake ()
 		isHide = false ;
 	}
 
-
+	void PoisonAdded ()
+	{
+		potionState.fillAmount = scoreToxic / scoreNeed ;
+	}
 }
