@@ -7,5 +7,4 @@ using UnityEngine.UI ;
 public class Scriptable_Forme : ScriptableObject 
 {
 	public Sprite formeImage ;
-	public float toxicRatio ;
 }

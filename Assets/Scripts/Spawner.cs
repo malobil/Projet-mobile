@@ -57,7 +57,7 @@ public class Spawner : MonoBehaviour
 	public void OnClick()
 	{
 		LevelManager.Instance().ScoreUpdate(choosenItem.toxicValor) ;
-		LevelManager.Instance().DisableObject() ;
+		gameObject.SetActive(false) ;
 		//Debug.Log("Click") ;
 	}
 }
