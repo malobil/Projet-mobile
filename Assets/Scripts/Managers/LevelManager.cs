@@ -127,7 +127,7 @@ void Awake ()
 		else if(currentTimeHide < 0 && isHide)
 		{
 			EnableObject() ;
-			Debug.Log("time bef show < 0") ;
+			//Debug.Log("time bef show < 0") ;
 			currentTimeHide = 0 ;
 			currentTimeShow = timeIngredientShow ;
 		}
@@ -142,7 +142,7 @@ void Awake ()
 		else if(currentTimeShow < 0 && !isHide)
 		{
 			DisableObject() ;
-			Debug.Log("time bef hide < 0") ;
+			//Debug.Log("time bef hide < 0") ;
 			currentTimeShow = 0 ;
 			currentTimeHide = timeHide ;
 		}
@@ -151,7 +151,7 @@ void Awake ()
 	public void ScoreUpdate (float toxicAdded) 
 	{
 		scoreToxic += toxicAdded;
-		Debug.Log(scoreToxic);
+		//Debug.Log(scoreToxic);
 	}
 
 	public void DisableObject()

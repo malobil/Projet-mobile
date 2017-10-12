@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
 	{
 		PopIngredient() ;
 		PopForm() ;
-		Debug.Log("Enable") ;
+		//Debug.Log("Enable") ;
 	}
 	// Update is called once per frame
 	void Update () 
