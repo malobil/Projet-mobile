@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114447965234858200}
   - component: {fileID: 114057843749458048}
   m_Layer: 5
-  m_Name: Button_Left_Item
+  m_Name: Button_Spawn_Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
