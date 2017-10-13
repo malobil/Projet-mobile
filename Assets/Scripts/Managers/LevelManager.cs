@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI ; 
+using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
 
 public class LevelManager : MonoBehaviour {
 
@@ -41,6 +42,10 @@ public class LevelManager : MonoBehaviour {
     {
         return instance;
     }
+
+
+	public int numberlvl;
+
 
 void Awake ()
     {
@@ -213,5 +218,10 @@ void Awake ()
 	void PoisonAdded ()
 	{
 		potionState.fillAmount = scoreToxic / scoreNeed ;
+	}
+
+	void LvlSucces ()
+	{
+		GameManager.Instance().HaveSuccessLevel(numberlvl);
 	}
 }
