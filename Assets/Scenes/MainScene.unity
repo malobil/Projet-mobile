@@ -108,7 +108,7 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &700967816
+--- !u!1001 &1148691218
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -204,6 +204,51 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5348254
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5348254
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.34446687
+      objectReference: {fileID: 0}
+    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.34446687
+      objectReference: {fileID: 0}
+    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.72154915
+      objectReference: {fileID: 0}
+    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.72154915
+      objectReference: {fileID: 0}
+    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5301297
+      objectReference: {fileID: 0}
+    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5301297
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
