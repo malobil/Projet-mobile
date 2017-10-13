@@ -618,6 +618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximumIngredient: 2
   listOfIngredient: []
+  listOfRecette:
+  - {fileID: 11400000, guid: ca76c1fd74e69d44ca070493cc6c7158, type: 2}
 --- !u!114 &114255829303991228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -650,7 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -749,6 +751,7 @@ MonoBehaviour:
   timerMinutes: 1000
   timerSecondes: 3
   quitButton: {fileID: 1339264203947554}
+  levelChampiValue: 0
   listOfobjectPresent: []
   spawnerList:
   - {fileID: 1252088956324490}
@@ -1126,7 +1129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
