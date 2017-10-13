@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RecetteManager : MonoBehaviour {
+public class RecetteLevelManager : MonoBehaviour {
 
 	public int maximumIngredient = 2 ;
 	public List<GameObject> listOfIngredient = new List<GameObject>() ;
+	public List<Scriptable_RecetteByLevel> listOfRecette = new List<Scriptable_RecetteByLevel>() ;
 
-	private static RecetteManager instance ;
-    public static RecetteManager Instance () 
+	private static RecetteLevelManager instance ;
+    public static RecetteLevelManager Instance () 
     {
         return instance;
     }
@@ -61,5 +62,18 @@ void Awake ()
 
 		listOfIngredient.Clear() ;
 		Debug.Log("Clear") ;
+	}
+
+	public void ConfirmList()
+	{
+		for(int y = 0 ; y < listOfRecette.Count ; y++)
+		{
+			if(listOfRecette[y].recetteList.Count == listOfIngredient.Count)
+			{
+	
+			}
+		}
+
+		Debug.Log("Confirm") ;
 	}
 }

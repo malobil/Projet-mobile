@@ -18,6 +18,6 @@ public class RecetteDropIngredients : MonoBehaviour, IDropHandler {
 	public void OnDrop(PointerEventData eventData)
 	{	
 		eventData.pointerDrag.gameObject.transform.SetParent(transform) ;
-		RecetteManager.Instance().AddIngredient(eventData.pointerDrag.gameObject) ;
+		RecetteLevelManager.Instance().AddIngredient(eventData.pointerDrag.gameObject) ;
 	}
 }
