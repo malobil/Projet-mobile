@@ -51,4 +51,15 @@ void Awake ()
 			ingredientToAdd.GetComponent<Formes_Et_Ingredients>().AddPoint() ;
 		}
 	}
+
+	public void ClearList()
+	{
+		for(int i = 0 ; i < listOfIngredient.Count ; i++)
+		{
+			Destroy(listOfIngredient[i]) ;
+		}
+
+		listOfIngredient.Clear() ;
+		Debug.Log("Clear") ;
+	}
 }
