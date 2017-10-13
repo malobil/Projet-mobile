@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems ;
+using UnityEngine.UI ;
 
-public class Formes_Et_Ingredients : MonoBehaviour, IDragHandler, IEndDragHandler,  IPointerClickHandler {
+public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler,  IPointerClickHandler {
 
 	private bool isDrag = false ;
 
@@ -22,6 +23,11 @@ public class Formes_Et_Ingredients : MonoBehaviour, IDragHandler, IEndDragHandle
 		
 	}
 
+	public void OnBeginDrag(PointerEventData eventData)
+	{
+		GetComponent<Image>().raycastTarget = false ;
+	}
+
 	public void OnDrag(PointerEventData eventData)
 	{
 		Debug.Log("OnBeginDrag") ;
@@ -32,9 +38,10 @@ public class Formes_Et_Ingredients : MonoBehaviour, IDragHandler, IEndDragHandle
 
 	public void OnEndDrag(PointerEventData eventData)
 	{
-		Debug.Log("Drop") ;
+		/*Debug.Log("Drop") ;
 		isDrag = false ;
-		AddPoint() ;
+		AddPoint() ;*/
+		//GetComponent<Image>().raycastTarget = true ;
 	}
 
 	public void OnPointerClick(PointerEventData eventData)

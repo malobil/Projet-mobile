@@ -108,58 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &148222414
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 148222416}
-  - component: {fileID: 148222415}
-  m_Layer: 0
-  m_Name: LevelManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &148222415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 148222414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potionState: {fileID: 0}
-  scoreNeed: 500
-  timeIngredientShow: 3
-  timeHide: 1
-  textEndLevel: {fileID: 303925159}
-  timerText: {fileID: 1074860554}
-  timerMinutes: 10000
-  timerSecondes: 0
-  listOfobjectPresent: []
-  spawnerList:
-  - {fileID: 591993405}
-  - {fileID: 1858137250}
---- !u!4 &148222416
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 148222414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7205442, y: 0.83118147, z: -0.040646337}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &303925157
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,11 +182,44 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 303925157}
---- !u!1 &591993405 stripped
+--- !u!1 &460291616 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1252088956324490, guid: 2ac3533e61ccc7f4686bb4066700d141,
+  m_PrefabParentObject: {fileID: 1889506332557692, guid: 2ac3533e61ccc7f4686bb4066700d141,
     type: 2}
   m_PrefabInternal: {fileID: 929973717}
+--- !u!114 &460291620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460291616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 100
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 150
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+--- !u!114 &460291621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460291616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714d343f9f87b54429a97580fbaad0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &791271769
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +327,7 @@ Prefab:
     - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -398,9 +379,30 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1859366221894506, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
-      propertyPath: m_Name
-      value: Potion_State_Background
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: timeIngredientShow
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.1755909
+      objectReference: {fileID: 0}
+    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.11116781
+      objectReference: {fileID: 0}
+    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: -0.0018611997
+      objectReference: {fileID: 0}
+    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.73570496
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
@@ -571,18 +573,13 @@ RectTransform:
   - {fileID: 1074860553}
   - {fileID: 2066597176}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1858137250 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1472372855135014, guid: 2ac3533e61ccc7f4686bb4066700d141,
-    type: 2}
-  m_PrefabInternal: {fileID: 929973717}
 --- !u!1 &1884847793
 GameObject:
   m_ObjectHideFlags: 0
