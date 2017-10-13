@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
 	public List <bool> lvlSuccess = new List <bool>();
 	public List <string> sceneName = new List <string>();
+
+	public GameObject gameManager ;
+
+	public Text textChampiScore ;
 
 	////----Champi system---///
 
@@ -22,6 +27,7 @@ public class GameManager : MonoBehaviour {
 
 	void Awake ()
     {
+    	DontDestroyOnLoad(gameManager);
         if (instance != null)
         {
             Destroy (gameObject);
@@ -35,7 +41,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		
+		textChampiScore.text = champiBank.ToString("") ;
 	}
 	
 	// Update is called once per frame
