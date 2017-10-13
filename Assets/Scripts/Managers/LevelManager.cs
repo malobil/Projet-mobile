@@ -31,14 +31,13 @@ public class LevelManager : MonoBehaviour {
 	private bool isHide = true ;
 	private bool levelIsEnd = false ;
 
-	////----Champi system---///
-
-	public float levelChampiValue ;
-	private float champiGet ;
-
 	////----Quit (hide)---///
 
 	public GameObject quitButton ;
+
+	////----Champi Value By Level---///
+
+	public float levelChampiValue ;
 
 	////----Spawner and object list---///
 
@@ -126,8 +125,7 @@ void Awake ()
 			textEndLevel.color = Color.green ;
 			textEndLevel.text = "VICTOIRE ! =')" ;
 			quitButton.SetActive(true);
-			ChampiEarn () ;
-			Debug.Log(champiGet) ;
+			GameManager.Instance().ChampiBank(levelChampiValue) ;
 
 		}
 		else
@@ -242,10 +240,5 @@ void Awake ()
 	public void QuitLevel (string levelSelec)
 	{
 		 SceneManager.LoadScene(levelSelec) ;
-	}
-
-	void ChampiEarn ()
-	{
-		champiGet = levelChampiValue ;
 	}
 }

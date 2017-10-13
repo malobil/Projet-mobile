@@ -7,6 +7,13 @@ public class GameManager : MonoBehaviour {
 
 	public List <bool> lvlSuccess = new List <bool>();
 	public List <string> sceneName = new List <string>();
+
+	////----Champi system---///
+
+	public float champiBank ;
+
+	////----Instance System---///
+
 	private static GameManager instance ;
     public static GameManager Instance () 
     {
@@ -48,6 +55,11 @@ public class GameManager : MonoBehaviour {
    		{
    			SceneManager.LoadScene (sceneName[levelnumber]);
    		}
+   	}
+
+   	public void ChampiBank (float champiObtained)
+   	{
+   		champiBank += champiObtained ;
    	}
 
 }
