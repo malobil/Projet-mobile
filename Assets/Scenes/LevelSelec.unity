@@ -1406,7 +1406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvlSuccess: 0100000000
   sceneName:
-  - Mainscene
+  - Level1
   - 
   - 
   - 
