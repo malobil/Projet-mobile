@@ -31,6 +31,11 @@ public class LevelManager : MonoBehaviour {
 	private bool isHide = true ;
 	private bool levelIsEnd = false ;
 
+	////----Quit (hide)---///
+
+	public GameObject quitButton ;
+	private bool quitButtonState ;
+
 	////----Spawner and object list---///
 
 	public List<GameObject> listOfobjectPresent = new List<GameObject>() ;
@@ -64,6 +69,7 @@ void Awake ()
 	// Use this for initialization
 	void Start () 
 	{
+		quitButtonState = false ;
 		currentTimeHide = timeHide ;
 	}
 	
@@ -116,11 +122,16 @@ void Awake ()
 		{	
 			textEndLevel.color = Color.green ;
 			textEndLevel.text = "VICTOIRE ! =')" ;
+			quitButtonState = true ;
+			quitButton.SetActive(true);
+
 		}
 		else
 		{
 			textEndLevel.color = Color.red ;
 			textEndLevel.text = "DEFAITE ! ='( " ;
+			quitButtonState = true ;
+			quitButton.SetActive(true);
 		}
 
 		levelIsEnd = true ;
@@ -223,5 +234,10 @@ void Awake ()
 	void LvlSucces ()
 	{
 		GameManager.Instance().HaveSuccessLevel(numberlvl);
+	}
+
+	public void QuitLevel (string levelSelec)
+	{
+		 SceneManager.LoadScene(levelSelec) ;
 	}
 }
