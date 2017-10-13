@@ -182,44 +182,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 303925157}
---- !u!1 &460291616 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1889506332557692, guid: 2ac3533e61ccc7f4686bb4066700d141,
-    type: 2}
-  m_PrefabInternal: {fileID: 929973717}
---- !u!114 &460291620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 460291616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 100
-    m_Bottom: 0
-  m_ChildAlignment: 1
-  m_Spacing: 150
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
---- !u!114 &460291621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 460291616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 714d343f9f87b54429a97580fbaad0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &791271769
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,31 +340,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timeIngredientShow
-      value: 100000
-      objectReference: {fileID: 0}
-    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.1755909
-      objectReference: {fileID: 0}
-    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.11116781
-      objectReference: {fileID: 0}
-    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: -0.0018611997
-      objectReference: {fileID: 0}
-    - target: {fileID: 224984738977262688, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.73570496
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
