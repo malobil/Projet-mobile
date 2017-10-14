@@ -30,7 +30,7 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 
 	public void OnDrag(PointerEventData eventData)
 	{
-		Debug.Log("OnBeginDrag") ;
+		//Debug.Log("OnBeginDrag") ;
 
 		transform.position = eventData.position ;
 		isDrag = true ;	

@@ -6,7 +6,9 @@ public class RecetteLevelManager : MonoBehaviour {
 
 	public int maximumIngredient = 2 ;
 	public List<GameObject> listOfIngredient = new List<GameObject>() ;
-	public List<Scriptable_RecetteByLevel> listOfRecette = new List<Scriptable_RecetteByLevel>() ;
+	public Scriptable_RecetteByLevel globalList ;
+	
+	private int ingredientCorrect ;
 
 	private static RecetteLevelManager instance ;
     public static RecetteLevelManager Instance () 
@@ -66,14 +68,43 @@ void Awake ()
 
 	public void ConfirmList()
 	{
-		for(int y = 0 ; y < listOfRecette.Count ; y++)
+		if(listOfIngredient.Count != 0)
 		{
-			if(listOfRecette[y].recetteList.Count == listOfIngredient.Count)
+			ingredientCorrect = 0 ;
+			for(int i = 0 ; i < globalList.recetteList.Count ; i++)
 			{
-	
+
+				if(listOfIngredient.Count == globalList.recetteList[i].recetteForme.Count)
+				{
+					Debug.Log("Une recette a ce nombre d'ingredient") ;
+					
+					for(int y = 0 ; y < listOfIngredient.Count ; y++)
+					{
+						Debug.Log("La recette trouvé contient :" + globalList.recetteList[i].recetteForme[y].formeImage + "comme ingredient" + y) ;
+						Debug.Log(listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage) ;
+
+						if(globalList.recetteList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
+						{
+							Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
+							ingredientCorrect++ ;
+						}
+					}
+					
+				}
 			}
+
+			if(ingredientCorrect == listOfIngredient.Count)
+			{
+				Debug.Log("Vous avez effectué une recette !") ;
+			}
+			else 
+			{
+				Debug.Log("Mauvais ingrédients") ;
+			}
+
+			Debug.Log("Confirm") ;
 		}
 
-		Debug.Log("Confirm") ;
+		
 	}
 }
