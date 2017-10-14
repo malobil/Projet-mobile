@@ -77,12 +77,11 @@ void Awake ()
 	{
 		if(listOfIngredient.Count != 0)
 		{
-			ingredientCorrect = 0 ;
 			for(int i = 0 ; i < globalList.recetteList.Count ; i++)
 			{
-
 				if(listOfIngredient.Count == globalList.recetteList[i].recetteForme.Count)
 				{
+					ingredientCorrect = 0 ;
 					Debug.Log("Une recette a ce nombre d'ingredient") ;
 					
 					for(int y = 0 ; y < listOfIngredient.Count ; y++)
@@ -95,32 +94,29 @@ void Awake ()
 							recetteAscomplish = globalList.recetteList[i] ;
 							Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
 							ingredientCorrect++ ;
+
+							if(ingredientCorrect == listOfIngredient.Count)
+							{
+								RecetteDone() ;
+							}
 						}
 					}
 					
 				}
 			}
-
-			if(ingredientCorrect == listOfIngredient.Count)
-			{
-				for(int p = 0 ; p < listOfIngredient.Count ; p++)
-				{
-					listOfIngredient[p].GetComponent<Formes_Et_Ingredients>().AddPoint() ;
-				}
-
-				LevelManager.Instance().ScoreUpdate(recetteAscomplish.recetteBonus) ;
-
-				ClearIngredientList() ;
-				Debug.Log("Vous avez effectué une recette !") ;
-			}
-			else 
-			{
-				Debug.Log("Mauvais ingrédients") ;
-			}
-
-			Debug.Log("Confirm") ;
 		}
+	}
 
-		
+	void RecetteDone()
+	{
+		for(int p = 0 ; p < listOfIngredient.Count ; p++)
+			{
+				listOfIngredient[p].GetComponent<Formes_Et_Ingredients>().AddPoint() ;
+			}
+
+		LevelManager.Instance().ScoreUpdate(recetteAscomplish.recetteBonus) ;
+
+		ClearIngredientList() ;
+		Debug.Log("Vous avez effectué une recette !") ;
 	}
 }

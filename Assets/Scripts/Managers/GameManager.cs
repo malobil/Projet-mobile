@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour {
 	public List <bool> lvlSuccess = new List <bool>();
 	public List <string> sceneName = new List <string>();
 
-	public GameObject gameManager ;
 
 	public Text textChampiScore ;
 
@@ -27,7 +26,7 @@ public class GameManager : MonoBehaviour {
 
 	void Awake ()
     {
-    	DontDestroyOnLoad(gameManager);
+    	DontDestroyOnLoad(gameObject);
         if (instance != null)
         {
             Destroy (gameObject);

@@ -125,7 +125,11 @@ void Awake ()
 			textEndLevel.color = Color.green ;
 			textEndLevel.text = "VICTOIRE ! =')" ;
 			quitButton.SetActive(true);
-			GameManager.Instance().ChampiBank(levelChampiValue) ;
+
+			if(GameManager.Instance() != null)
+			{
+				GameManager.Instance().ChampiBank(levelChampiValue) ;
+			}
 
 		}
 		else

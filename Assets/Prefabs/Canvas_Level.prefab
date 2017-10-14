@@ -616,10 +616,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e144cfa0c57cfc54dbe4153c00d22663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumIngredient: 2
+  maximumIngredient: 3
   listOfIngredient: []
-  listOfRecette:
-  - {fileID: 11400000, guid: ca76c1fd74e69d44ca070493cc6c7158, type: 2}
+  globalList: {fileID: 11400000, guid: ca76c1fd74e69d44ca070493cc6c7158, type: 2}
 --- !u!114 &114255829303991228
 MonoBehaviour:
   m_ObjectHideFlags: 1
