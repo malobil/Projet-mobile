@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
+	public int numberlvl;
+
 	public Image potionState ;
 
 	public float scoreNeed ;
@@ -30,6 +32,7 @@ public class LevelManager : MonoBehaviour {
 
 	private bool isHide = true ;
 	private bool levelIsEnd = false ;
+	private bool pointAdded = false ;
 
 	////----Quit (hide)---///
 
@@ -50,10 +53,6 @@ public class LevelManager : MonoBehaviour {
     {
         return instance;
     }
-
-
-	public int numberlvl;
-
 
 void Awake ()
     {
@@ -120,7 +119,7 @@ void Awake ()
 	void EndLevel()
 	{
 		textEndLevel.gameObject.SetActive(true) ;
-		if(scoreToxic >= scoreNeed)
+		if(scoreToxic >= scoreNeed && !pointAdded)
 		{	
 			textEndLevel.color = Color.green ;
 			textEndLevel.text = "VICTOIRE ! =')" ;
@@ -129,6 +128,7 @@ void Awake ()
 			if(GameManager.Instance() != null)
 			{
 				GameManager.Instance().ChampiBank(levelChampiValue) ;
+				LvlSucces() ;
 			}
 
 		}

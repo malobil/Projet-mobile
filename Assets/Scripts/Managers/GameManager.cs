@@ -54,14 +54,6 @@ public class GameManager : MonoBehaviour {
 		lvlSuccess[lvlnumber] = true;
 	}
 
-	public void LoadLevel (int levelnumber)
-   	{
-   		if (lvlSuccess[levelnumber] == true)
-   		{
-   			SceneManager.LoadScene (sceneName[levelnumber]);
-   		}
-   	}
-
    	public void ChampiBank (float champiObtained)
    	{
    		champiBank += champiObtained ;
