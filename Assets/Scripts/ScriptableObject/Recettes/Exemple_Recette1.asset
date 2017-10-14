@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recetteForme:
   - {fileID: 11400000, guid: 9570cb20d4766f24cb8cf2ce84d2147d, type: 2}
-  - {fileID: 11400000, guid: 00e5c918a458c604cb04bf507ca85920, type: 2}
+  - {fileID: 11400000, guid: 9570cb20d4766f24cb8cf2ce84d2147d, type: 2}
+  recetteBonus: 2000

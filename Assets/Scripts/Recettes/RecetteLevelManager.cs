@@ -9,6 +9,7 @@ public class RecetteLevelManager : MonoBehaviour {
 	public Scriptable_RecetteByLevel globalList ;
 	
 	private int ingredientCorrect ;
+	private Scriptable_Recette recetteAscomplish ;
 
 	private static RecetteLevelManager instance ;
     public static RecetteLevelManager Instance () 
@@ -55,6 +56,12 @@ void Awake ()
 		}
 	}
 
+	void ClearIngredientList()
+	{
+		listOfIngredient.Clear() ;
+		Debug.Log("Ingredient list clear") ;
+	}
+
 	public void ClearList()
 	{
 		for(int i = 0 ; i < listOfIngredient.Count ; i++)
@@ -62,8 +69,8 @@ void Awake ()
 			Destroy(listOfIngredient[i]) ;
 		}
 
-		listOfIngredient.Clear() ;
-		Debug.Log("Clear") ;
+		ClearIngredientList() ;
+		Debug.Log("Clear button press") ;
 	}
 
 	public void ConfirmList()
@@ -85,6 +92,7 @@ void Awake ()
 
 						if(globalList.recetteList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
 						{
+							recetteAscomplish = globalList.recetteList[i] ;
 							Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
 							ingredientCorrect++ ;
 						}
@@ -95,6 +103,14 @@ void Awake ()
 
 			if(ingredientCorrect == listOfIngredient.Count)
 			{
+				for(int p = 0 ; p < listOfIngredient.Count ; p++)
+				{
+					listOfIngredient[p].GetComponent<Formes_Et_Ingredients>().AddPoint() ;
+				}
+
+				LevelManager.Instance().ScoreUpdate(recetteAscomplish.recetteBonus) ;
+
+				ClearIngredientList() ;
 				Debug.Log("Vous avez effectué une recette !") ;
 			}
 			else 

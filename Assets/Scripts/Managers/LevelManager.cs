@@ -177,7 +177,7 @@ void Awake ()
 	{
 		scoreToxic += toxicAdded;
 		PoisonAdded() ;
-		Debug.Log(scoreToxic);
+		Debug.Log(toxicAdded);
 	}
 
 	public void AddObjectToList(GameObject gOPop)

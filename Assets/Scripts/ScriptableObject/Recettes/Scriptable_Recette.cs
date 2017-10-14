@@ -6,5 +6,6 @@ using UnityEngine;
 public class Scriptable_Recette : ScriptableObject 
 {
 	public List<Scriptable_Forme> recetteForme = new  List<Scriptable_Forme>() ;
+	public float recetteBonus ;
 
 }
