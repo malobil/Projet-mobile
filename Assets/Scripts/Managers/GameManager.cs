@@ -9,9 +9,6 @@ public class GameManager : MonoBehaviour {
 	public List <bool> lvlSuccess = new List <bool>();
 	public List <string> sceneName = new List <string>();
 
-
-	public Text textChampiScore ;
-
 	////----Champi system---///
 
 	public float champiBank ;
@@ -40,7 +37,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		textChampiScore.text = champiBank.ToString("") ;
+
 	}
 	
 	// Update is called once per frame
@@ -57,6 +54,11 @@ public class GameManager : MonoBehaviour {
    	public void ChampiBank (float champiObtained)
    	{
    		champiBank += champiObtained ;
+   	}
+
+   	public float ReturnChampiBank()
+   	{
+   		return champiBank ;
    	}
 
 }

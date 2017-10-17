@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI ;
 
 public class LevelSelectManager : MonoBehaviour {
 
+	public Text champiText  ;
+
 	// Use this for initialization
-	void Start () {
-		
+	void Start () 
+	{
+		ChangeChampiText() ;	
 	}
 	
 	// Update is called once per frame
@@ -21,5 +25,10 @@ public class LevelSelectManager : MonoBehaviour {
    		{
    			SceneManager.LoadScene (GameManager.Instance().sceneName[levelnumber]);
    		}
+   	}
+
+   	public void ChangeChampiText()
+   	{
+   		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() ;
    	}
 }

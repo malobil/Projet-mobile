@@ -97,7 +97,7 @@ void Awake ()
             	timerMinutes = 0;
         	}
 
-        	if(timerMinutes == 0 && timerSecondes == 0)
+        	if(timerMinutes == 0 && timerSecondes == 0 && !pointAdded)
         	{
         		EndLevel() ;
         		UnpopObject() ;
@@ -129,6 +129,7 @@ void Awake ()
 			{
 				GameManager.Instance().ChampiBank(levelChampiValue) ;
 				LvlSucces() ;
+				pointAdded = true ;
 			}
 
 		}
