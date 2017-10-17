@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour {
 	public List <bool> lvlSuccess = new List <bool>();
 	public List <string> sceneName = new List <string>();
 
-	public List<GameObject> listRecetteImage = new List<GameObject>() ;
+	////----Recette system---///
+
 	public Scriptable_RecetteByLevel recetteList ;
+
+	public List<Scriptable_Recette> recetteKnow = new List<Scriptable_Recette>() ;
 
 	////----Champi system---///
 
@@ -67,9 +70,12 @@ public class GameManager : MonoBehaviour {
 
    	/////-------------Recette Manager ----------------////////
 
-    public void UpdateRecetteList()
+    public void AddRecetteKnow(Scriptable_Recette recetteToAdd)
     {
-
+    	if(!recetteKnow.Contains(recetteToAdd))
+    	{
+    		recetteKnow.Add(recetteToAdd) ;
+    	}
     }
 
 }

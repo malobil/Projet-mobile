@@ -11,6 +11,9 @@ public class RecetteLevelManager : MonoBehaviour {
 	private int ingredientCorrect ;
 	private Scriptable_Recette recetteAscomplish ;
 
+	public GameObject recetteKnowPanel ;
+	public GameObject prefabImage ;
+
 	private static RecetteLevelManager instance ;
     public static RecetteLevelManager Instance () 
     {
@@ -116,7 +119,19 @@ void Awake ()
 
 		LevelManager.Instance().ScoreUpdate(recetteAscomplish.recetteBonus) ;
 
+		if(!GameManager.Instance().recetteKnow.Contains(recetteAscomplish))
+		{
+			UpdateRecetteKnowImage() ;
+			GameManager.Instance().AddRecetteKnow(recetteAscomplish) ;
+		}
+		
 		ClearIngredientList() ;
 		Debug.Log("Vous avez effectué une recette !") ;
 	}
+
+	void UpdateRecetteKnowImage()
+    {
+    	GameObject tempsInstant = Instantiate(prefabImage, recetteKnowPanel.transform) ;
+    	tempsInstant.GetComponent<AffichageRecetteScript>().Change(recetteAscomplish) ;
+    }
 }
