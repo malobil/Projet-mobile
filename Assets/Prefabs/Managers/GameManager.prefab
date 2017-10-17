@@ -58,5 +58,6 @@ MonoBehaviour:
   - 
   - 
   - 
-  textChampiScore: {fileID: 0}
+  listRecetteImage: []
+  recetteList: {fileID: 11400000, guid: ca76c1fd74e69d44ca070493cc6c7158, type: 2}
   champiBank: 100

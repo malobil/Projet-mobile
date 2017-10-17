@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour {
 	public List <bool> lvlSuccess = new List <bool>();
 	public List <string> sceneName = new List <string>();
 
+	public List<GameObject> listRecetteImage = new List<GameObject>() ;
+	public Scriptable_RecetteByLevel recetteList ;
+
 	////----Champi system---///
 
 	public float champiBank ;
@@ -60,5 +63,13 @@ public class GameManager : MonoBehaviour {
    	{
    		return champiBank ;
    	}
+
+
+   	/////-------------Recette Manager ----------------////////
+
+    public void UpdateRecetteList()
+    {
+
+    }
 
 }

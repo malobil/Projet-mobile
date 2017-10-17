@@ -6,8 +6,8 @@ public class RecetteLevelManager : MonoBehaviour {
 
 	public int maximumIngredient = 2 ;
 	public List<GameObject> listOfIngredient = new List<GameObject>() ;
-	public Scriptable_RecetteByLevel globalList ;
 	
+	private Scriptable_RecetteByLevel globalList ;
 	private int ingredientCorrect ;
 	private Scriptable_Recette recetteAscomplish ;
 
@@ -34,7 +34,7 @@ void Awake ()
 	// Use this for initialization
 	void Start () 
 	{
-		
+		globalList = GameManager.Instance().recetteList ; 
 	}
 	
 	// Update is called once per frame
