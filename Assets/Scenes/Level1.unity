@@ -263,17 +263,17 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: timerSecondes
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: timeIngredientShow
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: timerMinutes
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114700741604893086, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -289,6 +289,16 @@ Prefab:
         type: 2}
       propertyPath: numberlvl
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224683616126140740, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -990.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: scoreNeed
+      value: 3000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
