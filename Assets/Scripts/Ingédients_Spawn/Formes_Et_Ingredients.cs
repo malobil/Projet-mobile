@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems ;
 using UnityEngine.UI ;
 
-public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler,  IPointerClickHandler {
+public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHandler,  IPointerClickHandler {
 
 	private bool isDrag = false ;
 
@@ -26,6 +26,7 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 	public void OnBeginDrag(PointerEventData eventData)
 	{
 		GetComponent<Image>().raycastTarget = false ;
+		LevelManager.Instance().RetireObjectToList(gameObject) ;
 	}
 
 	public void OnDrag(PointerEventData eventData)
@@ -36,13 +37,6 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 		isDrag = true ;	
 	}
 
-	public void OnEndDrag(PointerEventData eventData)
-	{
-		/*Debug.Log("Drop") ;
-		isDrag = false ;
-		AddPoint() ;*/
-		//GetComponent<Image>().raycastTarget = true ;
-	}
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
