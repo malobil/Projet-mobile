@@ -37,7 +37,7 @@ public class AffichageRecetteScript : MonoBehaviour {
 				GameObject temps = Instantiate(standardImage, this.transform) ;
 				temps.GetComponent<Image>().sprite = recetteAffiche.recetteForme[loopNumber].formeImage ;
 				temps.SetActive(true) ;
-				Debug.Log("change") ;
+				//Debug.Log("change") ;
 				loopNumber++ ;
 			}
 			else if(i%2 == 1)
