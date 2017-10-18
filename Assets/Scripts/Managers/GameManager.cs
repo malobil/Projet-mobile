@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour {
 
 	public List<Scriptable_Recette> recetteKnow = new List<Scriptable_Recette>() ;
 
+	//------Save recette system ------///
+
+	public List<int> recetteKnowIdx = new List<int>() ;
+	private bool hadSaveARecipe = false ;
+
 	////----Champi system---///
 
 	public float champiBank ;
@@ -90,6 +95,9 @@ public class GameManager : MonoBehaviour {
     	if(!recetteKnow.Contains(recetteToAdd))
     	{
     		recetteKnow.Add(recetteToAdd) ;
+    		recetteKnowIdx.Add(recetteList.recetteList.IndexOf(recetteToAdd)) ;
+    		hadSaveARecipe = true ;
+    		//Debug.Log(recetteList.recetteList.IndexOf(recetteToAdd) + "recette Index") ;
     	}
     }
 
@@ -101,9 +109,16 @@ public class GameManager : MonoBehaviour {
     	Debug.Log("SAVE") ;
     	PlayerPrefs.SetFloat("PlayerScore", champiBank) ;
 
+  		PlayerPrefs.SetInt("HaveSaveRecipe", Convert.ToInt32(hadSaveARecipe)) ;
+
     	for(int i = 0 ; i < lvlSuccess.Count ; i++)
     	{
     		PlayerPrefs.SetInt("LvlSuccesList" + i, Convert.ToInt32(lvlSuccess[i])) ;
+    	}
+
+    	for(int y = 0 ; y < recetteKnowIdx.Count ; y++)
+    	{
+    		PlayerPrefs.SetInt("RecipeDiscover" + y, recetteKnowIdx[y]) ;
     	}
     }
 
@@ -111,11 +126,25 @@ public class GameManager : MonoBehaviour {
     {
     	Debug.Log("LOAD") ;
     	champiBank = PlayerPrefs.GetFloat("PlayerScore") ;
-
-    	for(int y = 1 ; y < lvlSuccess.Count ; y++)
+    	hadSaveARecipe = Convert.ToBoolean(PlayerPrefs.GetInt("HaveSaveRecipe")) ;
+    	for(int y = 0 ; y < lvlSuccess.Count ; y++)
     	{
     		lvlSuccess[y] = Convert.ToBoolean(PlayerPrefs.GetInt("LvlSuccesList" + y)) ;
     	}
+
+    	if(hadSaveARecipe)
+    	{
+	    	for(int z = 0 ; z < recetteList.recetteList.Count ; z++)
+	    	{
+	    		//Debug.Log("Boucle + " + z) ;
+	    		if(!recetteKnow.Contains(recetteList.recetteList[PlayerPrefs.GetInt("RecipeDiscover" + z)]) && PlayerPrefs.HasKey("RecipeDiscover" + z))
+	    		{
+	    			//Debug.Log("Poping " + z) ;
+	    			recetteKnow.Add(recetteList.recetteList[PlayerPrefs.GetInt("RecipeDiscover" + z)]) ;
+	    			//recetteKnowIdx.Add(PlayerPrefs.GetInt("RecipeDiscover"+z)) ;
+	    		}
+	    	}
+	    }
     }
 
     public void DeleteSave()
@@ -126,6 +155,14 @@ public class GameManager : MonoBehaviour {
     	{
     		PlayerPrefs.DeleteKey("LvlSuccesList" + p) ;
     	}
+
+    	for(int g = 0 ; g < recetteKnow.Count ; g++)
+    	{
+    		PlayerPrefs.DeleteKey("RecipeDiscover" + g) ;
+    	}
+
+    	PlayerPrefs.DeleteKey("PlayerScore") ;
+    	PlayerPrefs.DeleteKey("HaveSaveRecipe") ;
     }
 
 }
