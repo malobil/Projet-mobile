@@ -30,7 +30,7 @@ public class LevelSelectManager : MonoBehaviour {
 
    	public void ChangeChampiText()
    	{
-   		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() ;
+   		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() + " Mush";
    	}
 
    	public void PopRecipeBool()
