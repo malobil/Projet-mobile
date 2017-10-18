@@ -7,6 +7,7 @@ using UnityEngine.UI ;
 public class LevelSelectManager : MonoBehaviour {
 
 	public Text champiText  ;
+	public GameObject recipeBook ;
 
 	// Use this for initialization
 	void Start () 
@@ -32,8 +33,13 @@ public class LevelSelectManager : MonoBehaviour {
    		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() ;
    	}
 
-   	public void LoadRecipeScene()
+   	public void PopRecipeBool()
    	{
-   		SceneManager.LoadScene("RecipeBookScene");
+   	   recipeBook.SetActive(true) ;
+   	}
+
+   	public void CloseRecipeBook()
+   	{
+   		recipeBook.SetActive(false) ;
    	}
 }

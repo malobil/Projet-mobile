@@ -109,9 +109,4 @@ public class AffichageBookRecette : MonoBehaviour {
 			buttonUp.SetActive(true) ;
 		}
 	}
-
-	public void ReturnToSelect()
-	{
-		SceneManager.LoadScene("LevelSelect");
-	}
 }
