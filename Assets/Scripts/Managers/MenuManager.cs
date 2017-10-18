@@ -29,4 +29,9 @@ public class MenuManager : MonoBehaviour {
         GameManager.Instance().LoadGame() ;
    	}
 
+   	public void DeleteCurrentSave()
+   	{
+   		GameManager.Instance().DeleteSave() ;
+   	}
+
 }
