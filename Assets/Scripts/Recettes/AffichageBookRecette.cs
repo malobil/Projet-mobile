@@ -9,6 +9,7 @@ public class AffichageBookRecette : MonoBehaviour {
 
 	public GameObject layout ;
 	public GameObject prefabRecetteObject ;
+	public GameObject textNoRecipe ;
 
 	public GameObject buttonUp ;
 	public GameObject buttonDown ;
@@ -31,6 +32,11 @@ public class AffichageBookRecette : MonoBehaviour {
 		}
 
 		buttonDown.SetActive(false) ;
+
+		if(GameManager.Instance().recetteKnow.Count == 0)
+		{
+			textNoRecipe.SetActive(true) ;
+		}
 		
 	}
 	
@@ -44,6 +50,7 @@ public class AffichageBookRecette : MonoBehaviour {
 	{
 		if(GameManager.Instance().recetteKnow.Count != 0)
 		{
+			textNoRecipe.SetActive(false) ;
 			for(int i = depValue ; depValue <= i && i < endValue ; i++)
 			{
 				if(i < GameManager.Instance().recetteKnow.Count)
