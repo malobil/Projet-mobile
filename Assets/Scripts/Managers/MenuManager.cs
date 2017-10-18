@@ -26,6 +26,7 @@ public class MenuManager : MonoBehaviour {
 	public void PlayMenuAccueil ()
    	{
         SceneManager.LoadScene (MainScene);
+        GameManager.Instance().LoadGame() ;
    	}
 
 }
