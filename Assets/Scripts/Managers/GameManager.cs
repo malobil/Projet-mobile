@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour {
 	    		{
 	    			//Debug.Log("Poping " + z) ;
 	    			recetteKnow.Add(recetteList.recetteList[PlayerPrefs.GetInt("RecipeDiscover" + z)]) ;
-	    			//recetteKnowIdx.Add(PlayerPrefs.GetInt("RecipeDiscover"+z)) ;
+	    			recetteKnowIdx.Add(PlayerPrefs.GetInt("RecipeDiscover"+z)) ;
 	    		}
 	    	}
 	    }

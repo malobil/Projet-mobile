@@ -141,6 +141,7 @@ void Awake ()
 		}
 
 		levelIsEnd = true ;
+		GameManager.Instance().SaveGame() ;
 	}
 
 	void TimerShow()
