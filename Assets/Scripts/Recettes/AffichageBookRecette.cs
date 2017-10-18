@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AffichageBookRecette : MonoBehaviour {
 
@@ -107,5 +108,10 @@ public class AffichageBookRecette : MonoBehaviour {
 
 			buttonUp.SetActive(true) ;
 		}
+	}
+
+	public void ReturnToSelect()
+	{
+		SceneManager.LoadScene("LevelSelect");
 	}
 }
