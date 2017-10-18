@@ -125,11 +125,21 @@ public class GameManager : MonoBehaviour {
     public void LoadGame()
     {
     	Debug.Log("LOAD") ;
-    	champiBank = PlayerPrefs.GetFloat("PlayerScore") ;
-    	hadSaveARecipe = Convert.ToBoolean(PlayerPrefs.GetInt("HaveSaveRecipe")) ;
-    	for(int y = 0 ; y < lvlSuccess.Count ; y++)
+    	if(PlayerPrefs.HasKey("PlayerScore"))
     	{
-    		lvlSuccess[y] = Convert.ToBoolean(PlayerPrefs.GetInt("LvlSuccesList" + y)) ;
+    		champiBank = PlayerPrefs.GetFloat("PlayerScore") ;
+    	}
+
+    	if(PlayerPrefs.HasKey("HaveSaveRecipe"))
+    	{
+    		hadSaveARecipe = Convert.ToBoolean(PlayerPrefs.GetInt("HaveSaveRecipe")) ;
+    	}
+    	if(PlayerPrefs.HasKey("LvlSuccesList"))
+    	{
+    		for(int y = 0 ; y < lvlSuccess.Count ; y++)
+    		{
+    			lvlSuccess[y] = Convert.ToBoolean(PlayerPrefs.GetInt("LvlSuccesList" + y)) ;
+    		}
     	}
 
     	if(hadSaveARecipe)
