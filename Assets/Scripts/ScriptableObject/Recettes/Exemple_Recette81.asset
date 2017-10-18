@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Exemple_Recette81
   m_EditorClassIdentifier: 
   recetteForme:
-  - {fileID: 11400000, guid: 9570cb20d4766f24cb8cf2ce84d2147d, type: 2}
-  - {fileID: 11400000, guid: 9570cb20d4766f24cb8cf2ce84d2147d, type: 2}
-  - {fileID: 11400000, guid: 9570cb20d4766f24cb8cf2ce84d2147d, type: 2}
-  - {fileID: 11400000, guid: 9570cb20d4766f24cb8cf2ce84d2147d, type: 2}
+  - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
+  - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
+  - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
+  - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
   recetteBonus: 2000
