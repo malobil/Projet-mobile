@@ -31,4 +31,9 @@ public class LevelSelectManager : MonoBehaviour {
    	{
    		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() ;
    	}
+
+   	public void LoadRecipeScene()
+   	{
+   		SceneManager.LoadScene("RecipeBookScene");
+   	}
 }
