@@ -37,7 +37,8 @@ void Awake ()
 	// Use this for initialization
 	void Start () 
 	{
-		globalList = GameManager.Instance().recetteList ; 
+		globalList = GameManager.Instance().recetteList ;
+		LoadRecetteAlreadyKnow() ;
 	}
 	
 	// Update is called once per frame
@@ -133,5 +134,17 @@ void Awake ()
     {
     	GameObject tempsInstant = Instantiate(prefabImage, recetteKnowPanel.transform) ;
     	tempsInstant.GetComponent<AffichageRecetteScript>().Change(recetteAscomplish) ;
+    }
+
+    void LoadRecetteAlreadyKnow()
+    {
+    	for(int y = 0 ; y < GameManager.Instance().recetteKnow.Count ; y++)
+    	{
+    		if(GameManager.Instance().recetteKnow[y] != null)
+    		{
+    			GameObject popStartTemp = Instantiate(prefabImage, recetteKnowPanel.transform) ;
+    			popStartTemp.GetComponent<AffichageRecetteScript>().Change(GameManager.Instance().recetteKnow[y]) ;
+    		}
+    	}
     }
 }
