@@ -108,18 +108,13 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1148691218
+--- !u!1001 &1720602394
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114199527453885774, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: listOfIngredient.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -210,125 +205,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5348254
-      objectReference: {fileID: 0}
-    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5348254
-      objectReference: {fileID: 0}
-    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.34446687
-      objectReference: {fileID: 0}
-    - target: {fileID: 224594692550106834, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.34446687
-      objectReference: {fileID: 0}
-    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.72154915
-      objectReference: {fileID: 0}
-    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.72154915
-      objectReference: {fileID: 0}
-    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5301297
-      objectReference: {fileID: 0}
-    - target: {fileID: 224202573497240906, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5301297
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: levelChampiAmount
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: levelChampiValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timerSecondes
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timeIngredientShow
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timerMinutes
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114700741604893086, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: LevelSelect
-      objectReference: {fileID: 0}
-    - target: {fileID: 114199527453885774, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: maximumIngredient
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: numberlvl
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224683616126140740, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -990.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: scoreNeed
-      value: 3000
-      objectReference: {fileID: 0}
-    - target: {fileID: 114132200086151686, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateList
-      value: 
-      objectReference: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86,
-        type: 2}
-    - target: {fileID: 114132200086151686, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateFormList
-      value: 
-      objectReference: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09,
-        type: 2}
-    - target: {fileID: 114795538312939890, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateFormList
-      value: 
-      objectReference: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09,
-        type: 2}
-    - target: {fileID: 114795538312939890, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateList
-      value: 
-      objectReference: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0
