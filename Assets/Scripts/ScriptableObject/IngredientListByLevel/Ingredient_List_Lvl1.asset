@@ -11,4 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e22fcea019e36f4bb310f3baf9597e2, type: 3}
   m_Name: Ingredient_List_Lvl1
   m_EditorClassIdentifier: 
-  itemList: []
+  itemList:
+  - {fileID: 11400000, guid: 54e649168885ef24692ba2fc3d2a9643, type: 2}
+  - {fileID: 11400000, guid: dc98e109c4a67444bac3025f19e1bb49, type: 2}
+  - {fileID: 11400000, guid: 44e56fa18bd3c824a8a7e5af304b1d06, type: 2}

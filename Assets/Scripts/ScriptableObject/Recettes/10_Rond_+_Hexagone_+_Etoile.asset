@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de10bebc352c3840bed17031de6b299, type: 3}
-  m_Name: Exemple_Forme1
+  m_Script: {fileID: 11500000, guid: f22ab1e746619ee41969098494c52997, type: 3}
+  m_Name: 10_Rond_+_Hexagone_+_Etoile
   m_EditorClassIdentifier: 
-  formeImage: {fileID: 21300000, guid: 14689d10c3384a5418ed3154e42c91a0, type: 3}
-  toxicRatio: 0
+  recetteForme: []
+  recetteBonus: 0
