@@ -9,6 +9,26 @@ public class LevelSelectManager : MonoBehaviour {
 	public Text champiText  ;
 	public GameObject recipeBook, shopLayout ;
 
+    private static LevelSelectManager instance ;
+    public static LevelSelectManager Instance () 
+    {
+        return instance;
+    }
+
+void Awake ()
+    {
+        if (instance != null)
+        {
+            Destroy (gameObject);
+        }
+
+        else 
+
+        {
+            instance = this;
+        }
+    }
+
 	// Use this for initialization
 	void Start () 
 	{

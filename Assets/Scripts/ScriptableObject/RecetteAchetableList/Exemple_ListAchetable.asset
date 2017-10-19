@@ -17,4 +17,5 @@ MonoBehaviour:
   recette3Ingredient:
   - {fileID: 11400000, guid: 4355564f59ede5d4c886576c291eb981, type: 2}
   - {fileID: 11400000, guid: 345177c2b14de89449966df18fd6c2b1, type: 2}
-  recette4Ingredient: []
+  recette4Ingredient:
+  - {fileID: 11400000, guid: df613224328157c488fe71f55d49dad2, type: 2}

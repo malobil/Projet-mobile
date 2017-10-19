@@ -22,10 +22,7 @@ public class ShopManager : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		//priceText01.text = price01.ToString("") + " mush";
-		//priceText02.text = price02.ToString("") + " mush";
-		//priceText03.text = price03.ToString("") + " mush" ;
-		//BuyRecipe2Ing() ;
+		SetUpText() ;
 	}
 	
 	// Update is called once per frame
@@ -34,86 +31,112 @@ public class ShopManager : MonoBehaviour
 		
 	}
 
+	void SetUpText()
+	{
+		priceText01.text = price01.ToString("") + " mush";
+		priceText02.text = price02.ToString("") + " mush";
+		priceText03.text = price03.ToString("") + " mush" ;
+	}
+
 	public void BuyRecipe2Ing()
 	{
-		CheckRecette2Ing() ;
-		Debug.Log(numberRecetteKnowWith2Ingr) ;
-
-		if(obtainLayout != null)
-			{
-				Destroy(obtainLayoutObject) ;
-			}
-
-		if(numberRecetteKnowWith2Ingr < listOfRecipe.recette2Ingredient.Count)
+		if(GameManager.Instance().champiBank >= price01)
 		{
-			int tempRandomValor = Random.Range(0,listOfRecipe.recette2Ingredient.Count) ;
-			Debug.Log(tempRandomValor) ;
-			
-			if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette2Ingredient[tempRandomValor]))
+			CheckRecette2Ing() ;
+			Debug.Log(numberRecetteKnowWith2Ingr) ;
+
+			if(obtainLayout != null)
+				{
+					Destroy(obtainLayoutObject) ;
+				}
+
+			if(numberRecetteKnowWith2Ingr < listOfRecipe.recette2Ingredient.Count)
 			{
-				GameObject tempRecipe = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
-				tempRecipe.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette2Ingredient[tempRandomValor]) ;
-				obtainLayoutObject = tempRecipe ;
-				GameManager.Instance().AddRecetteKnow(listOfRecipe.recette2Ingredient[tempRandomValor]) ;
-				GameManager.Instance().SaveGame() ;
-			}
-			else
-			{
-				BuyRecipe2Ing() ;
+				int tempRandomValor = Random.Range(0,listOfRecipe.recette2Ingredient.Count) ;
+				Debug.Log(tempRandomValor) ;
+				
+				if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette2Ingredient[tempRandomValor]))
+				{
+					GameObject tempRecipe = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
+					tempRecipe.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette2Ingredient[tempRandomValor]) ;
+					obtainLayoutObject = tempRecipe ;
+					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette2Ingredient[tempRandomValor]) ;
+					GameManager.Instance().ChampiBank(-price01) ;
+					LevelSelectManager.Instance().ChangeChampiText() ;
+					GameManager.Instance().SaveGame() ;
+				}
+				else
+				{
+					BuyRecipe2Ing() ;
+				}
 			}
 		}
 	}
 
 	public void BuyRecipe3Ing()
 	{
-		CheckRecette3Ing() ;
-		if(numberRecetteKnowWith3Ingr < listOfRecipe.recette3Ingredient.Count)
+		if(GameManager.Instance().champiBank >= price02)
 		{
+		
+			CheckRecette3Ing() ;
+
 			if(obtainLayout != null)
 			{
 				Destroy(obtainLayoutObject) ;
 			}
 
-			int tempRandomValor2 = Random.Range(0,listOfRecipe.recette3Ingredient.Count) ;
-			
-			if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette3Ingredient[tempRandomValor2]))
+			if(numberRecetteKnowWith3Ingr < listOfRecipe.recette3Ingredient.Count)
 			{
-				GameObject tempRecipe = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
-				tempRecipe.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette3Ingredient[tempRandomValor2]) ;
-				obtainLayoutObject = tempRecipe ;
-				GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor2]) ;
-				GameManager.Instance().SaveGame() ;
-			}
-			else
-			{
-				BuyRecipe3Ing() ;
+
+				int tempRandomValor2 = Random.Range(0,listOfRecipe.recette3Ingredient.Count) ;
+				
+				if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette3Ingredient[tempRandomValor2]))
+				{
+					GameObject tempRecipe1 = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
+					tempRecipe1.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette3Ingredient[tempRandomValor2]) ;
+					obtainLayoutObject = tempRecipe1 ;
+					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor2]) ;
+					GameManager.Instance().ChampiBank(-price02) ;
+					LevelSelectManager.Instance().ChangeChampiText() ;
+					GameManager.Instance().SaveGame() ;
+				}
+				else
+				{
+					BuyRecipe3Ing() ;
+				}
 			}
 		}
 	}
 
 	public void BuyRecipe4Ing()
 	{
-		CheckRecette4Ing() ;
-		if(numberRecetteKnowWith4Ingr < listOfRecipe.recette4Ingredient.Count)
+		if(GameManager.Instance().champiBank >= price03)
 		{
+			CheckRecette4Ing() ;
+
 			if(obtainLayout != null)
 			{
 				Destroy(obtainLayoutObject) ;
 			}
 
-			int tempRandomValor3 = Random.Range(0,listOfRecipe.recette4Ingredient.Count) ;
-			
-			if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette4Ingredient[tempRandomValor3]))
+			if(numberRecetteKnowWith4Ingr < listOfRecipe.recette4Ingredient.Count)
 			{
-				GameObject tempRecipe = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
-				tempRecipe.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette4Ingredient[tempRandomValor3]) ;
-				obtainLayoutObject = tempRecipe ;
-				GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor3]) ;
-				GameManager.Instance().SaveGame() ;
-			}
-			else
-			{
-				BuyRecipe4Ing() ;
+				int tempRandomValor3 = Random.Range(0,listOfRecipe.recette4Ingredient.Count) ;
+				
+				if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette4Ingredient[tempRandomValor3]))
+				{
+					GameObject tempRecipe2 = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
+					tempRecipe2.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette4Ingredient[tempRandomValor3]) ;
+					obtainLayoutObject = tempRecipe2 ;
+					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor3]) ;
+					GameManager.Instance().ChampiBank(-price03) ;
+					LevelSelectManager.Instance().ChangeChampiText() ;
+					GameManager.Instance().SaveGame() ;
+				}
+				else
+				{
+					BuyRecipe4Ing() ;
+				}
 			}
 		}
 	}
