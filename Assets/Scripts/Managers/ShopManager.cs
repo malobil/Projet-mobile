@@ -16,6 +16,7 @@ public class ShopManager : MonoBehaviour
 
 	private int numberRecetteKnowWith2Ingr = 0 ;
 	private int numberRecetteKnowWith3Ingr = 0 ;
+	private int numberRecetteKnowWith4Ingr = 0 ;
 
 
 	// Use this for initialization
@@ -73,19 +74,59 @@ public class ShopManager : MonoBehaviour
 				Destroy(obtainLayoutObject) ;
 			}
 
-			int tempRandomValor = Random.Range(0,listOfRecipe.recette3Ingredient.Count) ;
+			int tempRandomValor2 = Random.Range(0,listOfRecipe.recette3Ingredient.Count) ;
 			
-			if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette3Ingredient[tempRandomValor]))
+			if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette3Ingredient[tempRandomValor2]))
 			{
 				GameObject tempRecipe = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
-				tempRecipe.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette3Ingredient[tempRandomValor]) ;
+				tempRecipe.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette3Ingredient[tempRandomValor2]) ;
 				obtainLayoutObject = tempRecipe ;
-				GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor]) ;
+				GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor2]) ;
 				GameManager.Instance().SaveGame() ;
 			}
 			else
 			{
 				BuyRecipe3Ing() ;
+			}
+		}
+	}
+
+	public void BuyRecipe4Ing()
+	{
+		CheckRecette4Ing() ;
+		if(numberRecetteKnowWith4Ingr < listOfRecipe.recette4Ingredient.Count)
+		{
+			if(obtainLayout != null)
+			{
+				Destroy(obtainLayoutObject) ;
+			}
+
+			int tempRandomValor3 = Random.Range(0,listOfRecipe.recette4Ingredient.Count) ;
+			
+			if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette4Ingredient[tempRandomValor3]))
+			{
+				GameObject tempRecipe = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
+				tempRecipe.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette4Ingredient[tempRandomValor3]) ;
+				obtainLayoutObject = tempRecipe ;
+				GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor3]) ;
+				GameManager.Instance().SaveGame() ;
+			}
+			else
+			{
+				BuyRecipe4Ing() ;
+			}
+		}
+	}
+
+	void  CheckRecette4Ing()
+	{
+		numberRecetteKnowWith4Ingr = 0 ;
+
+		for (int y = 0 ; y < listOfRecipe.recette4Ingredient.Count ; y++)
+		{
+			if(GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette4Ingredient[y]))
+			{
+				numberRecetteKnowWith4Ingr++ ;
 			}
 		}
 	}

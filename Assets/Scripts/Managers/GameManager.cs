@@ -161,7 +161,7 @@ public class GameManager : MonoBehaviour {
     {
     	Debug.Log("DELETE SAVE") ;
 
-    	for(int p = 1 ; p < lvlSuccess.Count ; p++)
+    	/*for(int p = 1 ; p < lvlSuccess.Count ; p++)
     	{
     		PlayerPrefs.DeleteKey("LvlSuccesList" + p) ;
     	}
@@ -172,7 +172,9 @@ public class GameManager : MonoBehaviour {
     	}
 
     	PlayerPrefs.DeleteKey("PlayerScore") ;
-    	PlayerPrefs.DeleteKey("HaveSaveRecipe") ;
+    	PlayerPrefs.DeleteKey("HaveSaveRecipe") ;*/
+
+    	PlayerPrefs.DeleteAll() ;
     }
 
 }

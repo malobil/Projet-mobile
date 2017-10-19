@@ -48,6 +48,11 @@ public class AffichageBookRecette : MonoBehaviour {
 
 	void ShowRecette()
 	{
+		for(int p = 0 ; p <listRecetteShow.Count ; p++)
+		{
+			Destroy(listRecetteShow[p]) ;
+		}
+
 		if(GameManager.Instance().recetteKnow.Count != 0)
 		{
 			textNoRecipe.SetActive(false) ;
