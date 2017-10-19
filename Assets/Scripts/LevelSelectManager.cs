@@ -7,7 +7,7 @@ using UnityEngine.UI ;
 public class LevelSelectManager : MonoBehaviour {
 
 	public Text champiText  ;
-	public GameObject recipeBook ;
+	public GameObject recipeBook, shopLayout ;
 
 	// Use this for initialization
 	void Start () 
@@ -33,13 +33,13 @@ public class LevelSelectManager : MonoBehaviour {
    		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() + " Mush";
    	}
 
-   	public void PopRecipeBool()
+   	public void PopMenu(GameObject thingTopop)
    	{
-   	   recipeBook.SetActive(true) ;
+   	   thingTopop.SetActive(true) ;
    	}
 
-   	public void CloseRecipeBook()
+   	public void BackToSelect(GameObject thingToDepop)
    	{
-   		recipeBook.SetActive(false) ;
+   		thingToDepop.SetActive(false) ;
    	}
 }

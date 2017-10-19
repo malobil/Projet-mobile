@@ -20,7 +20,7 @@ public class AffichageBookRecette : MonoBehaviour {
 	private int endValue ;
 
 	// Use this for initialization
-	void Start () 
+	void OnEnable () 
 	{
 		endValue = recetteNumberToShow ;
 		depValue = endValue - recetteNumberToShow ;
