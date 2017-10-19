@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5de10bebc352c3840bed17031de6b299, type: 3}
-  m_Name: 04_dodecagone
+  m_Name: 04_Etoile
   m_EditorClassIdentifier: 
-  formeImage: {fileID: 21300000, guid: c98092505ab214f459deeca92d6afbd8, type: 3}
+  formeImage: {fileID: 21300000, guid: 4a2cc856c9b71384699111adcc883ba9, type: 3}

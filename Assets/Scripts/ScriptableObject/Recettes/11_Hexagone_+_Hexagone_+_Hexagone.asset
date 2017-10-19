@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: 11_Hexagone_+_Hexagone_+_Hexagone
   m_EditorClassIdentifier: 
   recetteForme:
-  - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
-  - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
-  - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
-  recetteBonus: 2000
+  - {fileID: 11400000, guid: 84f9152bb97a4cf4aa9474cfaf958b39, type: 2}
+  - {fileID: 11400000, guid: 84f9152bb97a4cf4aa9474cfaf958b39, type: 2}
+  - {fileID: 11400000, guid: 84f9152bb97a4cf4aa9474cfaf958b39, type: 2}
+  recetteBonus: 300
