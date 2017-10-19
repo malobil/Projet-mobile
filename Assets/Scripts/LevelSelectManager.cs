@@ -8,6 +8,7 @@ public class LevelSelectManager : MonoBehaviour {
 
 	public Text champiText  ;
 	public GameObject recipeBook, shopLayout ;
+	public List<GameObject> levelList = new List<GameObject>() ;
 
     private static LevelSelectManager instance ;
     public static LevelSelectManager Instance () 
@@ -32,7 +33,8 @@ void Awake ()
 	// Use this for initialization
 	void Start () 
 	{
-		ChangeChampiText() ;	
+		ChangeChampiText() ;
+		PopLevel() ;	
 	}
 	
 	// Update is called once per frame
@@ -45,6 +47,17 @@ void Awake ()
    		if (GameManager.Instance().lvlSuccess[levelnumber] == true)
    		{
    			SceneManager.LoadScene (GameManager.Instance().sceneName[levelnumber]);
+   		}
+   	}
+
+   	public void PopLevel()
+   	{
+   		for(int i = 0 ; i < levelList.Count ; i++)
+   		{
+   			if(GameManager.Instance().lvlSuccess[i] == true)
+   			{
+   				levelList[i].SetActive(true) ;
+   			}
    		}
    	}
 
@@ -62,4 +75,5 @@ void Awake ()
    	{
    		thingToDepop.SetActive(false) ;
    	}
+
 }
