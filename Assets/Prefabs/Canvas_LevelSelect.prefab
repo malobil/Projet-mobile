@@ -1003,7 +1003,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114272125861374214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114862005295876756}
+        m_MethodName: BuyRecipe3Ing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114079061631016864
@@ -2932,6 +2943,10 @@ MonoBehaviour:
   price01: 10
   price02: 2
   price03: 57
+  listOfRecipe: {fileID: 11400000, guid: 85a4cf1a9213eda498ccbe62b27c3c5d, type: 2}
+  obtainLayout: {fileID: 1372232869993876}
+  prefabRecetteObject: {fileID: 1912399139551648, guid: a5ca15bab5b6d674e805b7d0f2346e7b,
+    type: 2}
 --- !u!114 &114873847014484546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3076,7 +3091,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114472280053697150}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114862005295876756}
+        m_MethodName: BuyRecipe2Ing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114920231847519188

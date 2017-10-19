@@ -13,6 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recette2Ingredient:
   - {fileID: 11400000, guid: e9266209b4069124f8b156d330d5fb43, type: 2}
+  - {fileID: 11400000, guid: 9c7f5b4b7680bea488cbc0428524b0b6, type: 2}
+  recette3Ingredient:
+  - {fileID: 11400000, guid: 4355564f59ede5d4c886576c291eb981, type: 2}
   - {fileID: 11400000, guid: 345177c2b14de89449966df18fd6c2b1, type: 2}
-  recette3Ingredient: []
   recette4Ingredient: []

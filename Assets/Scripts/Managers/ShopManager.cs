@@ -36,15 +36,17 @@ public class ShopManager : MonoBehaviour
 	public void BuyRecipe2Ing()
 	{
 		CheckRecette2Ing() ;
-		//Debug.Log(numberRecetteKnowWith2Ingr) ;
-		if(numberRecetteKnowWith2Ingr < listOfRecipe.recette2Ingredient.Count)
-		{
-			if(obtainLayout != null)
+		Debug.Log(numberRecetteKnowWith2Ingr) ;
+
+		if(obtainLayout != null)
 			{
 				Destroy(obtainLayoutObject) ;
 			}
 
+		if(numberRecetteKnowWith2Ingr < listOfRecipe.recette2Ingredient.Count)
+		{
 			int tempRandomValor = Random.Range(0,listOfRecipe.recette2Ingredient.Count) ;
+			Debug.Log(tempRandomValor) ;
 			
 			if(!GameManager.Instance().recetteKnow.Contains(listOfRecipe.recette2Ingredient[tempRandomValor]))
 			{
@@ -63,8 +65,8 @@ public class ShopManager : MonoBehaviour
 
 	public void BuyRecipe3Ing()
 	{
-		CheckRecette2Ing() ;
-		if(numberRecetteKnowWith2Ingr < listOfRecipe.recette3Ingredient.Count)
+		CheckRecette3Ing() ;
+		if(numberRecetteKnowWith3Ingr < listOfRecipe.recette3Ingredient.Count)
 		{
 			if(obtainLayout != null)
 			{
