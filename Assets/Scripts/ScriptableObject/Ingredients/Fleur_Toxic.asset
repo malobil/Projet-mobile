@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Fleur_Toxic
   m_EditorClassIdentifier: 
   ingredientImage: {fileID: 21300000, guid: 4058009adb3920b4db0bcf3168f9ab03, type: 3}
-  toxicValor: 100
+  toxicValor: 200
