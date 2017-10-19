@@ -41,6 +41,7 @@ public class LevelManager : MonoBehaviour {
 	////----Champi Value By Level---///
 
 	public float levelChampiValue ;
+	private float difference ; 
 
 	////----Spawner and object list---///
 
@@ -119,8 +120,16 @@ void Awake ()
 	void EndLevel()
 	{
 		textEndLevel.gameObject.SetActive(true) ;
+
 		if(scoreToxic >= scoreNeed && !pointAdded)
 		{	
+			difference = (scoreToxic - scoreNeed) * numberlvl ;
+
+			if(difference > 0)
+			{
+			   levelChampiValue += difference ;
+			}
+
 			textEndLevel.color = Color.green ;
 			textEndLevel.text = "VICTOIRE ! =')" ;
 			quitButton.SetActive(true);
