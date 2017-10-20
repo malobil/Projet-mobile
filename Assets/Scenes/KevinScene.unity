@@ -205,36 +205,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224683616126140740, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224136426008415698, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.7443196
-      objectReference: {fileID: 0}
-    - target: {fileID: 224136426008415698, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.30370578
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timerSecondes
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timerMinutes
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114700741604893086, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: LevelSelect
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0

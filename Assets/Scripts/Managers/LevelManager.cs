@@ -34,9 +34,10 @@ public class LevelManager : MonoBehaviour {
 	private bool levelIsEnd = false ;
 	private bool pointAdded = false ;
 
-	////----Quit (hide)---///
+	////----End game---///
 
-	public GameObject quitButton ;
+	public GameObject endLayout ;
+	public Text stateText, timeLeftText, scoreEndText, recipeFoundText, mushGainText ;
 
 	////----Champi Value By Level---///
 
@@ -105,13 +106,13 @@ void Awake ()
             	timerMinutes = 0;
         	}
 
-        	if(timerMinutes == 0 && timerSecondes == 0 && !pointAdded)
+        	if(timerMinutes == 0 && timerSecondes == 0 && !levelIsEnd)
         	{
         		EndLevel() ;
         		UnpopObject() ;
         	}
 
-        	if (timerMinutes >= 1 && timerSecondes <= 0 && !pointAdded)
+        	if (timerMinutes >= 1 && timerSecondes <= 0 && !levelIsEnd)
         	{
             	timerMinutes--;
             	timerSecondes = 60.0f;
@@ -126,7 +127,7 @@ void Awake ()
 
 	void EndLevel()
 	{
-		textEndLevel.gameObject.SetActive(true) ;
+		endLayout.SetActive(true) ;
 
 		if(scoreToxic >= scoreNeed && !pointAdded)
 		{	
@@ -137,10 +138,6 @@ void Awake ()
 			   levelChampiValue += difference ;
 			}
 
-			textEndLevel.color = Color.green ;
-			textEndLevel.text = "VICTOIRE ! =')" ;
-			quitButton.SetActive(true);
-
 			if(GameManager.Instance() != null)
 			{
 				GameManager.Instance().ChampiBank(levelChampiValue) ;
@@ -149,16 +146,30 @@ void Awake ()
 			}
 
 		}
-		else
-		{
-			textEndLevel.color = Color.red ;
-			textEndLevel.text = "DEFAITE ! ='( " ;
-			quitButton.SetActive(true);
-		}
 
 		levelIsEnd = true ;
+		EndText() ;
 		GameManager.Instance().SaveGame() ;
 	
+	}
+
+	void EndText()
+	{
+		endLayout.SetActive(true) ;
+		if(scoreToxic >= scoreNeed)
+		{	
+			stateText.color = Color.green ;
+			stateText.text = "VICTORY" ;
+		}
+		else if(scoreToxic < scoreNeed)
+		{
+			stateText.color = Color.red ;
+			stateText.text = "DEFEAT" ;
+		}
+
+		timeLeftText.text = "Time left : " + timerMinutes.ToString("f0") +" min" + timerSecondes.ToString("f0") + "sec" ;
+		scoreEndText.text = "Score : " + scoreToxic.ToString("") + " / " + scoreNeed.ToString("") ;
+		mushGainText.text = "Mushroom gain : " + levelChampiValue.ToString("") ;
 	}
 
 	void TimerShow()
