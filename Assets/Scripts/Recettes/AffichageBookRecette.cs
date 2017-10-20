@@ -19,6 +19,12 @@ public class AffichageBookRecette : MonoBehaviour {
 	private int depValue ;
 	private int endValue ;
 
+
+	void Start()
+	{
+		buttonDown.SetActive(false) ;
+	}
+	
 	// Use this for initialization
 	void OnEnable () 
 	{
@@ -26,12 +32,10 @@ public class AffichageBookRecette : MonoBehaviour {
 		depValue = endValue - recetteNumberToShow ;
 		ShowRecette() ;
 
-		if(GameManager.Instance().recetteKnow.Count < endValue)
+		if(GameManager.Instance().recetteKnow.Count > endValue)
 		{
-			buttonUp.SetActive(false) ;
+			buttonUp.SetActive(true) ;
 		}
-
-		buttonDown.SetActive(false) ;
 
 		if(GameManager.Instance().recetteKnow.Count == 0)
 		{
