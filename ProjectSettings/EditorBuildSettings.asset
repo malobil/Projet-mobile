@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RecipeBookScene.unity
     guid: 536aef5338f7cdd46b7c41d977f8ba92
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 1a2389ad7b6dd954fbb3ac54df230093
