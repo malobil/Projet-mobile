@@ -108,8 +108,8 @@ void Awake ()
 
         	if(timerMinutes == 0 && timerSecondes == 0 && !levelIsEnd)
         	{
-        		EndLevel() ;
         		UnpopObject() ;
+        		EndLevel() ;
         	}
 
         	if (timerMinutes >= 1 && timerSecondes <= 0 && !levelIsEnd)
@@ -160,16 +160,20 @@ void Awake ()
 		{	
 			stateText.color = Color.green ;
 			stateText.text = "VICTORY" ;
+			timeLeftText.text = "Time left : " + "<b>" + timerMinutes.ToString("f0") + "</b>" + " min " + "<b>" + timerSecondes.ToString("f0")+ "</b>" + " sec" ;
+			scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") +  "</b>" +  " / " + "<b>" + scoreNeed.ToString("") + "</b>" ;
+			mushGainText.text = "Mushroom gain : " + "<b>" + levelChampiValue.ToString("") + "</b>" ;
 		}
 		else if(scoreToxic < scoreNeed)
 		{
 			stateText.color = Color.red ;
 			stateText.text = "DEFEAT" ;
+			timeLeftText.text = "<b>No time left !</b>" ;
+			scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") + "</b>" + " / " + "<b>" + scoreNeed.ToString("") + "</b>";
+			mushGainText.text = "Mushroom gain : " +  "<b>0</b>" ;
 		}
 
-		timeLeftText.text = "Time left : " + timerMinutes.ToString("f0") +" min" + timerSecondes.ToString("f0") + "sec" ;
-		scoreEndText.text = "Score : " + scoreToxic.ToString("") + " / " + scoreNeed.ToString("") ;
-		mushGainText.text = "Mushroom gain : " + levelChampiValue.ToString("") ;
+		
 	}
 
 	void TimerShow()
