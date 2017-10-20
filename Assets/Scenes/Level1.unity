@@ -225,6 +225,16 @@ Prefab:
       propertyPath: m_AnchorMin.y
       value: 0.032715734
       objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: scoreNeed
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: timeHide
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0
