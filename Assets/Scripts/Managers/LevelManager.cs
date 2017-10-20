@@ -21,7 +21,9 @@ public class LevelManager : MonoBehaviour {
 	public float timerMinutes;
 	public float timerSecondes;
 
+	////----Animation----////
 
+	public Animator littleMeg ;
 
 	////----Timers (hide)---///
 
@@ -204,7 +206,8 @@ void Awake ()
 		{
 			
 			//Debug.Log("time bef show < 0") ;
-			PopObject() ;
+			littleMeg.SetTrigger("Show") ;
+			//PopObject() ;
 			isHide = false ;
 			currentTimeHide = 0 ;
 			currentTimeShow = timeIngredientShow ;
@@ -221,7 +224,8 @@ void Awake ()
 		else if(currentTimeShow < 0 && !isHide)
 		{
 			//Debug.Log("time bef hide < 0") ;
-			UnpopObject() ;
+			littleMeg.SetTrigger("Hide") ;
+			//UnpopObject() ;
 			isHide = true ;
 			currentTimeShow = 0 ;
 			currentTimeHide = timeHide ;
@@ -251,7 +255,7 @@ void Awake ()
 		}
 	}
 
-	void PopObject()
+	public void PopObject()
 	{	
 		for(int y = 0 ; y < spawnerList.Count ; y++)
 		{	
@@ -260,7 +264,7 @@ void Awake ()
 		}
 	}
 
-	void UnpopObject()
+	public void UnpopObject()
 	{
 		if(listOfobjectPresent.Count != 0)
 			{
