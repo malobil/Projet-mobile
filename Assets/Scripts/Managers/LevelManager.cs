@@ -43,7 +43,6 @@ public class LevelManager : MonoBehaviour {
 
 	public float levelChampiValue ;
 	public float[] palierScore ;
-	private float difference ; 
 	private float scoreToxic = 0f;
 	public float[] bonusMushByPalier ;
 	private float mushBonus = 0f ;
@@ -135,22 +134,25 @@ void Awake ()
 
 		if(scoreToxic >= scoreNeed && !pointAdded)
 		{	
-			difference = (scoreToxic - scoreNeed) ;
 
-			if( palierScore.Length > 0 && difference > palierScore[0])
+			if( palierScore.Length > 0 && scoreToxic > palierScore[0])
 			{
-			   levelChampiValue += bonusMushByPalier[0] ;
-			   mushBonus = bonusMushByPalier[0] ;
+				mushBonus = bonusMushByPalier[0] ;
+			  	levelChampiValue += bonusMushByPalier[0] ;
+			  	Debug.Log("Palier1") ;
+			   
 			}
-			else if(palierScore.Length >= 1 && difference > palierScore[1])
+			else if(palierScore.Length >= 1 && scoreToxic > palierScore[1])
 			{
 				levelChampiValue += bonusMushByPalier[1] ;
 				mushBonus = bonusMushByPalier[1] ;
+				Debug.Log("Palier2") ;
 			}
-			else if(palierScore.Length >= 2 && difference > palierScore[2])
+			else if(palierScore.Length >= 2 && scoreToxic > palierScore[2])
 			{
 				levelChampiValue += bonusMushByPalier[2] ;
 				mushBonus = bonusMushByPalier[2] ;
+				Debug.Log("Palier3") ;
 			}
 
 			if(GameManager.Instance() != null)
