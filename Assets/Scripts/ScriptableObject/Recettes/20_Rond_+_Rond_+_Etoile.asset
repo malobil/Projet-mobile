@@ -9,9 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f22ab1e746619ee41969098494c52997, type: 3}
-  m_Name: 01_Rond_+_Rond
+  m_Name: 20_Rond_+_Rond_+_Etoile
   m_EditorClassIdentifier: 
   recetteForme:
   - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
   - {fileID: 11400000, guid: aeef5a26a4d47ef468dcac707c992fcb, type: 2}
-  recetteBonus: 100
+  - {fileID: 11400000, guid: 963e10f9ee97de2409b526d488853ec6, type: 2}
+  recetteBonus: 300
