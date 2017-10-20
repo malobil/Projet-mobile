@@ -108,7 +108,6 @@ void Awake ()
 
         	if(timerMinutes == 0 && timerSecondes == 0 && !levelIsEnd)
         	{
-        		UnpopObject() ;
         		EndLevel() ;
         	}
 
@@ -128,6 +127,7 @@ void Awake ()
 	void EndLevel()
 	{
 		endLayout.SetActive(true) ;
+		UnpopObject() ;
 
 		if(scoreToxic >= scoreNeed && !pointAdded)
 		{	
