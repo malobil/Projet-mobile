@@ -674,7 +674,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9918276ecafeb9b48b752e4a024bc2b7,
+      objectReference: {fileID: 21300000, guid: a5881fec2ef32f146b54e3feaed2926a,
         type: 3}
     - target: {fileID: 114416855209226692, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
         type: 2}
@@ -729,7 +729,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 12c14d9d807b53d4285ebdfa9dfcff1c,
+      objectReference: {fileID: 21300000, guid: 945bdd219ee5e964c86ee4c5e09311ef,
         type: 3}
     - target: {fileID: 114191379952302160, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
         type: 2}
@@ -780,6 +780,33 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114626896788485340, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114626896788485340, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300002, guid: a5881fec2ef32f146b54e3feaed2926a,
+        type: 3}
+    - target: {fileID: 114416855209226692, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967697205345624, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967697205345624, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 945bdd219ee5e964c86ee4c5e09311ef,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b2ee788b704a5c4b86456a1a96f9cf7, type: 2}
   m_IsPrefabParent: 0
