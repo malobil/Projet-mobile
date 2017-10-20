@@ -302,7 +302,7 @@ Prefab:
     - target: {fileID: 224683616126140740, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: -990.7
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -371,6 +371,36 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21,
         type: 2}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: palierScore.Array.data[0]
+      value: 4050
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: palierScore.Array.data[1]
+      value: 4100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: palierScore.Array.data[2]
+      value: 4200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[0]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[1]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[2]
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0
