@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour {
 	public float timerMinutes;
 	public float timerSecondes;
 
-	private float scoreToxic = 0f;
+
 
 	////----Timers (hide)---///
 
@@ -39,10 +39,14 @@ public class LevelManager : MonoBehaviour {
 	public GameObject endLayout ;
 	public Text stateText, timeLeftText, scoreEndText, recipeFoundText, mushGainText ;
 
-	////----Champi Value By Level---///
+	////----Score---///
 
 	public float levelChampiValue ;
+	public float[] palierScore ;
 	private float difference ; 
+	private float scoreToxic = 0f;
+	public float[] bonusMushByPalier ;
+	private float mushBonus = 0f ;
 
 	////----Spawner and object list---///
 
@@ -131,11 +135,22 @@ void Awake ()
 
 		if(scoreToxic >= scoreNeed && !pointAdded)
 		{	
-			difference = (scoreToxic - scoreNeed) * numberlvl ;
+			difference = (scoreToxic - scoreNeed) ;
 
-			if(difference > 0)
+			if( palierScore.Length > 0 && difference > palierScore[0])
 			{
-			   levelChampiValue += difference ;
+			   levelChampiValue += bonusMushByPalier[0] ;
+			   mushBonus = bonusMushByPalier[0] ;
+			}
+			else if(palierScore.Length >= 1 && difference > palierScore[1])
+			{
+				levelChampiValue += bonusMushByPalier[1] ;
+				mushBonus = bonusMushByPalier[1] ;
+			}
+			else if(palierScore.Length >= 2 && difference > palierScore[2])
+			{
+				levelChampiValue += bonusMushByPalier[2] ;
+				mushBonus = bonusMushByPalier[2] ;
 			}
 
 			if(GameManager.Instance() != null)
@@ -162,7 +177,7 @@ void Awake ()
 			stateText.text = "VICTORY" ;
 			timeLeftText.text = "Time left : " + "<b>" + timerMinutes.ToString("f0") + "</b>" + " min " + "<b>" + timerSecondes.ToString("f0")+ "</b>" + " sec" ;
 			scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") +  "</b>" +  " / " + "<b>" + scoreNeed.ToString("") + "</b>" ;
-			mushGainText.text = "Mushroom gain : " + "<b>" + levelChampiValue.ToString("") + "</b>" ;
+			mushGainText.text = "Mushroom gain : " + "<b>" + levelChampiValue.ToString("") + "</b>" + " + " + "<b>" +  mushBonus.ToString("") + "</b>" ;
 		}
 		else if(scoreToxic < scoreNeed)
 		{
@@ -278,5 +293,10 @@ void Awake ()
 	public void QuitLevel (string levelSelec)
 	{
 		 SceneManager.LoadScene(levelSelec) ;
+	}
+
+	public bool ReturnLevelEnd()
+	{
+		return levelIsEnd ;
 	}
 }

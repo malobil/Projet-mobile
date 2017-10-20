@@ -68,44 +68,50 @@ void Awake ()
 
 	public void ClearList()
 	{
-		for(int i = 0 ; i < listOfIngredient.Count ; i++)
+		if(!LevelManager.Instance().ReturnLevelEnd())
 		{
-			Destroy(listOfIngredient[i]) ;
-		}
+			for(int i = 0 ; i < listOfIngredient.Count ; i++)
+			{
+				Destroy(listOfIngredient[i]) ;
+			}
 
-		ClearIngredientList() ;
-		Debug.Log("Clear button press") ;
+			ClearIngredientList() ;
+			Debug.Log("Clear button press") ;
+		}
 	}
 
 	public void ConfirmList()
 	{
-		if(listOfIngredient.Count != 0)
+		if(!LevelManager.Instance().ReturnLevelEnd())
 		{
-			for(int i = 0 ; i < globalList.recetteList.Count ; i++)
+			if(listOfIngredient.Count != 0)
 			{
-				if(listOfIngredient.Count == globalList.recetteList[i].recetteForme.Count)
+				for(int i = 0 ; i < globalList.recetteList.Count ; i++)
 				{
-					ingredientCorrect = 0 ;
-					Debug.Log("Une recette a ce nombre d'ingredient") ;
-					
-					for(int y = 0 ; y < listOfIngredient.Count ; y++)
+					if(listOfIngredient.Count == globalList.recetteList[i].recetteForme.Count)
 					{
-						Debug.Log("La recette trouvé contient :" + globalList.recetteList[i].recetteForme[y].formeImage + "comme ingredient" + y) ;
-						Debug.Log(listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage) ;
-
-						if(globalList.recetteList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
+						ingredientCorrect = 0 ;
+						Debug.Log("Une recette a ce nombre d'ingredient") ;
+						
+						for(int y = 0 ; y < listOfIngredient.Count ; y++)
 						{
-							recetteAscomplish = globalList.recetteList[i] ;
-							Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
-							ingredientCorrect++ ;
+							Debug.Log("La recette trouvé contient :" + globalList.recetteList[i].recetteForme[y].formeImage + "comme ingredient" + y) ;
+							Debug.Log(listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage) ;
 
-							if(ingredientCorrect == listOfIngredient.Count)
+							if(globalList.recetteList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
 							{
-								RecetteDone() ;
+								recetteAscomplish = globalList.recetteList[i] ;
+								Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
+								ingredientCorrect++ ;
+
+								if(ingredientCorrect == listOfIngredient.Count)
+								{
+									RecetteDone() ;
+								}
 							}
 						}
+						
 					}
-					
 				}
 			}
 		}
