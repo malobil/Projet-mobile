@@ -1,17 +1,11 @@
 fileFormatVersion: 2
-guid: d86439d7377d6b84caaab5e10784fd08
-timeCreated: 1508519828
+guid: 5762e71b81eac4a4f85577712df86439
+timeCreated: 1508519386
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: My_little_ingredients_0
-    21300002: My_little_ingredients_1
-    21300004: My_little_ingredients_2
-    21300006: My_little_ingredients_3
-    21300008: My_little_ingredients_4
-    21300010: My_little_ingredients_5
-    21300012: My_little_ingredients_6
-    21300014: My_little_ingredients_7
+    21300000: Buton_Leave_0
+    21300002: Buton_Leave_1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -99,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: My_little_ingredients_0
+      name: Buton_Leave_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 577
-        width: 250
-        height: 301
+        x: 1
+        y: 3
+        width: 234
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,97 +107,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: My_little_ingredients_1
+      name: Buton_Leave_1
       rect:
         serializedVersion: 2
-        x: 360
-        y: 590
-        width: 227
-        height: 258
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: My_little_ingredients_2
-      rect:
-        serializedVersion: 2
-        x: 657
-        y: 575
-        width: 267
-        height: 361
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: My_little_ingredients_3
-      rect:
-        serializedVersion: 2
-        x: 1077
-        y: 615
-        width: 124
-        height: 188
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: My_little_ingredients_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 14
-        width: 250
-        height: 305
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: My_little_ingredients_5
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 21
-        width: 227
-        height: 258
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: My_little_ingredients_6
-      rect:
-        serializedVersion: 2
-        x: 657
-        y: 0
-        width: 267
-        height: 361
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: My_little_ingredients_7
-      rect:
-        serializedVersion: 2
-        x: 1077
-        y: 49
-        width: 124
-        height: 188
+        x: 265
+        y: 12
+        width: 234
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
