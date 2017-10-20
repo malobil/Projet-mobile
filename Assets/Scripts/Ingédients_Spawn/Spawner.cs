@@ -18,6 +18,8 @@ public class Spawner : MonoBehaviour
 	private int randomNumberIngredient ;
 	private int randomNumberForm ;
 
+	public float decalage ;
+
 	
 
 	// Use this for initialization
@@ -45,6 +47,11 @@ public class Spawner : MonoBehaviour
 		
 		objectPop.GetComponent<Image>().sprite = associateFormList.formList[randomNumberForm].formeImage ; // Change form pop sprite
 		objectPop.transform.GetChild(0).GetComponent<Image>().sprite = choosenItem.ingredientImage ; // change ingredient pop sprite
+		
+		if(randomNumberForm == 1)
+		{
+			objectPop.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition += new Vector2(0,-decalage) ;
+		}
 
 		objectPop.GetComponent<Formes_Et_Ingredients>().SetToxicValueAndform(choosenItem.toxicValor,associateFormList.formList[randomNumberForm]) ;
 

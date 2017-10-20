@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeecc06ca4f4be42a2ce2e4c40df182, type: 3}
   m_Name: Champignon_Sain
   m_EditorClassIdentifier: 
-  ingredientImage: {fileID: 21300000, guid: fae520ee001ad7d46842d588cc7c9a1c, type: 3}
+  ingredientImage: {fileID: 21300000, guid: d86439d7377d6b84caaab5e10784fd08, type: 3}
   toxicValor: -100

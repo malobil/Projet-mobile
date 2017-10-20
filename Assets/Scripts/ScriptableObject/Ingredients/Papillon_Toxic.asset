@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeecc06ca4f4be42a2ce2e4c40df182, type: 3}
   m_Name: Papillon_Toxic
   m_EditorClassIdentifier: 
-  ingredientImage: {fileID: 21300000, guid: 9690ffc1aa345924abeb308cd005e710, type: 3}
+  ingredientImage: {fileID: 21300012, guid: d86439d7377d6b84caaab5e10784fd08, type: 3}
   toxicValor: 400
