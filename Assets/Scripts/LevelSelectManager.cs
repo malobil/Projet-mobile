@@ -76,4 +76,9 @@ void Awake ()
    		thingToDepop.SetActive(false) ;
    	}
 
+    public void GoToMainMenu()
+    {
+      SceneManager.LoadScene ("Accueil");
+    }
+
 }
