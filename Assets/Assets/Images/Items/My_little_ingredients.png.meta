@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 guid: d86439d7377d6b84caaab5e10784fd08
+<<<<<<< HEAD
 timeCreated: 1508519828
 licenseType: Free
 TextureImporter:
@@ -12,6 +13,20 @@ TextureImporter:
     21300010: My_little_ingredients_5
     21300012: My_little_ingredients_6
     21300014: My_little_ingredients_7
+=======
+timeCreated: 1508514378
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Champignon_Sain
+    21300002: Gateau_Sain
+    21300004: Papillon_Sain
+    21300006: Fleur_Sain
+    21300008: Champignon_Toxic
+    21300010: Gateau_Toxic
+    21300012: Papillon_Toxic
+    21300014: Fleur_Toxic
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -99,7 +114,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_0
+=======
+      name: Champignon_Sain
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 0
@@ -107,13 +126,21 @@ TextureImporter:
         width: 250
         height: 301
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_1
+=======
+      name: Gateau_Sain
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 360
@@ -121,13 +148,21 @@ TextureImporter:
         width: 227
         height: 258
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_2
+=======
+      name: Papillon_Sain
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 657
@@ -135,13 +170,21 @@ TextureImporter:
         width: 267
         height: 361
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_3
+=======
+      name: Fleur_Sain
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 1077
@@ -149,13 +192,21 @@ TextureImporter:
         width: 124
         height: 188
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_4
+=======
+      name: Champignon_Toxic
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 0
@@ -163,13 +214,21 @@ TextureImporter:
         width: 250
         height: 305
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_5
+=======
+      name: Gateau_Toxic
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 360
@@ -177,13 +236,21 @@ TextureImporter:
         width: 227
         height: 258
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_6
+=======
+      name: Papillon_Toxic
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 657
@@ -191,13 +258,21 @@ TextureImporter:
         width: 267
         height: 361
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
+<<<<<<< HEAD
       name: My_little_ingredients_7
+=======
+      name: Fleur_Toxic
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       rect:
         serializedVersion: 2
         x: 1077
@@ -205,7 +280,11 @@ TextureImporter:
         width: 124
         height: 188
       alignment: 0
+<<<<<<< HEAD
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> f4c5d39591319057bf2f0f9b90e0bf414246ab76
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
