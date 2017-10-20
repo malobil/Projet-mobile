@@ -134,12 +134,10 @@ public class GameManager : MonoBehaviour {
     	{
     		hadSaveARecipe = Convert.ToBoolean(PlayerPrefs.GetInt("HaveSaveRecipe")) ;
     	}
-    	if(PlayerPrefs.HasKey("LvlSuccesList"))
+
+    	for(int y = 1 ; y < lvlSuccess.Count ; y++)
     	{
-    		for(int y = 0 ; y < lvlSuccess.Count ; y++)
-    		{
-    			lvlSuccess[y] = Convert.ToBoolean(PlayerPrefs.GetInt("LvlSuccesList" + y)) ;
-    		}
+    		lvlSuccess[y] = Convert.ToBoolean(PlayerPrefs.GetInt("LvlSuccesList" + y)) ;
     	}
 
     	if(hadSaveARecipe)

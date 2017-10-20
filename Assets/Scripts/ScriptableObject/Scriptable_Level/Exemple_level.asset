@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7292603739f2079409daf5527b7906a3, type: 3}
   m_Name: Exemple_level
   m_EditorClassIdentifier: 
-  description: "Mamy \xE0 besoin d'une grosse potion !"
+  description: "Mamy \xE0 besoin d'une grosse potion!"
   time: '1 : 00'
   toxicNecc: 3000
   recompense: 500

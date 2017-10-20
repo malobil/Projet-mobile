@@ -81,12 +81,19 @@ void Awake ()
 		TimerShow() ;
 		TimerHide() ;
 		TimerGeneral() ;
+
+		if(scoreToxic >= scoreNeed && !pointAdded)
+		{
+			EndLevel() ;
+		}
 	}
 
 	void TimerGeneral()
 	{
-		timerSecondes-=Time.deltaTime;
-		
+		if(!pointAdded)
+		{
+			timerSecondes-=Time.deltaTime;
+		}
 
 			if(timerSecondes < 0)
         	{
@@ -104,7 +111,7 @@ void Awake ()
         		UnpopObject() ;
         	}
 
-        	if (timerMinutes >= 1 && timerSecondes <= 0)
+        	if (timerMinutes >= 1 && timerSecondes <= 0 && !pointAdded)
         	{
             	timerMinutes--;
             	timerSecondes = 60.0f;
@@ -151,6 +158,7 @@ void Awake ()
 
 		levelIsEnd = true ;
 		GameManager.Instance().SaveGame() ;
+	
 	}
 
 	void TimerShow()
