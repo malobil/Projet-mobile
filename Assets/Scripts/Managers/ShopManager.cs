@@ -128,7 +128,7 @@ public class ShopManager : MonoBehaviour
 					GameObject tempRecipe2 = Instantiate(prefabRecetteObject, obtainLayout.transform) ;
 					tempRecipe2.GetComponent<AffichageRecetteScript>().Change(listOfRecipe.recette4Ingredient[tempRandomValor3]) ;
 					obtainLayoutObject = tempRecipe2 ;
-					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor3]) ;
+					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette4Ingredient[tempRandomValor3]) ;
 					GameManager.Instance().ChampiBank(-price03) ;
 					LevelSelectManager.Instance().ChangeChampiText() ;
 					GameManager.Instance().SaveGame() ;
