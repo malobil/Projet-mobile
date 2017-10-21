@@ -537,7 +537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1849739944009462
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1893136708703338
 GameObject:
   m_ObjectHideFlags: 1
@@ -1115,8 +1115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7c2e343a6b7f3488df4f1c34d38156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associateList: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86, type: 2}
-  associateFormList: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09, type: 2}
+  associateList: {fileID: 11400000, guid: 878d58d0c89420a4a901371de674123c, type: 2}
+  associateFormList: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   prefab: {fileID: 1185945485424568, guid: 55f8903b1bf83ae40a298fe1040bf37b, type: 2}
   decalage: 50
 --- !u!114 &114141645535822694
@@ -1498,13 +1498,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberlvl: 1
   potionState: {fileID: 114940296573390532}
-  scoreNeed: 100
+  scoreNeed: 4500
   timeIngredientShow: 3
-  timeHide: 1
+  timeHide: 0.5
   textEndLevel: {fileID: 114030586968149852}
   timerText: {fileID: 114909790581594640}
   timerMinutes: 1
-  timerSecondes: 20
+  timerSecondes: 10
   littleMeg: {fileID: 95803168246303714}
   endLayout: {fileID: 1849739944009462}
   stateText: {fileID: 114249865811169588}
@@ -1512,15 +1512,15 @@ MonoBehaviour:
   scoreEndText: {fileID: 114894205985771696}
   recipeFoundText: {fileID: 114578481123541472}
   mushGainText: {fileID: 114147641594287038}
-  levelChampiValue: 50
+  levelChampiValue: 100
   palierScore:
-  - 3050
-  - 3100
-  - 3150
+  - 4050
+  - 4100
+  - 4200
   bonusMushByPalier:
-  - 10
-  - 20
   - 50
+  - 60
+  - 100
   listOfobjectPresent: []
   spawnerList:
   - {fileID: 1252088956324490}
@@ -2150,8 +2150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7c2e343a6b7f3488df4f1c34d38156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associateList: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86, type: 2}
-  associateFormList: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09, type: 2}
+  associateList: {fileID: 11400000, guid: 878d58d0c89420a4a901371de674123c, type: 2}
+  associateFormList: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   prefab: {fileID: 1185945485424568, guid: 55f8903b1bf83ae40a298fe1040bf37b, type: 2}
   decalage: 50
 --- !u!114 &114797524603698902
@@ -3255,7 +3255,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -990.7}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224718980493613898
 RectTransform:

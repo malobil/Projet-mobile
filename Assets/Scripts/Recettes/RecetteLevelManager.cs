@@ -7,7 +7,7 @@ public class RecetteLevelManager : MonoBehaviour {
 	public int maximumIngredient = 2 ;
 	public List<GameObject> listOfIngredient = new List<GameObject>() ;
 	
-	private Scriptable_RecetteByLevel globalList ;
+	private List<Scriptable_Recette> globalList = new List<Scriptable_Recette>() ;
 	private int ingredientCorrect ;
 	private Scriptable_Recette recetteAscomplish ;
 
@@ -37,7 +37,7 @@ void Awake ()
 	// Use this for initialization
 	void Start () 
 	{
-		globalList = GameManager.Instance().recetteList ;
+		globalList = GameManager.Instance().recetteKnow ;
 		LoadRecetteAlreadyKnow() ;
 	}
 	
@@ -86,21 +86,21 @@ void Awake ()
 		{
 			if(listOfIngredient.Count != 0)
 			{
-				for(int i = 0 ; i < globalList.recetteList.Count ; i++)
+				for(int i = 0 ; i < globalList.Count ; i++)
 				{
-					if(listOfIngredient.Count == globalList.recetteList[i].recetteForme.Count)
+					if(listOfIngredient.Count == globalList[i].recetteForme.Count)
 					{
 						ingredientCorrect = 0 ;
 						Debug.Log("Une recette a ce nombre d'ingredient") ;
 						
 						for(int y = 0 ; y < listOfIngredient.Count ; y++)
 						{
-							Debug.Log("La recette trouvé contient :" + globalList.recetteList[i].recetteForme[y].formeImage + "comme ingredient" + y) ;
+							Debug.Log("La recette trouvé contient :" + globalList[i].recetteForme[y].formeImage + "comme ingredient" + y) ;
 							Debug.Log(listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage) ;
 
-							if(globalList.recetteList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
+							if(globalList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
 							{
-								recetteAscomplish = globalList.recetteList[i] ;
+								recetteAscomplish = globalList[i] ;
 								Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
 								ingredientCorrect++ ;
 
@@ -126,11 +126,11 @@ void Awake ()
 
 		LevelManager.Instance().ScoreUpdate(recetteAscomplish.recetteBonus) ;
 
-		if(!GameManager.Instance().recetteKnow.Contains(recetteAscomplish))
+		/*if(!GameManager.Instance().recetteKnow.Contains(recetteAscomplish))
 		{
 			UpdateRecetteKnowImage() ;
 			GameManager.Instance().AddRecetteKnow(recetteAscomplish) ;
-		}
+		}*/
 		
 		ClearIngredientList() ;
 		Debug.Log("Vous avez effectué une recette !") ;
