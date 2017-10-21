@@ -19,6 +19,7 @@ public class Spawner : MonoBehaviour
 	private int randomNumberForm ;
 
 	public float decalage ;
+	public float decalageStar ;
 
 	
 
@@ -51,6 +52,10 @@ public class Spawner : MonoBehaviour
 		if(randomNumberForm == 1)
 		{
 			objectPop.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition += new Vector2(0,-decalage) ;
+		}
+		else if(randomNumberForm == 3)
+		{
+			objectPop.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition += new Vector2(0,-decalageStar) ;
 		}
 
 		objectPop.GetComponent<Formes_Et_Ingredients>().SetToxicValueAndform(choosenItem.toxicValor,associateFormList.formList[randomNumberForm]) ;
