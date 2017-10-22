@@ -206,7 +206,19 @@ void Awake ()
 		{
 			
 			//Debug.Log("time bef show < 0") ;
-			littleMeg.SetTrigger("Show") ;
+			if(spawnerList.Count <= 2)
+			{
+				littleMeg.SetTrigger("Show") ;
+			}
+			else if(spawnerList.Count >= 3 && spawnerList.Count <= 4)
+			{
+				littleMeg.SetTrigger("Show4") ;
+			}
+			else if(spawnerList.Count >= 5)
+			{
+				littleMeg.SetTrigger("Show6") ;
+			}
+			
 			//PopObject() ;
 			isHide = false ;
 			currentTimeHide = 0 ;
