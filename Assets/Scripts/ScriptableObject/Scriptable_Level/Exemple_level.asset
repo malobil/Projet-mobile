@@ -15,3 +15,5 @@ MonoBehaviour:
   time: '1 : 20'
   toxicNecc: 3000
   recompense: 150
+  Levelname: Mamy et la potion
+  levelNum: 0

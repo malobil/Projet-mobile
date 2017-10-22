@@ -7,8 +7,9 @@ using UnityEngine.UI ;
 public class LevelSelectManager : MonoBehaviour {
 
 	public Text champiText  ;
-	public GameObject recipeBook, shopLayout ;
-	public List<GameObject> levelList = new List<GameObject>() ;
+	public GameObject recipeBook, shopLayout, missionLayout ;
+  public GameObject missionPrefab ;
+	public List<Scriptable_level> levelList = new List<Scriptable_level>() ;
 
     private static LevelSelectManager instance ;
     public static LevelSelectManager Instance () 
@@ -56,7 +57,10 @@ void Awake ()
    		{
    			if(GameManager.Instance().lvlSuccess[i] == true)
    			{
-   				levelList[i].SetActive(true) ;
+   				//levelList[i].SetActive(true) ;
+          GameObject temp = Instantiate(missionPrefab,missionLayout.transform) ;
+          temp.GetComponent<LevelSelectPanel>().level = levelList[i] ;
+
    			}
    		}
    	}
@@ -67,8 +71,15 @@ void Awake ()
    	}
 
    	public void PopMenu(GameObject thingTopop)
-   	{
+   	{ 
+      if(!thingTopop.activeInHierarchy)
+      {
    	   thingTopop.SetActive(true) ;
+      }
+      else if(thingTopop.activeInHierarchy)
+      {
+        thingTopop.SetActive(false) ;
+      }
    	}
 
    	public void BackToSelect(GameObject thingToDepop)
