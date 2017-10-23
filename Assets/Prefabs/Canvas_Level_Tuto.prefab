@@ -239,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1235753065697358
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 224244994173207430}
   - component: {fileID: 95765201354072320}
   m_Layer: 5
-  m_Name: FlecheGaucheParent
+  m_Name: FlecheFiole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -521,6 +521,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1659418831228956
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224373949609172970}
+  - component: {fileID: 222911917335504138}
+  - component: {fileID: 114573595479453646}
+  m_Layer: 5
+  m_Name: "Fl\xE8cheGauche"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1659455092034786
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +549,22 @@ GameObject:
   - component: {fileID: 95334685509043706}
   m_Layer: 5
   m_Name: FlecheDroiteParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1668936489311020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224967466543880146}
+  - component: {fileID: 95813470875227774}
+  m_Layer: 5
+  m_Name: FlecheGaucheParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,6 +969,23 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305979288118392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bfdbf6c21570eaa4f8b8ae8eea9643d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95813470875227774
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668936489311020}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bfdbf6c21570eaa4f8b8ae8eea9643d6, type: 2}
@@ -2048,6 +2098,33 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114573595479453646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1659418831228956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: ec9eaa4e419324f4eb1fa545242346b0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114589701017067356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2556,20 +2633,23 @@ MonoBehaviour:
   mamyLayout: {fileID: 1055109410056334}
   mamyText: {fileID: 114415914618114202}
   mamyDialogue:
-  - Hello my child. It's me, Grandma !
-  - Today we gonna learn the basics of potion. Let's begin honey.
-  - You already have your ingredients ! Good ! Touch the right one to push it in the
-    cauldron.
-  - Alright Sweety ! If you want to finish, use the toxic stuff but avoid the healthy
-    one.
-  - Sometimes, they will pop out. Wait to change it.
-  - Noooo ! You didn't listen to me ! Look at your flask on the right, it decreased.
-    Be careful of that.
-  - You must finish right in time to succeed but if the time run out, you will failed.
+  - Hello my child. It's me, <color=red>Grandma</color> !
+  - Today we gonna learn the <color=red>basics of potion</color>. Let's begin honey.
+  - You already have your <color=red>ingredients</color> ! Good ! Touch the <color=red>right</color>
+    one to push it in the cauldron.
+  - Alright Sweety ! If you want to finish, use the <color=red>toxic stuff</color>
+    but avoid the <color=red>healthy</color> one.
+  - Sometimes, they will <color=red>pop out</color>. Wait to change it.
+  - Noooo ! You didn't listen to me ! Look at your <color=red>flask</color> on the
+    right, it decreased. Be careful of that.
+  - You must finish <color=red>right in time</color> to succeed but if the time run
+    out, you will failed.
   - Great work ! Grandma is proud of you. Now try to make your own potion ?
   - 
   rigthArrow: {fileID: 1659455092034786}
-  leftArrow: {fileID: 1305979288118392}
+  leftArrow: {fileID: 1668936489311020}
+  timer: {fileID: 1232690804678694}
+  fioleArrow: {fileID: 1305979288118392}
 --- !u!114 &114917676693203698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2615,7 +2695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.816}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3171,6 +3251,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1776037291746748}
+--- !u!222 &222911917335504138
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1659418831228956}
 --- !u!222 &222911983654967502
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3457,17 +3543,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305979288118392}
-  m_LocalRotation: {x: -0.32778174, y: -0.9447535, z: 0.00000093877316, w: 0.000002577901}
+  m_LocalRotation: {x: -0.14884542, y: -0.9888605, z: 0.0000013958972, w: 0.0000023618525}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000007, y: 1.0000002, z: 1.000001}
   m_Children:
   - {fileID: 224602384447573108}
   m_Father: {fileID: 224942512394400860}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 17.12}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -727, y: 217}
+  m_AnchoredPosition: {x: 1038, y: 141}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224261338642171688
@@ -3563,6 +3649,24 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -392, y: -199}
   m_SizeDelta: {x: 136, y: 148}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224373949609172970
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1659418831228956}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224967466543880146}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: 38.268}
+  m_AnchorMin: {x: 0.27579325, y: 0.6211061}
+  m_AnchorMax: {x: 0.27579325, y: 0.6211061}
+  m_AnchoredPosition: {x: 22.420649, y: -12.110615}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224375920575340634
 RectTransform:
@@ -4027,6 +4131,7 @@ RectTransform:
   - {fileID: 224356138719745010}
   - {fileID: 224560013104360670}
   - {fileID: 224100732431362504}
+  - {fileID: 224967466543880146}
   - {fileID: 224244994173207430}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -4071,6 +4176,25 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224967466543880146
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668936489311020}
+  m_LocalRotation: {x: -0.32778174, y: -0.9447535, z: 0.00000093877316, w: 0.000002577901}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224373949609172970}
+  m_Father: {fileID: 224942512394400860}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -727, y: 217}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224973039755918504
 RectTransform:
