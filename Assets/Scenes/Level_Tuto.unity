@@ -115,11 +115,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -210,75 +205,9 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[1]
-      value: First rule, it's potion and not poison ... let's begin honey.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[0]
-      value: Hello my child. It's me, Grandma !
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[2]
-      value: You already have your ingredients ! Good ! Touch the right ingredient
-        to push it in the cauldron.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[3]
-      value: Alright Sweety ! If you want to finish, use the toxic ingredients but
-        avoid the healthy one.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[4]
-      value: Sometimes, you will take an healthy ingredient. Wait to change it. But
-        for this time, you will touch it to put that cake in the cauldron.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[5]
-      value: You saw that the potion toxicity decrease on your right. Be careful and
-        use only the toxics one.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[6]
-      value: Wonderful ! Grandma is so proud of you. Now try to make your own potion
-        ?
-      objectReference: {fileID: 0}
-    - target: {fileID: 114641364941564308, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1500948163}
-    - target: {fileID: 114641364941564308, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 114121662539590336, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1500948163}
-    - target: {fileID: 114121662539590336, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitLevel
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1500948163 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1500948162}
-  m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
 --- !u!1 &1884847793
 GameObject:
   m_ObjectHideFlags: 0

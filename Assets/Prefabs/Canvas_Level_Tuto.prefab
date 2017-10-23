@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114202137676222872}
         m_MethodName: QuitLevel
         m_Mode: 5
         m_Arguments:
@@ -2148,7 +2148,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114202137676222872}
         m_MethodName: QuitLevel
         m_Mode: 5
         m_Arguments:
@@ -2207,7 +2207,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: acd3e1b872859414b885e259170238bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bf3c291104a58e48a07bb57cc68489e, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2254,15 +2254,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.41176468, g: 0.41176468, b: 0.41176468, a: 0.541}
+  m_Color: {r: 0.41176468, g: 0.41176468, b: 0.41176468, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 083aae14e4ace3f47aa623f1e09f7ca4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2520,17 +2520,17 @@ MonoBehaviour:
   mamyLayout: {fileID: 1055109410056334}
   mamyText: {fileID: 114415914618114202}
   mamyDialogue:
-  - Salut ma petite ! Je suis super mamy ! La plus grande mamy de toute les mamy qui
-    aime les potions !
-  - "Je vais t'apprendre \xE0 faire une potion ! Montre moi ce que tu as dans les
-    mains."
-  - "Oh je vois que tu as d\xE9ja pr\xE9par\xE9 tes ingr\xE9dient ! Essayons un :
-    appuie sur l'ingr\xE9dient de droite pour le mettre dans ta potion"
-  - "Bien jou\xE9 ! Quand tu met un ingr\xE9dient toxic dans la potion sont effet
-    s'am\xE9liore mais attention si tu met un ingr\xE9dient sain tu va r\xE9duire
-    son effet !"
-  - "Essaie de mettre cet ingr\xE9dient dedans"
-  - "Bien jou\xE9 ! Allez fait ta propre potion ;)"
+  - Hello my child. It's me, Grandma !
+  - First rule, it's potion and not poison ... let's begin honey.
+  - You already have your ingredients ! Good ! Touch the right ingredient to push
+    it in the cauldron.
+  - Alright Sweety ! If you want to finish, use the toxic ingredients but avoid the
+    healthy one.
+  - Sometimes, you will take an healthy ingredient. Wait to change it. But for this
+    time, you will touch it to put that cake in the cauldron.
+  - You saw that the potion toxicity decrease on your right. Be careful and use only
+    the toxics one.
+  - Wonderful ! Grandma is so proud of you. Now try to make your own potion ?
   - 
   rigthArrow: {fileID: 1659455092034786}
   leftArrow: {fileID: 1305979288118392}
@@ -3693,8 +3693,8 @@ RectTransform:
   m_Father: {fileID: 224942512394400860}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.94223815, y: 0.11262258}
-  m_AnchorMax: {x: 0.9760917, y: 0.75807315}
+  m_AnchorMin: {x: 0.9311773, y: 0.09718269}
+  m_AnchorMax: {x: 0.98571926, y: 0.773214}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
