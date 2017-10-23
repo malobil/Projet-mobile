@@ -115,11 +115,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.size
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -209,51 +204,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[0]
-      value: Hello my child. It's me, Grandma !
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[1]
-      value: Today we gonna learn the basics of potion. Let's begin honey.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[2]
-      value: You already have your ingredients ! Good ! Touch the right one to push
-        it in the cauldron.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[3]
-      value: Alright Sweety ! If you want to finish, use the toxic stuff but avoid
-        the healthy one.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[4]
-      value: Sometimes, they will pop out. Wait to change it.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[5]
-      value: Noooo ! You didn't listen to me ! Look at your flask on the right, it
-        decreased. Be careful of that.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[6]
-      value: You must finish right in time to succeed but if the time run out, you
-        will failed.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[7]
-      value: Great work ! Grandma is proud of you. Now try to make your own potion
-        ?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}

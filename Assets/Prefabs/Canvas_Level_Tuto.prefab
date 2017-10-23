@@ -335,6 +335,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224244994173207430}
+  - component: {fileID: 95765201354072320}
   m_Layer: 5
   m_Name: FlecheGaucheParent
   m_TagString: Untagged
@@ -528,6 +529,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224100732431362504}
+  - component: {fileID: 95334685509043706}
   m_Layer: 5
   m_Name: FlecheDroiteParent
   m_TagString: Untagged
@@ -893,6 +895,23 @@ Transform:
   m_Father: {fileID: 224942512394400860}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95334685509043706
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1659455092034786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44a83152f98836e49b11475f542c334f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95504466143128000
 Animator:
   serializedVersion: 3
@@ -903,6 +922,23 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f44a1694ed972c0458f5477daef1c6f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95765201354072320
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305979288118392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bfdbf6c21570eaa4f8b8ae8eea9643d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1730,12 +1766,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a345ce1d3ee8425488479340c3b58e1f, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 150
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2521,16 +2557,16 @@ MonoBehaviour:
   mamyText: {fileID: 114415914618114202}
   mamyDialogue:
   - Hello my child. It's me, Grandma !
-  - First rule, it's potion and not poison ... let's begin honey.
-  - You already have your ingredients ! Good ! Touch the right ingredient to push
-    it in the cauldron.
-  - Alright Sweety ! If you want to finish, use the toxic ingredients but avoid the
-    healthy one.
-  - Sometimes, you will take an healthy ingredient. Wait to change it. But for this
-    time, you will touch it to put that cake in the cauldron.
-  - You saw that the potion toxicity decrease on your right. Be careful and use only
-    the toxics one.
-  - Wonderful ! Grandma is so proud of you. Now try to make your own potion ?
+  - Today we gonna learn the basics of potion. Let's begin honey.
+  - You already have your ingredients ! Good ! Touch the right one to push it in the
+    cauldron.
+  - Alright Sweety ! If you want to finish, use the toxic stuff but avoid the healthy
+    one.
+  - Sometimes, they will pop out. Wait to change it.
+  - Noooo ! You didn't listen to me ! Look at your flask on the right, it decreased.
+    Be careful of that.
+  - You must finish right in time to succeed but if the time run out, you will failed.
+  - Great work ! Grandma is proud of you. Now try to make your own potion ?
   - 
   rigthArrow: {fileID: 1659455092034786}
   leftArrow: {fileID: 1305979288118392}
@@ -3321,7 +3357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 642, y: 179}
+  m_AnchoredPosition: {x: 719, y: 252}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224117951690516176
@@ -3431,7 +3467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -663.652, y: 174.39276}
+  m_AnchoredPosition: {x: -727, y: 217}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224261338642171688
@@ -3950,8 +3986,8 @@ RectTransform:
   m_Father: {fileID: 224560013104360670}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.11530974, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.11530974, y: 0.05063672}
+  m_AnchorMax: {x: 1, y: 0.89872664}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
