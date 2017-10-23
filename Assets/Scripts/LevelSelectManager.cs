@@ -7,7 +7,7 @@ using UnityEngine.UI ;
 public class LevelSelectManager : MonoBehaviour {
 
 	public Text champiText  ;
-	public GameObject recipeBook, shopLayout, missionLayout ;
+	public GameObject recipeBook, shopLayout, missionLayout, recipeBookButton, shopLayoutButton ;
   public GameObject missionPrefab ;
 	public List<Scriptable_level> levelList = new List<Scriptable_level>() ;
 
@@ -129,6 +129,7 @@ void Awake ()
       }
       else if(GameManager.Instance().ReturnTutoState() == 2)
       {
+        shopLayoutButton.SetActive(true) ;
         shopAnimator.SetTrigger("Blink") ;
       }
       else if(GameManager.Instance().ReturnTutoState() == 3)
@@ -138,6 +139,11 @@ void Awake ()
          shopLayout.SetActive(true) ;
          shopQuitButton.SetActive(false) ;
          mamyIsTalking = true ;
+      }
+
+      if(GameManager.Instance().ReturnTutoState() > 3)
+      {
+        shopLayoutButton.SetActive(true) ;
       }
   }
 

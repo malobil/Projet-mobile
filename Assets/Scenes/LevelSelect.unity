@@ -242,6 +242,11 @@ Prefab:
       propertyPath: mamyText
       value: 
       objectReference: {fileID: 1937008382}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: shopLayoutButton
+      value: 
+      objectReference: {fileID: 1169524698}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32a47c0519746b438a56c7ed42ab90b, type: 2}
   m_IsPrefabParent: 0
@@ -486,9 +491,47 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 4b3a3fd48b2edac439478226a454f87f,
         type: 3}
+    - target: {fileID: 1662240103639046, guid: 3b2ee788b704a5c4b86456a1a96f9cf7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114502515095369108, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908959890298190, guid: 3b2ee788b704a5c4b86456a1a96f9cf7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b2ee788b704a5c4b86456a1a96f9cf7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1169524698 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1908959890298190, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169524697}
 --- !u!95 &1169524699 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95665843998372996, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
