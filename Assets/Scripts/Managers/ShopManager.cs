@@ -49,6 +49,11 @@ public class ShopManager : MonoBehaviour
 				{
 					Destroy(obtainLayoutObject) ;
 				}
+				
+			if(LevelSelectManager.Instance().TutoStateValorReturn() == 2)
+			{
+				LevelSelectManager.Instance().TutoShop() ;
+			}
 
 			if(numberRecetteKnowWith2Ingr < listOfRecipe.recette2Ingredient.Count)
 			{

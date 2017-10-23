@@ -27,7 +27,7 @@ public class LevelSelectPanel : MonoBehaviour {
 
 	void Update()
 	{
-		if(GameManager.Instance().ReturnTuto() && LevelSelectManager.Instance().ReturnState() == 1 && !isAnimate)
+		if(GameManager.Instance().ReturnTuto() && GameManager.Instance().ReturnTutoState() == 1 && !isAnimate)
 		{
 			playButton.SetTrigger("Blink") ;
 			isAnimate = false ;

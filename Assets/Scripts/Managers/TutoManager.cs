@@ -89,6 +89,7 @@ void Awake ()
 			tutoIsEnd = true ;
 			LevelManager.Instance().EndTuto() ;
 			LevelManager.Instance().ChangeSpawnerIngredientList(ingredientList) ;
+			//GameManager.Instance().AddTutoState() ;
 			timer.SetActive(true) ;
 			mamyLayout.SetActive(false) ;
 		}
@@ -126,7 +127,7 @@ void Awake ()
 	{
 		isWaiting = true ;
 		Debug.Log("Wait") ;
-		yield return new  WaitForSeconds(1.5f) ;
+		yield return new  WaitForSeconds(1.4f) ;
 		PopSomething(rigthArrow) ;
 		LevelManager.Instance().DisableForm(0) ;
 		isWaiting = false ;

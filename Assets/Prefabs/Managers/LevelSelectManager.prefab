@@ -51,3 +51,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e61a3a4b27f2cc4bb415e9da1c0ca55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  champiText: {fileID: 0}
+  recipeBook: {fileID: 0}
+  shopLayout: {fileID: 0}
+  missionLayout: {fileID: 0}
+  missionPrefab: {fileID: 1644309428104708, guid: b926ad2387a2a994088f43f976c43816,
+    type: 2}
+  levelList:
+  - {fileID: 11400000, guid: 6485817f85df9b141a19617d3e73e9e7, type: 2}
+  - {fileID: 11400000, guid: 910622cfad43f274c8aad28fbc97f32f, type: 2}
+  - {fileID: 11400000, guid: 6d682e79495ef2c48b6cfe2a6f4f7062, type: 2}
+  questAnimator: {fileID: 0}
+  recipeBookAnimator: {fileID: 0}
+  shopAnimator: {fileID: 0}
+  mamyDialogue:
+  - Welcome to shop !
+  - I will learn to you how to buy some new recipe !
+  - To buy you need mushroom ! But for comercial purpose i will offer the first one
+    to you, common don't be shy buy it !
+  - See ? Your purchase is show here.
+  - When you got enought money you can also purchase some 3 ingredient recipe !
+  - And even after you can buy 4 INGREDIENT RECIPE !!
+  - Simple like all ! Visit me when you wait ;)
+  mamyLayout: {fileID: 0}
+  shopQuitButton: {fileID: 0}
+  button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
+  arrowBuy2: {fileID: 0}
+  arrowBuy3: {fileID: 0}
+  arrowBuy4: {fileID: 0}
+  arrowObtain: {fileID: 0}
+  mamyText: {fileID: 0}

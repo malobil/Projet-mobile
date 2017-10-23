@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
     ///----Tuto----///
 
     private bool isFirstTime = true ;
+    private int tutoState = 0 ;
 
 	////----Instance System---///
 
@@ -77,8 +78,17 @@ public class GameManager : MonoBehaviour {
 
 	public void HaveSuccessLevel (int lvlnumber)
 	{
-		lvlSuccess[lvlnumber] = true;
-		SaveGame() ;
+        if(!lvlSuccess[lvlnumber])
+        {
+		  lvlSuccess[lvlnumber] = true;
+		  //SaveGame() ;
+          if(lvlnumber == 2)
+          {
+            tutoState = 2 ;
+          }
+        }
+
+        SaveGame() ;
 	}
 
    	public void ChampiBank (float champiObtained)
@@ -117,6 +127,8 @@ public class GameManager : MonoBehaviour {
 
         PlayerPrefs.SetInt("HaveDoneTuto", Convert.ToInt32(isFirstTime)) ;
 
+        PlayerPrefs.SetInt("TutoStateSave", tutoState) ;
+
     	for(int i = 0 ; i < lvlSuccess.Count ; i++)
     	{
     		PlayerPrefs.SetInt("LvlSuccesList" + i, Convert.ToInt32(lvlSuccess[i])) ;
@@ -136,6 +148,11 @@ public class GameManager : MonoBehaviour {
     	{
     		champiBank = PlayerPrefs.GetFloat("PlayerScore") ;
     	}
+
+        if(PlayerPrefs.HasKey("TutoStateSave"))
+        {
+            tutoState = PlayerPrefs.GetInt("TutoStateSave") ;
+        }
 
     	if(PlayerPrefs.HasKey("HaveSaveRecipe"))
     	{
@@ -165,6 +182,8 @@ public class GameManager : MonoBehaviour {
 	    		}
 	    	}
 	    }
+
+        Debug.Log("Tuto state" + tutoState) ;
     }
 
     public void DeleteSave()
@@ -196,6 +215,16 @@ public class GameManager : MonoBehaviour {
     {
         isFirstTime = false ;
         SaveGame() ;
+    }
+
+    public int ReturnTutoState()
+    {
+        return tutoState ;
+    }
+
+    public void AddTutoState()
+    {
+        tutoState++ ;
     }
 
 }

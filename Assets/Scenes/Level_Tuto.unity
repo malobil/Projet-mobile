@@ -108,7 +108,7 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1500948162
+--- !u!1001 &284041530
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -205,21 +205,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1232690804678694, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114907278720304722, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: ingredientList
-      value: 
-      objectReference: {fileID: 11400000, guid: 8e9568ad538e8894eae879ec898b4de6,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
   m_IsPrefabParent: 0
@@ -312,25 +297,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2129747049 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1232690804678694, guid: b7ca094e0c93e0846b8cd089092ece1a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1500948162}
---- !u!95 &2129747053
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2129747049}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8f7ef51e10577dd4080d1ea632401d55, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1

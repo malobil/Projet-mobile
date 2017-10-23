@@ -11,14 +11,18 @@ public class LevelSelectManager : MonoBehaviour {
   public GameObject missionPrefab ;
 	public List<Scriptable_level> levelList = new List<Scriptable_level>() ;
 
-  //----Tuto----///
+  //----Tuto Shop----///
 
   public Animator questAnimator, recipeBookAnimator, shopAnimator ;
+  public string[] mamyDialogue ;
+  public GameObject mamyLayout, shopQuitButton, button1,button2,button3, arrowBuy2, arrowBuy3, arrowBuy4, arrowObtain;
+  public Text mamyText ;
+  private int tutoState = -1 ;
+  private bool mamyIsTalking ;
+  private bool mamyAskingSomething = false ;
 
-  private int tutoState = 0 ;
-
-    private static LevelSelectManager instance ;
-    public static LevelSelectManager Instance () 
+  private static LevelSelectManager instance ;
+  public static LevelSelectManager Instance () 
     {
         return instance;
     }
@@ -42,15 +46,16 @@ void Awake ()
 	{
 		ChangeChampiText() ;
 		PopLevel() ;
-    if(GameManager.Instance().ReturnTuto())
-    {
-       Tuto() ;
-    }
+    Tuto() ;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+  {
+		  if(mamyIsTalking && Input.GetMouseButtonDown(0) && !mamyAskingSomething)
+      {
+        TutoShop() ;
+      }
 	}
 
 	public void LoadLevel (int levelnumber)
@@ -70,7 +75,6 @@ void Awake ()
    				//levelList[i].SetActive(true) ;
           GameObject temp = Instantiate(missionPrefab,missionLayout.transform) ;
           temp.GetComponent<LevelSelectPanel>().level = levelList[i] ;
-
    			}
    		}
    	}
@@ -86,11 +90,15 @@ void Awake ()
       {
    	   thingTopop.SetActive(true) ;
 
-        if(thingTopop.name == "Panel" && tutoState==0 && GameManager.Instance().ReturnTuto())
+        if(thingTopop.name == "Panel" && GameManager.Instance().ReturnTutoState() == 0)
         {
-          tutoState++ ;
+          GameManager.Instance().AddTutoState() ;
           Tuto() ;
-          Debug.Log(tutoState) ;
+        }
+        else if(thingTopop.name == "Boutique_Layout" && GameManager.Instance().ReturnTutoState() == 2)
+        {
+          GameManager.Instance().AddTutoState() ;
+          Tuto() ;
         }
       }
       else if(thingTopop.activeInHierarchy)
@@ -111,17 +119,84 @@ void Awake ()
 
   public void Tuto()
   {
-      if(tutoState == 0)
+      if(GameManager.Instance().ReturnTutoState() == 0)
       {
         questAnimator.SetTrigger("Blink") ;
       }
-      if(tutoState == 1)
+      else if(GameManager.Instance().ReturnTutoState() == 1)
       {
         questAnimator.SetTrigger("UnBlink") ;
       }
+      else if(GameManager.Instance().ReturnTutoState() == 2)
+      {
+        shopAnimator.SetTrigger("Blink") ;
+      }
+      else if(GameManager.Instance().ReturnTutoState() == 3)
+      {
+         shopAnimator.SetTrigger("UnBlink") ;
+         TutoShop() ;
+         shopLayout.SetActive(true) ;
+         shopQuitButton.SetActive(false) ;
+         mamyIsTalking = true ;
+      }
   }
 
-  public int ReturnState()
+  public void TutoShop()
+  {
+    if(tutoState +1 < mamyDialogue.Length)
+    {
+      tutoState++ ;
+      mamyLayout.SetActive(true) ;
+      mamyText.text = mamyDialogue[tutoState] ;
+      button1.GetComponent<Button>().interactable = false ;
+      button2.GetComponent<Button>().interactable = false ;
+      button3.GetComponent<Button>().interactable = false ;
+      Debug.Log("tuto state shop " + tutoState) ;
+    }
+    else if(tutoState +1 >= mamyDialogue.Length)
+    {
+      Debug.Log("End tuto shop") ;
+      mamyIsTalking = false ;
+      mamyLayout.SetActive(false) ;
+      shopQuitButton.SetActive(true) ;
+      button1.GetComponent<Button>().interactable = true ;
+      button2.GetComponent<Button>().interactable = true ;
+      button3.GetComponent<Button>().interactable = true ;
+      arrowBuy2.SetActive(false) ;
+      arrowBuy3.SetActive(false) ;
+      arrowBuy4.SetActive(false) ;
+      arrowObtain.SetActive(false) ;
+      GameManager.Instance().AddTutoState() ;
+      GameManager.Instance().SaveGame() ;
+    }
+    
+    if(tutoState == 2)
+    {
+        GameManager.Instance().ChampiBank(100f) ;
+        arrowBuy2.SetActive(true) ;
+        mamyAskingSomething = true ;
+        button1.GetComponent<Button>().interactable = true ;
+    }
+    else if(tutoState == 3)
+    {
+      arrowBuy2.SetActive(false) ;
+      mamyAskingSomething = false ;
+      button1.GetComponent<Button>().interactable = false ;
+      arrowObtain.SetActive(true) ;
+    }
+    else if(tutoState == 4)
+    {
+        arrowObtain.SetActive(false) ;
+        arrowBuy3.SetActive(true) ;
+    }
+    else if(tutoState == 5)
+    {
+      arrowBuy3.SetActive(false) ;
+      arrowBuy4.SetActive(true) ;
+    }
+  }
+
+  public int TutoStateValorReturn()
   {
     return tutoState ;
   }

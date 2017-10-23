@@ -58,7 +58,6 @@ public class LevelManager : MonoBehaviour {
 
 	private bool isTuto = false ;
 
-
 	private static LevelManager instance ;
     public static LevelManager Instance () 
     {
