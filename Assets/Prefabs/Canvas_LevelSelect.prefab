@@ -1771,7 +1771,7 @@ MonoBehaviour:
   recompText: {fileID: 114630026096406100}
   number: {fileID: 0}
   questName: {fileID: 0}
-  level: {fileID: 11400000, guid: 2c76dd75c372a4a4c8991523b2d2cc38, type: 2}
+  level: {fileID: 0}
   playButton: {fileID: 0}
 --- !u!114 &114136575102623718
 MonoBehaviour:
@@ -5795,8 +5795,8 @@ RectTransform:
   - {fileID: 224736593612522518}
   - {fileID: 224670965027555396}
   - {fileID: 224783381043086290}
-  - {fileID: 224324527896305078}
   - {fileID: 224967642682435346}
+  - {fileID: 224324527896305078}
   - {fileID: 224290979454327534}
   - {fileID: 224483832290868112}
   m_Father: {fileID: 0}
@@ -5972,7 +5972,7 @@ RectTransform:
   - {fileID: 224669282532035982}
   - {fileID: 224399341301529144}
   m_Father: {fileID: 224250932907803984}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.99594253}
@@ -6839,7 +6839,7 @@ RectTransform:
   - {fileID: 224535796101600336}
   - {fileID: 224089378102292970}
   m_Father: {fileID: 224250932907803984}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30129418, y: 0.90253264}
   m_AnchorMax: {x: 0.5, y: 0.99002427}

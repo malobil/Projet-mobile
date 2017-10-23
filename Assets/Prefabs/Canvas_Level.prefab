@@ -1522,8 +1522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7c2e343a6b7f3488df4f1c34d38156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associateList: {fileID: 11400000, guid: 878d58d0c89420a4a901371de674123c, type: 2}
-  associateFormList: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
+  associateList: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86, type: 2}
+  associateFormList: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09, type: 2}
   prefab: {fileID: 1185945485424568, guid: 55f8903b1bf83ae40a298fe1040bf37b, type: 2}
   decalage: 50
   decalageStar: 20
@@ -1722,12 +1722,12 @@ MonoBehaviour:
   mushGainText: {fileID: 114147641594287038}
   levelChampiValue: 100
   palierScore:
-  - 4050
-  - 4100
-  - 4200
+  - 3050
+  - 3100
+  - 3150
   bonusMushByPalier:
   - 50
-  - 60
+  - 75
   - 100
   listOfobjectPresent: []
   spawnerList:
@@ -1840,8 +1840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7c2e343a6b7f3488df4f1c34d38156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associateList: {fileID: 11400000, guid: 878d58d0c89420a4a901371de674123c, type: 2}
-  associateFormList: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
+  associateList: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86, type: 2}
+  associateFormList: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09, type: 2}
   prefab: {fileID: 1185945485424568, guid: 55f8903b1bf83ae40a298fe1040bf37b, type: 2}
   decalage: 50
   decalageStar: 20
@@ -2210,15 +2210,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.41176468, g: 0.41176468, b: 0.41176468, a: 0.541}
+  m_Color: {r: 0.41176468, g: 0.41176468, b: 0.41176468, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 083aae14e4ace3f47aa623f1e09f7ca4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2566,7 +2566,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: acd3e1b872859414b885e259170238bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07a3307ed25974744abff7bc13abf325, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3213,8 +3213,8 @@ RectTransform:
   m_Father: {fileID: 224079364144443764}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.94223815, y: 0.11262258}
-  m_AnchorMax: {x: 0.9760917, y: 0.75807315}
+  m_AnchorMin: {x: 0.9246611, y: 0.11262258}
+  m_AnchorMax: {x: 0.98146856, y: 0.8940865}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

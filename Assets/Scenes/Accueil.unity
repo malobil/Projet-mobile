@@ -209,36 +209,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
-        type: 2}
-      propertyPath: champiBank
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
-        type: 2}
-      propertyPath: lvlSuccess.Array.data[1]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
-        type: 2}
-      propertyPath: lvlSuccess.Array.data[2]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
-        type: 2}
-      propertyPath: lvlSuccess.Array.data[3]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
-        type: 2}
-      propertyPath: sceneName.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
-        type: 2}
-      propertyPath: sceneName.Array.data[1]
-      value: Level2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98c6daad2792df84e9b387131ad9a56f, type: 2}
   m_IsPrefabParent: 0

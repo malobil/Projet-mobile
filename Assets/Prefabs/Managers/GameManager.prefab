@@ -53,12 +53,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvlSuccess: 0100000000
   sceneName:
+  - Level_Tuto
   - Level1
   - Level2
-  - 
   - 
   - 
   recetteList: {fileID: 11400000, guid: ca76c1fd74e69d44ca070493cc6c7158, type: 2}
   recetteKnow: []
   recetteKnowIdx: 
-  champiBank: 0
+  champiBank: 1500

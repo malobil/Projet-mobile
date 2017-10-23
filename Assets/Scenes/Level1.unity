@@ -294,50 +294,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114306542591750086, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateFormList
-      value: 
-      objectReference: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09,
-        type: 2}
-    - target: {fileID: 114306542591750086, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateList
-      value: 
-      objectReference: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86,
-        type: 2}
-    - target: {fileID: 114521609252645102, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateList
-      value: 
-      objectReference: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86,
-        type: 2}
-    - target: {fileID: 114521609252645102, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateFormList
-      value: 
-      objectReference: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09,
-        type: 2}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: palierScore.Array.data[0]
-      value: 3050
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: palierScore.Array.data[1]
-      value: 3100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: palierScore.Array.data[2]
-      value: 3150
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: bonusMushByPalier.Array.data[1]
-      value: 75
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0
