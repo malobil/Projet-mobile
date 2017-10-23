@@ -14,6 +14,6 @@ MonoBehaviour:
   description: "Mamy \xE0 besoin d'une grosse potion!"
   time: '1 : 20'
   toxicNecc: 3000
-  recompense: 150
-  Levelname: Mamy et la potion
+  recompense: 50
+  Levelname: La potion de Mamy
   levelNum: 0

@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7292603739f2079409daf5527b7906a3, type: 3}
-  m_Name: Level2
+  m_Name: Tuto1
   m_EditorClassIdentifier: 
-  description: ' I will show you how to make potions faster.'
-  time: '1 : 10'
-  toxicNecc: 3000
-  recompense: 100
-  Levelname: Let's talk about recipes
-  levelNum: 2
+  description: I will teach you the art of potions basics.
+  time: '* : **'
+  toxicNecc: 2000
+  recompense: 50
+  Levelname: First Lesson
+  levelNum: 12

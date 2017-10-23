@@ -9,11 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7292603739f2079409daf5527b7906a3, type: 3}
-  m_Name: Level2
+  m_Name: Level4
   m_EditorClassIdentifier: 
-  description: ' I will show you how to make potions faster.'
+  description: I'm the Cooker of Rivia and I would like to prepare something very
+    tasty for my dear friends, the ghouls.
   time: '1 : 10'
-  toxicNecc: 3000
-  recompense: 100
-  Levelname: Let's talk about recipes
-  levelNum: 2
+  toxicNecc: 5000
+  recompense: 150
+  Levelname: The Cooker
+  levelNum: 4
