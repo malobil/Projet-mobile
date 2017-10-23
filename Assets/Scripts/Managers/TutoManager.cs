@@ -77,6 +77,7 @@ void Awake ()
 		}
 		else if(tutoState +1 >= mamyDialogue.Length)
 		{
+			Debug.Log("END") ;
 			LevelManager.Instance().EndTuto() ;
 
 			mamyLayout.SetActive(false) ;

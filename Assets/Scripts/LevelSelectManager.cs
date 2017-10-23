@@ -42,7 +42,10 @@ void Awake ()
 	{
 		ChangeChampiText() ;
 		PopLevel() ;
-    Tuto() ;
+    if(GameManager.Instance().ReturnTuto())
+    {
+       Tuto() ;
+    }
 	}
 	
 	// Update is called once per frame
@@ -108,8 +111,6 @@ void Awake ()
 
   public void Tuto()
   {
-    if(GameManager.Instance().ReturnTuto())
-    {
       if(tutoState == 0)
       {
         questAnimator.SetTrigger("Blink") ;
@@ -118,7 +119,6 @@ void Awake ()
       {
         questAnimator.SetTrigger("UnBlink") ;
       }
-    }
   }
 
   public int ReturnState()

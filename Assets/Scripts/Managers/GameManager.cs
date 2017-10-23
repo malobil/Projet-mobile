@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour {
 
         if(PlayerPrefs.HasKey("HaveDoneTuto"))
         {
-            hadSaveARecipe = Convert.ToBoolean(PlayerPrefs.GetInt("HaveDoneTuto")) ;
+            isFirstTime = Convert.ToBoolean(PlayerPrefs.GetInt("HaveDoneTuto")) ;
         }
 
     	for(int y = 1 ; y < lvlSuccess.Count ; y++)

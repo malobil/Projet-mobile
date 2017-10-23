@@ -345,6 +345,7 @@ void Awake ()
 	{
 		//HideAnimation() ;
 		isTuto = false ;
+		GameManager.Instance().DoneTuto() ;
 	}
 
 	public void DisableForm(int formIdx)
