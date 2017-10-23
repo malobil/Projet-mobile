@@ -344,6 +344,8 @@ void Awake ()
 	public void EndTuto()
 	{
 		//HideAnimation() ;
+		HideAnimation() ;
+		//isHide = false ;
 		isTuto = false ;
 		GameManager.Instance().DoneTuto() ;
 	}

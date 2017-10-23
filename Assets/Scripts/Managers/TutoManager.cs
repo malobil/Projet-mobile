@@ -12,7 +12,7 @@ public class TutoManager : MonoBehaviour {
 	public Text mamyText ;
 	public string[] mamyDialogue ;
 
-	public GameObject rigthArrow, leftArrow ;
+	public GameObject rigthArrow, leftArrow, timer ;
 
 	private bool tutoIsEnd = false ;
 	private int tutoState = -1 ;
@@ -49,7 +49,7 @@ void Awake ()
 
 	void Update()
 	{
-		if(Input.GetMouseButtonDown(0))
+		if(Input.GetMouseButtonDown(0) && !tutoIsEnd)
 		{
 			Tutoriel() ;
 		}
@@ -78,8 +78,9 @@ void Awake ()
 		else if(tutoState +1 >= mamyDialogue.Length)
 		{
 			Debug.Log("END") ;
+			tutoIsEnd = true ;
 			LevelManager.Instance().EndTuto() ;
-
+			timer.SetActive(true) ;
 			mamyLayout.SetActive(false) ;
 		}
 		else

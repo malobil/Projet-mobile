@@ -205,6 +205,20 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114923468605928330, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232690804678694, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 2129747049}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
   m_IsPrefabParent: 0
@@ -297,3 +311,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2129747049 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1232690804678694, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1500948162}
