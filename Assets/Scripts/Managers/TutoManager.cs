@@ -49,7 +49,7 @@ void Awake ()
 
 	void Update()
 	{
-		if(Input.GetMouseButtonDown(0) && !tutoIsEnd)
+		if(Input.GetMouseButtonDown(0) && !tutoIsEnd && !demandeSomething)
 		{
 			Tutoriel() ;
 		}
@@ -63,11 +63,13 @@ void Awake ()
 			mamyText.text = mamyDialogue[tutoState] ;
 		}
 
-		if(tutoState == 2)
+		if(tutoState == 2 && !isWaiting && !demandeSomething)
 		{
 			LevelManager.Instance().ShowAnimation() ;
 			demandeSomething = true ;
-			PopSomething(rigthArrow) ;
+			//PopSomething(rigthArrow) ;
+			StartCoroutine(Wait()) ;
+			
 		}
 		else if(tutoState == 4)
 		{			
@@ -116,8 +118,10 @@ void Awake ()
 	{
 		isWaiting = true ;
 		Debug.Log("Wait") ;
-		yield return new  WaitForSeconds(1.2f) ;
+		yield return new  WaitForSeconds(1.5f) ;
+		PopSomething(rigthArrow) ;
 		LevelManager.Instance().DisableForm(0) ;
 		isWaiting = false ;
+		StopCoroutine(Wait()) ;
 	}
 }
