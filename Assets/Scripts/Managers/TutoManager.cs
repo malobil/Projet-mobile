@@ -11,6 +11,7 @@ public class TutoManager : MonoBehaviour {
 	public GameObject mamyLayout ;
 	public Text mamyText ;
 	public string[] mamyDialogue ;
+	public Scriptable_IngredientList ingredientList ;
 
 	public GameObject rigthArrow, leftArrow, timer,fioleArrow ;
 
@@ -87,6 +88,7 @@ void Awake ()
 			Debug.Log("END") ;
 			tutoIsEnd = true ;
 			LevelManager.Instance().EndTuto() ;
+			LevelManager.Instance().ChangeSpawnerIngredientList(ingredientList) ;
 			timer.SetActive(true) ;
 			mamyLayout.SetActive(false) ;
 		}

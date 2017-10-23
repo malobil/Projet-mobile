@@ -359,4 +359,12 @@ void Awake ()
 	{
 		listOfobjectPresent[formIdx].GetComponent<Image>().raycastTarget = true ;
 	}
+
+	public void ChangeSpawnerIngredientList(Scriptable_IngredientList newIngredientList)
+	{
+		for(int y = 0 ; y < spawnerList.Count ; y++)
+		{
+			spawnerList[y].GetComponent<Spawner>().associateList = newIngredientList ;
+		}
+	}
 }
