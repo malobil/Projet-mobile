@@ -13,7 +13,7 @@ public class LevelSelectManager : MonoBehaviour {
 
   //----Tuto----///
 
-  public Animator questAnimator, playButtonAnimator, recipeBookAnimator, shopAnimator ;
+  public Animator questAnimator, recipeBookAnimator, shopAnimator ;
 
   private int tutoState = 0 ;
 

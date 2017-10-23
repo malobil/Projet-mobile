@@ -359,7 +359,7 @@ Prefab:
         type: 2}
       propertyPath: missionPrefab
       value: 
-      objectReference: {fileID: 1790295202012918, guid: e04cf5b02e2d74340984a79e410d7081,
+      objectReference: {fileID: 1644309428104708, guid: b926ad2387a2a994088f43f976c43816,
         type: 2}
     - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
         type: 2}
@@ -372,6 +372,11 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 6d682e79495ef2c48b6cfe2a6f4f7062,
         type: 2}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: playButtonAnimator
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32a47c0519746b438a56c7ed42ab90b, type: 2}
   m_IsPrefabParent: 0
