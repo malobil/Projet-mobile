@@ -108,168 +108,161 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1500948162
+--- !u!1001 &912579010
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_Pivot.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 224079364144443764, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[0]
-      value: Hello my child. It's me, Grandma !
+    - target: {fileID: 1467464595070464, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[1]
-      value: Today we gonna learn the basics of potion. Let's begin honey.
+    - target: {fileID: 1889506332557692, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
-      propertyPath: mamyDialogue.Array.data[2]
-      value: You already have your ingredients ! Good ! Touch the right one to push
-        it in the cauldron.
+      propertyPath: scoreNeed
+      value: 3000
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
-      propertyPath: mamyDialogue.Array.data[3]
-      value: Alright Sweety ! If you want to finish, use the toxic stuff but avoid
-        the healthy one.
+      propertyPath: timeIngredientShow
+      value: 2.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
-      propertyPath: mamyDialogue.Array.data[4]
-      value: Sometimes, they will pop out. Wait to change it.
+      propertyPath: bonusMushByPalier.Array.data[1]
+      value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
-      propertyPath: mamyDialogue.Array.data[5]
-      value: Noooo ! You didn't listen to me ! Look at your flask on the right, it
-        decreased. Be careful of that.
+      propertyPath: bonusMushByPalier.Array.data[2]
+      value: 150
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
-      propertyPath: mamyDialogue.Array.data[6]
-      value: You must finish right in time to succeed but if the time run out, you
-        will failed.
+      propertyPath: palierScore.Array.data[0]
+      value: 4550
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
-      propertyPath: mamyDialogue.Array.data[7]
-      value: Great work ! Grandma is proud of you. Now try to make your own potion
-        ?
+      propertyPath: palierScore.Array.data[1]
+      value: 4600
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: palierScore.Array.data[2]
+      value: 4700
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1884847793
+--- !u!1 &1914412224
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1884847798}
-  - component: {fileID: 1884847797}
-  - component: {fileID: 1884847796}
-  - component: {fileID: 1884847795}
-  - component: {fileID: 1884847794}
+  - component: {fileID: 1914412229}
+  - component: {fileID: 1914412228}
+  - component: {fileID: 1914412227}
+  - component: {fileID: 1914412226}
+  - component: {fileID: 1914412225}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -277,33 +270,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1884847794
+--- !u!81 &1914412225
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884847793}
+  m_GameObject: {fileID: 1914412224}
   m_Enabled: 1
---- !u!124 &1884847795
+--- !u!124 &1914412226
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884847793}
+  m_GameObject: {fileID: 1914412224}
   m_Enabled: 1
---- !u!92 &1884847796
+--- !u!92 &1914412227
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884847793}
+  m_GameObject: {fileID: 1914412224}
   m_Enabled: 1
---- !u!20 &1884847797
+--- !u!20 &1914412228
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884847793}
+  m_GameObject: {fileID: 1914412224}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -334,12 +327,12 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!4 &1884847798
+--- !u!4 &1914412229
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884847793}
+  m_GameObject: {fileID: 1914412224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
