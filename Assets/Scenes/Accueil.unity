@@ -1272,6 +1272,16 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 5d86098f59a0298438d2fdd024c37227,
         type: 3}
+    - target: {fileID: 114152266035791370, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114152266035791370, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b412aab741afb3b46b6d4610ec00d15a, type: 2}
   m_IsPrefabParent: 0
