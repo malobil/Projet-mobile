@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 222662494195231778}
   - component: {fileID: 114416461541536310}
   - component: {fileID: 114348544471315340}
+  - component: {fileID: 95061694570637296}
   m_Layer: 5
   m_Name: Quest_Button
   m_TagString: Untagged
@@ -344,7 +345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1242886845251930
 GameObject:
   m_ObjectHideFlags: 1
@@ -1372,6 +1373,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &95061694570637296
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074015285414358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80c10c04d8bac3b48a379a2aa872eb6e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114016547177944184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1754,6 +1772,7 @@ MonoBehaviour:
   number: {fileID: 0}
   questName: {fileID: 0}
   level: {fileID: 11400000, guid: 2c76dd75c372a4a4c8991523b2d2cc38, type: 2}
+  playButton: {fileID: 0}
 --- !u!114 &114136575102623718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2725,6 +2744,7 @@ MonoBehaviour:
   number: {fileID: 0}
   questName: {fileID: 0}
   level: {fileID: 11400000, guid: 6d682e79495ef2c48b6cfe2a6f4f7062, type: 2}
+  playButton: {fileID: 0}
 --- !u!114 &114416260571487112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5776,8 +5796,8 @@ RectTransform:
   - {fileID: 224670965027555396}
   - {fileID: 224783381043086290}
   - {fileID: 224324527896305078}
-  - {fileID: 224290979454327534}
   - {fileID: 224967642682435346}
+  - {fileID: 224290979454327534}
   - {fileID: 224483832290868112}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -5909,7 +5929,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224250932907803984}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.531736, y: 0.87956345}
   m_AnchorMax: {x: 0.7126748, y: 0.9972383}
@@ -6819,7 +6839,7 @@ RectTransform:
   - {fileID: 224535796101600336}
   - {fileID: 224089378102292970}
   m_Father: {fileID: 224250932907803984}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30129418, y: 0.90253264}
   m_AnchorMax: {x: 0.5, y: 0.99002427}

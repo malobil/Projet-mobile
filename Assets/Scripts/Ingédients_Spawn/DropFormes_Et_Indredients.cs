@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems ;
+using UnityEngine.SceneManagement ;
 
 public class DropFormes_Et_Indredients : MonoBehaviour, IDropHandler {
 
@@ -11,6 +12,11 @@ public class DropFormes_Et_Indredients : MonoBehaviour, IDropHandler {
 		{
 			Debug.Log(eventData.pointerDrag.name) ;
 			eventData.pointerDrag.gameObject.GetComponent<Formes_Et_Ingredients>().AddPoint() ;
+		}
+
+		if(SceneManager.GetActiveScene().name == "Level_Tuto" && TutoManager.Instance().ReturnDemand())
+		{
+			TutoManager.Instance().RequestDone() ;
 		}
 	}
 }

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1740173759408330}
+  m_IsPrefabParent: 1
+--- !u!1 &1740173759408330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4404745123509442}
+  - component: {fileID: 114021038507807266}
+  - component: {fileID: 114548641137133256}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4404745123509442
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740173759408330}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1480.7206, y: -719.1688, z: -0.040646337}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114021038507807266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740173759408330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberlvl: 1
+  potionState: {fileID: 0}
+  scoreNeed: 3000
+  timeIngredientShow: 3
+  timeHide: 0.5
+  textEndLevel: {fileID: 0}
+  timerText: {fileID: 0}
+  timerMinutes: 1
+  timerSecondes: 10
+  littleMeg: {fileID: 0}
+  endLayout: {fileID: 0}
+  stateText: {fileID: 0}
+  timeLeftText: {fileID: 0}
+  scoreEndText: {fileID: 0}
+  recipeFoundText: {fileID: 0}
+  mushGainText: {fileID: 0}
+  levelChampiValue: 100
+  palierScore:
+  - 4050
+  - 4100
+  - 4200
+  bonusMushByPalier:
+  - 50
+  - 60
+  - 100
+  listOfobjectPresent: []
+  spawnerList:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114548641137133256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740173759408330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e144cfa0c57cfc54dbe4153c00d22663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumIngredient: 4
+  listOfIngredient: []
+  recetteKnowPanel: {fileID: 0}
+  prefabImage: {fileID: 1912399139551648, guid: a5ca15bab5b6d674e805b7d0f2346e7b,
+    type: 2}

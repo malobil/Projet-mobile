@@ -54,6 +54,10 @@ public class LevelManager : MonoBehaviour {
 	public List<GameObject> listOfobjectPresent = new List<GameObject>() ;
 	public List<GameObject> spawnerList = new List<GameObject>() ;
 
+	////---- Is tuto ----///
+
+	private bool isTuto = false ;
+
 
 	private static LevelManager instance ;
     public static LevelManager Instance () 
@@ -79,18 +83,26 @@ void Awake ()
 	void Start () 
 	{
 		currentTimeHide = timeHide ;
+
+		if(SceneManager.GetActiveScene().name == "Level_Tuto")
+		{
+			isTuto = true ;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		TimerShow() ;
-		TimerHide() ;
-		TimerGeneral() ;
-
-		if(scoreToxic >= scoreNeed && !pointAdded)
+		if(!isTuto)
 		{
-			EndLevel() ;
+			TimerShow() ;
+			TimerHide() ;
+			TimerGeneral() ;
+
+			if(scoreToxic >= scoreNeed && !pointAdded)
+			{
+				EndLevel() ;
+			}
 		}
 	}
 
@@ -189,10 +201,8 @@ void Awake ()
 			stateText.text = "DEFEAT" ;
 			timeLeftText.text = "<b>No time left !</b>" ;
 			scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") + "</b>" + " / " + "<b>" + scoreNeed.ToString("") + "</b>";
-			mushGainText.text = "Mushroom gain : " +  "<b>0</b>" ;
-		}
-
-		
+			mushGainText.text = "Mushroom gain : " +  "<b>"+ mushBonus + "</b>" ;
+		}	
 	}
 
 	void TimerShow()
@@ -204,7 +214,16 @@ void Awake ()
 		}
 		else if(currentTimeHide < 0 && isHide)
 		{
-			
+			ShowAnimation() ;
+			//PopObject() ;
+			isHide = false ;
+			currentTimeHide = 0 ;
+			currentTimeShow = timeIngredientShow ;
+		}
+	}
+
+	public void ShowAnimation()
+	{
 			//Debug.Log("time bef show < 0") ;
 			if(spawnerList.Count <= 2)
 			{
@@ -218,12 +237,11 @@ void Awake ()
 			{
 				littleMeg.SetTrigger("Show6") ;
 			}
-			
-			//PopObject() ;
-			isHide = false ;
-			currentTimeHide = 0 ;
-			currentTimeShow = timeIngredientShow ;
-		}
+	}
+
+	public void HideAnimation()
+	{
+		littleMeg.SetTrigger("Hide") ;
 	}
 
 	void TimerHide()
@@ -236,7 +254,7 @@ void Awake ()
 		else if(currentTimeShow < 0 && !isHide)
 		{
 			//Debug.Log("time bef hide < 0") ;
-			littleMeg.SetTrigger("Hide") ;
+			HideAnimation() ;
 			//UnpopObject() ;
 			isHide = true ;
 			currentTimeShow = 0 ;
@@ -249,6 +267,11 @@ void Awake ()
 		scoreToxic += toxicAdded;
 		PoisonAdded() ;
 		Debug.Log(toxicAdded);
+
+		if(scoreToxic < 0)
+		{
+			scoreToxic = 0 ;
+		}
 	}
 
 	public void AddObjectToList(GameObject gOPop)
@@ -316,5 +339,21 @@ void Awake ()
 	public bool ReturnLevelEnd()
 	{
 		return levelIsEnd ;
+	}
+
+	public void EndTuto()
+	{
+		//HideAnimation() ;
+		isTuto = false ;
+	}
+
+	public void DisableForm(int formIdx)
+	{
+		listOfobjectPresent[formIdx].GetComponent<Image>().raycastTarget = false ;
+	}
+
+	public void EnableForm(int formIdx)
+	{
+		listOfobjectPresent[formIdx].GetComponent<Image>().raycastTarget = true ;
 	}
 }

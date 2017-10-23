@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems ;
 using UnityEngine.UI ;
+using UnityEngine.SceneManagement;
 
-public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHandler,  IPointerClickHandler {
+public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHandler,  IPointerClickHandler, IEndDragHandler {
 
 	private bool isDrag = false ;
 
@@ -37,6 +38,13 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 		isDrag = true ;	
 	}
 
+	public void OnEndDrag(PointerEventData eventData)
+	{
+		if(SceneManager.GetActiveScene().name == "Level_Tuto" && TutoManager.Instance().ReturnDemand())
+		{
+			TutoManager.Instance().RequestDone() ;
+		}
+	}
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
@@ -44,6 +52,11 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 		{
 			Debug.Log("click") ;
 			AddPoint() ;
+		}
+
+		if(SceneManager.GetActiveScene().name == "Level_Tuto" && TutoManager.Instance().ReturnDemand())
+		{
+			TutoManager.Instance().RequestDone() ;
 		}
 	}
 

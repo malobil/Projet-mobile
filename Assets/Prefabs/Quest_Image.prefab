@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 222715263536540228}
   - component: {fileID: 114244187477062754}
   - component: {fileID: 114853636336581894}
+  - component: {fileID: 95486428340699832}
   m_Layer: 5
   m_Name: Go_Button
   m_TagString: Untagged
@@ -167,6 +168,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &95486428340699832
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531240863491876}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abdeb44ef4f040d4e9c5bad687daade5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114102844972537252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -535,6 +553,7 @@ MonoBehaviour:
   number: {fileID: 114581956238650554}
   questName: {fileID: 114823292017366860}
   level: {fileID: 11400000, guid: 2c76dd75c372a4a4c8991523b2d2cc38, type: 2}
+  playButton: {fileID: 95486428340699832}
 --- !u!222 &222116822734779238
 CanvasRenderer:
   m_ObjectHideFlags: 1

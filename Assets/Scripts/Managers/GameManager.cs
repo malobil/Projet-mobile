@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour {
 
 	public float champiBank ;
 
+    ///----Tuto----///
+
+    private bool isFirstTime = true ;
+
 	////----Instance System---///
 
 	private static GameManager instance ;
@@ -111,6 +115,8 @@ public class GameManager : MonoBehaviour {
 
   		PlayerPrefs.SetInt("HaveSaveRecipe", Convert.ToInt32(hadSaveARecipe)) ;
 
+        PlayerPrefs.SetInt("HaveDoneTuto", Convert.ToInt32(isFirstTime)) ;
+
     	for(int i = 0 ; i < lvlSuccess.Count ; i++)
     	{
     		PlayerPrefs.SetInt("LvlSuccesList" + i, Convert.ToInt32(lvlSuccess[i])) ;
@@ -125,6 +131,7 @@ public class GameManager : MonoBehaviour {
     public void LoadGame()
     {
     	Debug.Log("LOAD") ;
+
     	if(PlayerPrefs.HasKey("PlayerScore"))
     	{
     		champiBank = PlayerPrefs.GetFloat("PlayerScore") ;
@@ -134,6 +141,11 @@ public class GameManager : MonoBehaviour {
     	{
     		hadSaveARecipe = Convert.ToBoolean(PlayerPrefs.GetInt("HaveSaveRecipe")) ;
     	}
+
+        if(PlayerPrefs.HasKey("HaveDoneTuto"))
+        {
+            hadSaveARecipe = Convert.ToBoolean(PlayerPrefs.GetInt("HaveDoneTuto")) ;
+        }
 
     	for(int y = 1 ; y < lvlSuccess.Count ; y++)
     	{
@@ -173,6 +185,17 @@ public class GameManager : MonoBehaviour {
     	PlayerPrefs.DeleteKey("HaveSaveRecipe") ;*/
 
     	PlayerPrefs.DeleteAll() ;
+    }
+
+    public bool ReturnTuto()
+    {
+        return isFirstTime ;
+    }
+
+    public void DoneTuto()
+    {
+        isFirstTime = false ;
+        SaveGame() ;
     }
 
 }

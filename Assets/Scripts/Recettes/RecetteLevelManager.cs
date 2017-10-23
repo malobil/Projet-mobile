@@ -37,7 +37,10 @@ void Awake ()
 	// Use this for initialization
 	void Start () 
 	{
-		globalList = GameManager.Instance().recetteKnow ;
+		if(GameManager.Instance() != null)
+		{
+			globalList = GameManager.Instance().recetteKnow ;
+		}
 		LoadRecetteAlreadyKnow() ;
 	}
 	
@@ -144,13 +147,16 @@ void Awake ()
 
     void LoadRecetteAlreadyKnow()
     {
-    	for(int y = 0 ; y < GameManager.Instance().recetteKnow.Count ; y++)
+    	if(GameManager.Instance() != null)
     	{
-    		if(GameManager.Instance().recetteKnow[y] != null)
-    		{
-    			GameObject popStartTemp = Instantiate(prefabImage, recetteKnowPanel.transform) ;
-    			popStartTemp.GetComponent<AffichageRecetteScript>().Change(GameManager.Instance().recetteKnow[y]) ;
-    		}
-    	}
+	    	for(int y = 0 ; y < GameManager.Instance().recetteKnow.Count ; y++)
+	    	{
+	    		if(GameManager.Instance().recetteKnow[y] != null)
+	    		{
+	    			GameObject popStartTemp = Instantiate(prefabImage, recetteKnowPanel.transform) ;
+	    			popStartTemp.GetComponent<AffichageRecetteScript>().Change(GameManager.Instance().recetteKnow[y]) ;
+	    		}
+	    	}
+	    }
     }
 }

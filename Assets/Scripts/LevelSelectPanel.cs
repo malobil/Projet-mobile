@@ -8,7 +8,10 @@ public class LevelSelectPanel : MonoBehaviour {
 	public Text descriptionText,timeText, toxicText, recompText, number, questName ;
 	
 	public Scriptable_level level ;
+
+	public Animator playButton ;
 	private int lvlNumber ;
+	private bool isAnimate = false ;
 
 	// Use this for initialization
 	void Start () 
@@ -21,15 +24,22 @@ public class LevelSelectPanel : MonoBehaviour {
 		number.text = lvlNumber.ToString("") ; ;
 		questName.text = level.name ;
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+	void Update()
 	{
-		
+		if(GameManager.Instance().ReturnTuto() && LevelSelectManager.Instance().ReturnState() == 1 && !isAnimate)
+		{
+			playButton.SetTrigger("Blink") ;
+			isAnimate = false ;
+			GameManager.Instance().DoneTuto() ;
+		}
 	}
+	
 
 	public void LoadLevel()
 	{
 		LevelSelectManager.Instance().LoadLevel(lvlNumber) ;
 	}
+
+
 }

@@ -32,10 +32,10 @@ public class Spawner : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetKeyDown("p"))
+		/*if(Input.GetKeyDown("p"))
 		{
 			PopFormAndIngredient() ;
-		}
+		}*/
 	}
 
 	public void PopFormAndIngredient()

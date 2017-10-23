@@ -11,6 +11,12 @@ public class LevelSelectManager : MonoBehaviour {
   public GameObject missionPrefab ;
 	public List<Scriptable_level> levelList = new List<Scriptable_level>() ;
 
+  //----Tuto----///
+
+  public Animator questAnimator, playButtonAnimator, recipeBookAnimator, shopAnimator ;
+
+  private int tutoState = 0 ;
+
     private static LevelSelectManager instance ;
     public static LevelSelectManager Instance () 
     {
@@ -35,7 +41,8 @@ void Awake ()
 	void Start () 
 	{
 		ChangeChampiText() ;
-		PopLevel() ;	
+		PopLevel() ;
+    Tuto() ;
 	}
 	
 	// Update is called once per frame
@@ -75,6 +82,13 @@ void Awake ()
       if(!thingTopop.activeInHierarchy)
       {
    	   thingTopop.SetActive(true) ;
+
+        if(thingTopop.name == "Panel" && tutoState==0 && GameManager.Instance().ReturnTuto())
+        {
+          tutoState++ ;
+          Tuto() ;
+          Debug.Log(tutoState) ;
+        }
       }
       else if(thingTopop.activeInHierarchy)
       {
@@ -91,5 +105,25 @@ void Awake ()
     {
       SceneManager.LoadScene ("Accueil");
     }
+
+  public void Tuto()
+  {
+    if(GameManager.Instance().ReturnTuto())
+    {
+      if(tutoState == 0)
+      {
+        questAnimator.SetTrigger("Blink") ;
+      }
+      if(tutoState == 1)
+      {
+        questAnimator.SetTrigger("UnBlink") ;
+      }
+    }
+  }
+
+  public int ReturnState()
+  {
+    return tutoState ;
+  }
 
 }
