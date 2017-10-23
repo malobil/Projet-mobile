@@ -15,5 +15,5 @@ MonoBehaviour:
   time: '1 : 00'
   toxicNecc: 4000
   recompense: 100
-  Levelname: 
+  Levelname: Il faut plus d'argent !
   levelNum: 2
