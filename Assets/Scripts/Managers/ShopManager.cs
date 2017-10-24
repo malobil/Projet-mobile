@@ -52,9 +52,9 @@ void Awake ()
 
 	void SetUpText()
 	{
-		priceText01.text = price01.ToString("") + " mush";
-		priceText02.text = price02.ToString("") + " mush";
-		priceText03.text = price03.ToString("") + " mush" ;
+		priceText01.text = price01.ToString("") ;
+		priceText02.text = price02.ToString("");
+		priceText03.text = price03.ToString("") ;
 	}
 
 	public void BuyRecipe2Ing()

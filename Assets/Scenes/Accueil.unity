@@ -1282,6 +1282,36 @@ Prefab:
       propertyPath: m_FontData.m_AlignByGeometry
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114361078470786586, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114361078470786586, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114361078470786586, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114361078470786586, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114361078470786586, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114361078470786586, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b412aab741afb3b46b6d4610ec00d15a, type: 2}
   m_IsPrefabParent: 0
