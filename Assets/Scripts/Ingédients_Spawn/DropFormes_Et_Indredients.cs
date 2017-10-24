@@ -13,7 +13,7 @@ public class DropFormes_Et_Indredients : MonoBehaviour, IDropHandler {
 			Debug.Log(eventData.pointerDrag.name) ;
 			if(TutoRecipeManager.Instance() != null && TutoRecipeManager.Instance().ReturnDemand())
 			{
-				if(TutoRecipeManager.Instance().ReturnState() == 2)
+				if(TutoRecipeManager.Instance().ReturnState() <= 4)
 				{
 					//LevelManager.Instance().DestroyAObject(eventData.pointerDrag.gameObject) ;
 					//LevelManager.Instance().UnpopObject() ;
@@ -22,7 +22,7 @@ public class DropFormes_Et_Indredients : MonoBehaviour, IDropHandler {
 					LevelManager.Instance().PopParticularObject(1) ;
 					//Destroy(eventData.pointerDrag.gameObject) ;
 				}
-				else if(TutoRecipeManager.Instance().ReturnState() == 4)
+				else if(TutoRecipeManager.Instance().ReturnState() == 6)
 				{
 					Debug.Log("Tuto destroy") ;
 					LevelManager.Instance().DestroyAObject(eventData.pointerDrag.gameObject) ;

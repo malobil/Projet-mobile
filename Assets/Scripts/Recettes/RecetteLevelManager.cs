@@ -121,7 +121,7 @@ void Awake ()
 
 			if(SceneManager.GetActiveScene().name == "Level_Tuto_Recipe" && TutoRecipeManager.Instance() != null)
 			{
-				if(TutoRecipeManager.Instance().ReturnDemand() && TutoRecipeManager.Instance().ReturnState() == 5)
+				if(TutoRecipeManager.Instance().ReturnDemand() && TutoRecipeManager.Instance().ReturnState() == 8)
 				{
 					TutoRecipeManager.Instance().RequestDone() ;
 				}

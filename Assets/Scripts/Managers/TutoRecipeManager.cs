@@ -83,36 +83,51 @@ void Awake ()
    		}
    		else if(tutoState == 2)
    		{
-   			PopSomething(recipeArrow) ;
-   			//PopSomething(dragArrow) ;
-   			UnPopSomething(recipeListArrow) ;
    			if(!isWaiting)
    			{
    				StartCoroutine(Wait()) ;
    			}
+   			UnPopSomething(recipeListArrow) ;
    			LevelManager.Instance().ShowAnimation() ;
-   			demandeSomething = true ;
+   			
    		}
    		else if(tutoState == 3)
    		{
-   			UnPopSomething(recipeArrow) ;
+   			PopSomething(recipeArrow) ;
+   			//PopSomething(dragArrow) ;
+   			
+   			UnPopSomething(mamyLayout) ;
+   			demandeSomething = true ;
+   			//LevelManager.Instance().EnableForm(1) ;
+   			//UnPopSomething(recipeArrow) ;
    		}
    		else if(tutoState == 4)
    		{
-   			demandeSomething = true ;
-   			PopSomething(recipeArrow2) ;
-   			LevelManager.Instance().EnableForm(0) ;
-   		}
-   		else if(tutoState == 5)
-   		{
-   			UnPopSomething(recipeArrow2) ;
-   			demandeSomething = true ;
-   			PopSomething(validArrow) ;
+   			UnPopSomething(recipeArrow) ;
    		}
    		else if(tutoState == 6)
    		{
+   			PopSomething(recipeArrow2) ;
+   			LevelManager.Instance().EnableForm(0) ;
+   			UnPopSomething(mamyLayout) ;
+   			demandeSomething = true ;
+   			//UnPopSomething(recipeArrow2) ;
+   			//demandeSomething = true ;
+   			//PopSomething(validArrow) ;
+   		}
+   		else if(tutoState == 7)
+   		{
+   			UnPopSomething(recipeArrow2) ;
+   		}
+   		else if(tutoState == 8)
+   		{
+   			demandeSomething = true ;
+   			PopSomething(validArrow) ;
+   			UnPopSomething(mamyLayout) ;
+   		}
+   		else if(tutoState == 9)
+   		{
    			UnPopSomething(validArrow) ;
-   			demandeSomething = false ;
    		}
 
 	}
@@ -121,8 +136,9 @@ void Awake ()
 	{
 		isWaiting = true ;
 		Debug.Log("Wait") ;
-		yield return new  WaitForSeconds(1.6f) ;
+		yield return new  WaitForSeconds(1.2f) ;
 		LevelManager.Instance().DisableForm(0) ;
+		//LevelManager.Instance().DisableForm(1) ;
 		isWaiting = false ;
 		StopCoroutine(Wait()) ;
 	}
