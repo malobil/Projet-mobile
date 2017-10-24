@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: I must prepare a banquet for the wild hunt. I want to break the ice
     between us.
-  time: '1 : 10'
+  time: '1 : 00'
   toxicNecc: 6000
-  recompense: 150
+  recompense: 250
   Levelname: The Cooker III
   levelNum: 9

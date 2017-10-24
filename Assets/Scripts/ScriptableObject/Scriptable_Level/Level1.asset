@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Heal my back sweety
   time: '1 : 20'
-  toxicNecc: 3000
+  toxicNecc: 2500
   recompense: 50
   Levelname: I need a tonic and one of yours will be perfect.
   levelNum: 1

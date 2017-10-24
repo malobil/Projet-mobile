@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: It's me again, The Cooker of Rivia. This time my customer is a little
     tougher. I need something to send him directly to heaven.
-  time: '1 : 10'
+  time: '1 : 05'
   toxicNecc: 6000
   recompense: 200
   Levelname: The Cooker II

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   description: ' I will show you how to make potions faster.'
-  time: '1 : 10'
-  toxicNecc: 3000
-  recompense: 100
+  time: '1 : 20'
+  toxicNecc: 2500
+  recompense: 50
   Levelname: Let's talk about recipes
   levelNum: 2

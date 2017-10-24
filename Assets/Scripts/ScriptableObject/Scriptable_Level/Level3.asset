@@ -14,7 +14,7 @@ MonoBehaviour:
   description: A scary dog is stalking me everyday and i've heard that certein potion
     can be good reppellant.
   time: '1 : 10'
-  toxicNecc: 4000
-  recompense: 150
+  toxicNecc: 3000
+  recompense: 100
   Levelname: Creepy Dog
   levelNum: 3

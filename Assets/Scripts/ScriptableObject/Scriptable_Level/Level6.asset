@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Hello, my name is Ash. And my goal is to taste all the potions around
     the world. Can you grant me your best potion ?
-  time: '1 : 10'
-  toxicNecc: 5500
+  time: '1 : 05'
+  toxicNecc: 5000
   recompense: 150
   Levelname: Gotta test them all !
   levelNum: 6

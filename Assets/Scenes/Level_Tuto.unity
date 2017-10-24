@@ -205,6 +205,41 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: timerSecondes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: levelChampiValue
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: palierScore.Array.data[0]
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: palierScore.Array.data[1]
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: palierScore.Array.data[2]
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[2]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114202137676222872, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[1]
+      value: 75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
   m_IsPrefabParent: 0
