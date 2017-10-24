@@ -464,13 +464,14 @@ GameObject:
   - component: {fileID: 224400072015563884}
   - component: {fileID: 222611991156584754}
   - component: {fileID: 114279259568405604}
+  - component: {fileID: 114170906296915546}
   m_Layer: 5
   m_Name: Recettte_List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1472372855135014
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +771,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1920344864478630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1397,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114170906296915546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1467464595070464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3bedca65c55e046a3f6456ace33163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114178192926121466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1910,15 +1922,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberlvl: 2
+  numberlvl: 6
   potionState: {fileID: 114940296573390532}
-  scoreNeed: 1500
-  timeIngredientShow: 3
+  scoreNeed: 4000
+  timeIngredientShow: 2.5
   timeHide: 0.5
   textEndLevel: {fileID: 114030586968149852}
   timerText: {fileID: 114909790581594640}
   timerMinutes: 1
-  timerSecondes: 20
+  timerSecondes: 10
   littleMeg: {fileID: 95803168246303714}
   endLayout: {fileID: 1849739944009462}
   stateText: {fileID: 114249865811169588}
@@ -1926,11 +1938,11 @@ MonoBehaviour:
   scoreEndText: {fileID: 114894205985771696}
   recipeFoundText: {fileID: 0}
   mushGainText: {fileID: 114147641594287038}
-  levelChampiValue: 50
+  levelChampiValue: 150
   palierScore:
-  - 1550
-  - 1600
-  - 1700
+  - 4100
+  - 4200
+  - 4300
   bonusMushByPalier:
   - 50
   - 100

@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 224508424510802652}
   - component: {fileID: 222130163409414286}
   - component: {fileID: 114186668442485476}
+  - component: {fileID: 114746430901299258}
   m_Layer: 5
   m_Name: Recettte_List
   m_TagString: Untagged
@@ -1125,7 +1126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberlvl: 1
+  numberlvl: 4
   potionState: {fileID: 114099023890230334}
   scoreNeed: 2500
   timeIngredientShow: 2.5
@@ -2746,6 +2747,17 @@ MonoBehaviour:
   prefab: {fileID: 1185945485424568, guid: 55f8903b1bf83ae40a298fe1040bf37b, type: 2}
   decalage: 50
   decalageStar: 20
+--- !u!114 &114746430901299258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1297137959884012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3bedca65c55e046a3f6456ace33163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114782254631271442
 MonoBehaviour:
   m_ObjectHideFlags: 1
