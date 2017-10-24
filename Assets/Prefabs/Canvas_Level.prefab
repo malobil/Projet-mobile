@@ -1241,7 +1241,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8e60d63ead8677749b15c1e2e90007bc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcbe3dcda61dae94481eb90bbe83999b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1706,7 +1706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberlvl: 2
   potionState: {fileID: 114940296573390532}
-  scoreNeed: 3000
+  scoreNeed: 1500
   timeIngredientShow: 3
   timeHide: 0.5
   textEndLevel: {fileID: 114030586968149852}
@@ -1720,11 +1720,11 @@ MonoBehaviour:
   scoreEndText: {fileID: 114894205985771696}
   recipeFoundText: {fileID: 0}
   mushGainText: {fileID: 114147641594287038}
-  levelChampiValue: 100
+  levelChampiValue: 50
   palierScore:
-  - 3050
-  - 3100
-  - 3150
+  - 1550
+  - 1600
+  - 1700
   bonusMushByPalier:
   - 50
   - 75

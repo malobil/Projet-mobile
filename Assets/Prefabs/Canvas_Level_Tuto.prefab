@@ -1060,7 +1060,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8e60d63ead8677749b15c1e2e90007bc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcbe3dcda61dae94481eb90bbe83999b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1498,7 +1498,7 @@ MonoBehaviour:
   textEndLevel: {fileID: 0}
   timerText: {fileID: 114907278720304722}
   timerMinutes: 1
-  timerSecondes: 10
+  timerSecondes: 20
   littleMeg: {fileID: 95504466143128000}
   endLayout: {fileID: 1719510582225602}
   stateText: {fileID: 114028299285747458}
@@ -1506,14 +1506,14 @@ MonoBehaviour:
   scoreEndText: {fileID: 114134572757394324}
   recipeFoundText: {fileID: 0}
   mushGainText: {fileID: 114469470743177792}
-  levelChampiValue: 100
+  levelChampiValue: 50
   palierScore:
-  - 4050
-  - 4100
-  - 4200
+  - 1050
+  - 1100
+  - 1050
   bonusMushByPalier:
   - 50
-  - 60
+  - 75
   - 100
   listOfobjectPresent: []
   spawnerList:
