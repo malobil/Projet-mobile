@@ -31,8 +31,7 @@ public class DropFormes_Et_Indredients : MonoBehaviour, IDropHandler {
 			}
 			else
 			{
-				Debug.Log("point drag") ;
-				eventData.pointerDrag.gameObject.GetComponent<Formes_Et_Ingredients>().AddPoint() ;
+				LevelManager.Instance().DestroyAObject(eventData.pointerDrag.gameObject) ;
 			}
 		}
 

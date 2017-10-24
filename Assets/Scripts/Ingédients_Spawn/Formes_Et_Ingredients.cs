@@ -5,7 +5,7 @@ using UnityEngine.EventSystems ;
 using UnityEngine.UI ;
 using UnityEngine.SceneManagement;
 
-public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHandler,  IPointerClickHandler, IEndDragHandler {
+public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 
 	private bool isDrag = false ;
 
@@ -47,7 +47,7 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 		}
 	}
 
-	public void OnPointerClick(PointerEventData eventData)
+	/*public void OnPointerClick(PointerEventData eventData)
 	{
 		if(!isDrag)
 		{
@@ -65,7 +65,7 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 		{
 			TutoManager.Instance().RequestDone() ;
 		}
-	}
+	}*/
 
 	public void AddPoint()
 	{
