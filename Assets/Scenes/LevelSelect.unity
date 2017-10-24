@@ -250,19 +250,19 @@ Prefab:
     - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
         type: 2}
       propertyPath: mamyDialogue.Array.data[0]
-      value: Honey ! Welcome to <color=red>Grandma's</color> shop !
+      value: Meggy ! Welcome to <color=red>Grandma's</color> shop !
       objectReference: {fileID: 0}
     - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
         type: 2}
       propertyPath: mamyDialogue.Array.data[1]
-      value: Do you need some <color=red>recipes</color> ?
+      value: Do you want some <color=red>recipes</color> ? To buy them, you need <color=red>Mush</color>
+        ! You win Mush after making a potion.
       objectReference: {fileID: 0}
     - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
         type: 2}
       propertyPath: mamyDialogue.Array.data[2]
-      value: To buy their, you need <color=red>mushrooms</color> ! And because you
-        are my grand child, I will offer you the first one, common don't be shy <color=red>buy
-        it</color> !
+      value: Because you are my grand child, I will offer you the first one, common
+        don't be shy <color=red>click on the 2 ingredients recipes</color> !
       objectReference: {fileID: 0}
     - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
         type: 2}
