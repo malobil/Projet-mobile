@@ -80,6 +80,12 @@ void Awake ()
    		}
    	}
 
+    public void PopLevel3()
+    {
+          GameObject temp = Instantiate(missionPrefab,missionLayout.transform) ;
+          temp.GetComponent<LevelSelectPanel>().level = levelList[3] ;
+    }
+
    	public void ChangeChampiText()
    	{
    		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() + " Mush";
@@ -179,6 +185,8 @@ void Awake ()
       arrowBuy4.SetActive(false) ;
       arrowObtain.SetActive(false) ;
       GameManager.Instance().AddTutoState() ;
+      GameManager.Instance().UnlockLvl2() ;
+      PopLevel3() ;
       GameManager.Instance().SaveGame() ;
     }
     

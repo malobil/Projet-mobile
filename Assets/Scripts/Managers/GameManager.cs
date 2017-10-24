@@ -80,16 +80,29 @@ public class GameManager : MonoBehaviour {
 	{
         if(!lvlSuccess[lvlnumber])
         {
-		  lvlSuccess[lvlnumber] = true;
-		  //SaveGame() ;
-          if(lvlnumber == 2)
-          {
-            tutoState = 2 ;
-          }
+
+            if(lvlnumber != 3)
+            {
+    		  lvlSuccess[lvlnumber] = true;
+    		  //SaveGame() ;
+            }
+            
+            if(lvlnumber == 3)
+            {
+                AddTutoState() ;
+            }
+            Debug.Log("tuto state " + tutoState) ;
+            Debug.Log("Envoyé " + lvlnumber) ;
         }
 
         SaveGame() ;
 	}
+
+    public void UnlockLvl2()
+    {
+        lvlSuccess[3] =  true ;
+        SaveGame() ;
+    }
 
    	public void ChampiBank (float champiObtained)
    	{
