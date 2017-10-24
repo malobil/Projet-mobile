@@ -23,3 +23,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_Tuto_Recipe.unity
     guid: e0e1e13d0ccf48145b3527fd044717af
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 75cc8fc2710815f4896022215693db99
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 515d102377d3752429de5e35adf4fbec
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: 238caecf1e3b8154097ac5fd55c41c5b
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: de1256ab736046c42bc3fd96f62defd9
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: c6fb7ce929310d54985f355c5ade786d
+  - enabled: 1
+    path: Assets/Scenes/Level9.unity
+    guid: 33f4a7521bbf52e4c8c775e9fd2d8666
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
+    guid: 23ff6632b9a531a4281b994333d01d06
