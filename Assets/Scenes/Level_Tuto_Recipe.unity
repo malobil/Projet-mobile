@@ -197,6 +197,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &141139667 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1685301271249678, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+    type: 2}
+  m_PrefabInternal: {fileID: 2028273977}
 --- !u!1 &256563662
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +255,7 @@ MonoBehaviour:
   recipeListArrow: {fileID: 1178341496}
   recipeArrow: {fileID: 665726124}
   validArrow: {fileID: 1244134378}
-  recipeArrow2: {fileID: 1038607739}
+  recipeArrow2: {fileID: 141139667}
   timer: {fileID: 2001997604}
 --- !u!4 &256563664
 Transform:
@@ -272,7 +277,7 @@ GameObject:
   m_PrefabInternal: {fileID: 2028273977}
 --- !u!1 &665726124 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1685301271249678, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+  m_PrefabParentObject: {fileID: 1916216623255764, guid: bfd06ef9a4cc38f439ce800bd7e52265,
     type: 2}
   m_PrefabInternal: {fileID: 2028273977}
 --- !u!114 &1024992895 stripped
@@ -281,11 +286,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2028273977}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &1038607739 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1160465857394114, guid: bfd06ef9a4cc38f439ce800bd7e52265,
-    type: 2}
-  m_PrefabInternal: {fileID: 2028273977}
 --- !u!1 &1178341496 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1973512726228570, guid: bfd06ef9a4cc38f439ce800bd7e52265,
