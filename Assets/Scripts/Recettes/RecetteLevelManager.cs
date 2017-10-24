@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement  ;
 
 public class RecetteLevelManager : MonoBehaviour {
 
@@ -128,6 +129,14 @@ void Awake ()
 			}
 
 		LevelManager.Instance().ScoreUpdate(recetteAscomplish.recetteBonus) ;
+
+		if(SceneManager.GetActiveScene().name == "Level_Tuto_Recipe" && TutoRecipeManager.Instance() != null)
+		{
+			if(TutoRecipeManager.Instance().ReturnDemand())
+			{
+				TutoRecipeManager.Instance().RequestDone() ;
+			}
+		}
 
 		/*if(!GameManager.Instance().recetteKnow.Contains(recetteAscomplish))
 		{

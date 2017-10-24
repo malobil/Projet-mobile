@@ -19,5 +19,10 @@ public class RecetteDropIngredients : MonoBehaviour, IDropHandler {
 	{	
 		eventData.pointerDrag.gameObject.transform.SetParent(transform) ;
 		RecetteLevelManager.Instance().AddIngredient(eventData.pointerDrag.gameObject) ;
+
+		if(TutoRecipeManager.Instance() != null && TutoRecipeManager.Instance().ReturnDemand())
+		{
+			TutoRecipeManager.Instance().RequestDone() ;
+		}
 	}
 }

@@ -28,6 +28,7 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 	{
 		GetComponent<Image>().raycastTarget = false ;
 		LevelManager.Instance().RetireObjectToList(gameObject) ;
+
 	}
 
 	public void OnDrag(PointerEventData eventData)
@@ -48,10 +49,16 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
-		if(!isDrag)
+		if(!isDrag && SceneManager.GetActiveScene().name != "Level_Tuto_Recipe")
 		{
-			Debug.Log("click") ;
-			AddPoint() ;
+			if(TutoRecipeManager.Instance() != null && !TutoRecipeManager.Instance().ReturnTutoState())
+			{
+			}
+			else
+			{
+				Debug.Log("click") ;
+				AddPoint() ;
+			}
 		}
 
 		if(SceneManager.GetActiveScene().name == "Level_Tuto" && TutoManager.Instance().ReturnDemand())

@@ -83,7 +83,7 @@ void Awake ()
 	{
 		currentTimeHide = timeHide ;
 
-		if(SceneManager.GetActiveScene().name == "Level_Tuto")
+		if(SceneManager.GetActiveScene().name == "Level_Tuto" || SceneManager.GetActiveScene().name == "Level_Tuto_Recipe")
 		{
 			isTuto = true ;
 		}
@@ -365,5 +365,16 @@ void Awake ()
 		{
 			spawnerList[y].GetComponent<Spawner>().associateList = newIngredientList ;
 		}
+	}
+
+	public void PopParticularObject(int idx)
+	{
+		spawnerList[idx].GetComponent<Spawner>().PopFormAndIngredient() ;
+	}
+
+	public void DestroyAObject(GameObject go)
+	{
+		Destroy(go) ;
+		RetireObjectToList(go) ;
 	}
 }

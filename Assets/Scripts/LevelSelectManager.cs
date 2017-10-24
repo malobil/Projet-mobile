@@ -95,6 +95,10 @@ void Awake ()
           GameManager.Instance().AddTutoState() ;
           Tuto() ;
         }
+        else if(thingTopop.name == "Panel" && GameManager.Instance().ReturnTutoState() == 1)
+        {
+          questAnimator.SetTrigger("UnBlink") ;
+        }
         else if(thingTopop.name == "Boutique_Layout" && GameManager.Instance().ReturnTutoState() == 2)
         {
           GameManager.Instance().AddTutoState() ;
@@ -125,10 +129,11 @@ void Awake ()
       }
       else if(GameManager.Instance().ReturnTutoState() == 1)
       {
-        questAnimator.SetTrigger("UnBlink") ;
+        questAnimator.SetTrigger("Blink") ;
       }
       else if(GameManager.Instance().ReturnTutoState() == 2)
       {
+        questAnimator.SetTrigger("UnBlink") ;
         shopLayoutButton.SetActive(true) ;
         shopAnimator.SetTrigger("Blink") ;
       }
