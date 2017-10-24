@@ -22,7 +22,7 @@ public class LevelSelectPanel : MonoBehaviour {
 		toxicText.text = "Goal : " + level.toxicNecc ;
 		recompText.text = "Award : " + level.recompense +"mush" ;
 		number.text = lvlNumber.ToString("") ; ;
-		questName.text = level.name ;
+		questName.text = level.Levelname ;
 	}
 
 	void Update()
