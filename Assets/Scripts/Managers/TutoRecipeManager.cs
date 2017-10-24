@@ -11,8 +11,9 @@ public class TutoRecipeManager : MonoBehaviour {
 	public Text mamyText ;
 	public string[] mamyDialogue ;
 	public Scriptable_IngredientList ingredientList ;
+	public Scriptable_FormeByLevel formLevel ;
 
-	public GameObject recipeListArrow, recipeArrow, timer ;
+	public GameObject recipeListArrow, recipeArrow, validArrow, recipeArrow2, timer ;
 
 	private bool tutoIsEnd = false ;
 	private int tutoState = -1 ;
@@ -64,7 +65,16 @@ void Awake ()
 		}
 		else if(tutoState +1 >= mamyDialogue.Length)
     	{
+    		Debug.Log("End") ;
+    		LevelManager.Instance().ChangeSpawnerIngredientList(ingredientList) ;
+			LevelManager.Instance().ChangeSpawnerFormList(formLevel) ;
      		UnPopSomething(mamyLayout) ;
+     		LevelManager.Instance().EndTuto() ;
+			//GameManager.Instance().AddTutoState() ;
+			timer.SetActive(true) ;
+			demandeSomething = false ;
+			tutoIsEnd = true ;
+			//mamyLayout.SetActive(false) ;
    		}
 
    		if(tutoState == 1)
@@ -74,6 +84,7 @@ void Awake ()
    		else if(tutoState == 2)
    		{
    			PopSomething(recipeArrow) ;
+   			//PopSomething(dragArrow) ;
    			UnPopSomething(recipeListArrow) ;
    			if(!isWaiting)
    			{
@@ -89,7 +100,19 @@ void Awake ()
    		else if(tutoState == 4)
    		{
    			demandeSomething = true ;
+   			PopSomething(recipeArrow2) ;
    			LevelManager.Instance().EnableForm(0) ;
+   		}
+   		else if(tutoState == 5)
+   		{
+   			UnPopSomething(recipeArrow2) ;
+   			demandeSomething = true ;
+   			PopSomething(validArrow) ;
+   		}
+   		else if(tutoState == 6)
+   		{
+   			UnPopSomething(validArrow) ;
+   			demandeSomething = false ;
    		}
 
 	}

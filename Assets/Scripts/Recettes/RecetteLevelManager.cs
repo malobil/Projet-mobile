@@ -118,6 +118,14 @@ void Awake ()
 					}
 				}
 			}
+
+			if(SceneManager.GetActiveScene().name == "Level_Tuto_Recipe" && TutoRecipeManager.Instance() != null)
+			{
+				if(TutoRecipeManager.Instance().ReturnDemand() && TutoRecipeManager.Instance().ReturnState() == 5)
+				{
+					TutoRecipeManager.Instance().RequestDone() ;
+				}
+			}
 		}
 	}
 
@@ -129,14 +137,6 @@ void Awake ()
 			}
 
 		LevelManager.Instance().ScoreUpdate(recetteAscomplish.recetteBonus) ;
-
-		if(SceneManager.GetActiveScene().name == "Level_Tuto_Recipe" && TutoRecipeManager.Instance() != null)
-		{
-			if(TutoRecipeManager.Instance().ReturnDemand())
-			{
-				TutoRecipeManager.Instance().RequestDone() ;
-			}
-		}
 
 		/*if(!GameManager.Instance().recetteKnow.Contains(recetteAscomplish))
 		{

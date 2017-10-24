@@ -346,7 +346,17 @@ void Awake ()
 		HideAnimation() ;
 		//isHide = false ;
 		isTuto = false ;
-		GameManager.Instance().DoneTuto() ;
+		if(SceneManager.GetActiveScene().name == "Level_Tuto" )
+		{
+			GameManager.Instance().DoneTuto() ;
+		}
+		else
+		{
+			if(GameManager.Instance() != null)
+			{
+				GameManager.Instance().AddTutoState() ;
+			}
+		}
 	}
 
 	public void DisableForm(int formIdx)
@@ -364,6 +374,14 @@ void Awake ()
 		for(int y = 0 ; y < spawnerList.Count ; y++)
 		{
 			spawnerList[y].GetComponent<Spawner>().associateList = newIngredientList ;
+		}
+	}
+
+	public void ChangeSpawnerFormList(Scriptable_FormeByLevel newFormeList)
+	{
+		for(int y = 0 ; y < spawnerList.Count ; y++)
+		{
+			spawnerList[y].GetComponent<Spawner>().associateFormList = newFormeList ;
 		}
 	}
 

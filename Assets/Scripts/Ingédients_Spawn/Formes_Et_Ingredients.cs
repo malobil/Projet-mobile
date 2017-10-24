@@ -49,9 +49,9 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
-		if(!isDrag && SceneManager.GetActiveScene().name != "Level_Tuto_Recipe")
+		if(!isDrag)
 		{
-			if(TutoRecipeManager.Instance() != null && !TutoRecipeManager.Instance().ReturnTutoState())
+			if(SceneManager.GetActiveScene().name == "Level_Tuto_Recipe" && TutoRecipeManager.Instance() != null && !TutoRecipeManager.Instance().ReturnTutoState())
 			{
 			}
 			else
