@@ -14,7 +14,7 @@ MonoBehaviour:
   description: I'm the Cooker of Rivia and I would like to prepare something very
     tasty for my dear friends, the ghouls.
   time: '1 : 10'
-  toxicNecc: 4000
+  toxicNecc: 3000
   recompense: 100
   Levelname: The Cooker
   levelNum: 4

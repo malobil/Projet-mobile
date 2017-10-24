@@ -11,10 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7292603739f2079409daf5527b7906a3, type: 3}
   m_Name: Level3
   m_EditorClassIdentifier: 
-  description: A scary dog is stalking me everyday and i've heard that certein potion
-    can be good reppellant.
+  description: Grandma will show you how to make potions faster.
   time: '1 : 10'
-  toxicNecc: 3000
+  toxicNecc: 2500
   recompense: 100
-  Levelname: Creepy Dog
+  Levelname: Let's talk about recipes
   levelNum: 3

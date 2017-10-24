@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7292603739f2079409daf5527b7906a3, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  description: Heal my back sweety
+  description: Grandma need a tonic and one of yours will be perfect.
   time: '1 : 20'
-  toxicNecc: 2500
+  toxicNecc: 1500
   recompense: 50
-  Levelname: I need a tonic and one of yours will be perfect.
+  Levelname: Heal my back sweety
   levelNum: 1

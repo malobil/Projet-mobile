@@ -744,6 +744,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: lvlSuccess.Array.size
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4316163364297376, guid: 98c6daad2792df84e9b387131ad9a56f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1473.8854
@@ -775,6 +785,51 @@ Prefab:
     - target: {fileID: 4316163364297376, guid: 98c6daad2792df84e9b387131ad9a56f, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[3]
+      value: Level_Tuto_Recipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[2]
+      value: Level2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[4]
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[5]
+      value: Level5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[6]
+      value: Level6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[7]
+      value: Level7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[8]
+      value: Level8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[9]
+      value: Level9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114242217118713852, guid: 98c6daad2792df84e9b387131ad9a56f,
+        type: 2}
+      propertyPath: sceneName.Array.data[10]
+      value: Level10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98c6daad2792df84e9b387131ad9a56f, type: 2}
