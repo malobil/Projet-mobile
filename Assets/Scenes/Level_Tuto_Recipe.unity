@@ -379,6 +379,42 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114538502595075652, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: associateFormList
+      value: 
+      objectReference: {fileID: 11400000, guid: cab86819d6fab164a85f766a2650d5ad,
+        type: 2}
+    - target: {fileID: 114005688891103474, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: associateFormList
+      value: 
+      objectReference: {fileID: 11400000, guid: cab86819d6fab164a85f766a2650d5ad,
+        type: 2}
+    - target: {fileID: 114538502595075652, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: associateList
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e6c4537607c05440a2b8e062720ff96,
+        type: 2}
+    - target: {fileID: 114005688891103474, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: associateList
+      value: 
+      objectReference: {fileID: 11400000, guid: 1e98052b68fd3584b994d5a7932529a4,
+        type: 2}
+    - target: {fileID: 114611816420620834, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: associateList
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e6c4537607c05440a2b8e062720ff96,
+        type: 2}
+    - target: {fileID: 114611816420620834, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: associateFormList
+      value: 
+      objectReference: {fileID: 11400000, guid: cab86819d6fab164a85f766a2650d5ad,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfd06ef9a4cc38f439ce800bd7e52265, type: 2}
   m_IsPrefabParent: 0
