@@ -227,18 +227,21 @@ MonoBehaviour:
   mamyLayout: {fileID: 520789247}
   mamyText: {fileID: 1024992895}
   mamyDialogue:
-  - Hey it's me again you can now do some recipe !
-  - You can see your recipe list just here to the left
-  - To make a recipe you just have to drag and drop your form into your thinking.Try
-    to drag and drop the left form !
-  - See it's stuck just here
-  - Now drag the other !
-  - You have now 2 form let's fuse them ! Click on the "valid" button.
-  - You got some extra point from recipe but be carefull if you put good ingredient
-    it will reduce the effect ! It can be untoxic too ! So beware ;)
-  - If you make a mistake you can press the "clear" button, it will destroy your ingredients
-    and form !
-  - Well make your potion ;)
+  - It's <color=red>Grandma</color> again !
+  - You just bought a <color=red>recipe</color>. Recipe <color=red>associate the shape</color>
+    of your ingredients to make <color=red>stronger toxicity</color>.
+  - <color=red>Slide your shape</color> in your mind. For now slide <color=red>the
+    left one</color> !
+  - 'Perfect, just in <color=red>the cloud</color> ! '
+  - Now <color=red>slide</color> the <color=red>other one</color> !
+  - Let's <color=red>fuse</color> them ! Click on the <color=red>"valid" button</color>.
+  - 'You have got some <color=red>extra points</color> from recipe. '
+  - be carefull put <color=red>healthy stuffs</color> in the recipe will <color=red>reduce</color>
+    the effect ! It can be untoxic too.
+  - If you make a <color=red>mistake</color>, you can <color=red>press the "clear"
+    button</color> to destroy your shape and you will have no points.
+  - This is the last time I interrupt you. Good bye honey. Come to my <color=red>shop</color>
+    later !
   ingredientList: {fileID: 11400000, guid: 1e98052b68fd3584b994d5a7932529a4, type: 2}
   formLevel: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   recipeListArrow: {fileID: 1178341496}
@@ -391,6 +394,56 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: timerSecondes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: scoreNeed
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: timeIngredientShow
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: levelChampiValue
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: palierScore.Array.data[0]
+      value: 2050
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: palierScore.Array.data[1]
+      value: 2100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: palierScore.Array.data[2]
+      value: 2200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[0]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[1]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114010410609593878, guid: bfd06ef9a4cc38f439ce800bd7e52265,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[2]
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfd06ef9a4cc38f439ce800bd7e52265, type: 2}

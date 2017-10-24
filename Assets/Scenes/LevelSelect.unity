@@ -250,7 +250,7 @@ Prefab:
     - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
         type: 2}
       propertyPath: mamyDialogue.Array.data[0]
-      value: Honey ! Welcome to the <color=red>Grandma's</color> shop !
+      value: Honey ! Welcome to <color=red>Grandma's</color> shop !
       objectReference: {fileID: 0}
     - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
         type: 2}
