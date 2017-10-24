@@ -470,7 +470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1472372855135014
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1849739944009462
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1920344864478630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,13 +1912,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberlvl: 2
   potionState: {fileID: 114940296573390532}
-  scoreNeed: 3000
-  timeIngredientShow: 2.5
+  scoreNeed: 1500
+  timeIngredientShow: 3
   timeHide: 0.5
   textEndLevel: {fileID: 114030586968149852}
   timerText: {fileID: 114909790581594640}
   timerMinutes: 1
-  timerSecondes: 10
+  timerSecondes: 20
   littleMeg: {fileID: 95803168246303714}
   endLayout: {fileID: 1849739944009462}
   stateText: {fileID: 114249865811169588}
@@ -1928,9 +1928,9 @@ MonoBehaviour:
   mushGainText: {fileID: 114147641594287038}
   levelChampiValue: 50
   palierScore:
-  - 4550
-  - 4600
-  - 4700
+  - 1550
+  - 1600
+  - 1700
   bonusMushByPalier:
   - 50
   - 100
