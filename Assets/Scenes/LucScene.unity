@@ -458,6 +458,11 @@ Prefab:
       propertyPath: m_PlaneDistance
       value: 100.44
       objectReference: {fileID: 0}
+    - target: {fileID: 224975806873325072, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0
@@ -602,7 +607,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 138134525
+  randomSeed: -678645213
   InitialModule:
     serializedVersion: 3
     enabled: 1
