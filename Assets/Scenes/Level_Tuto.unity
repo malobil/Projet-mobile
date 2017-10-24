@@ -205,6 +205,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[1]
+      value: Today I will teach you the <color=red>basics of potion</color>. Let's
+        begin honey.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
   m_IsPrefabParent: 0

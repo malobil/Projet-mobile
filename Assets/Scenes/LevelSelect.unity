@@ -247,6 +247,45 @@ Prefab:
       propertyPath: shopLayoutButton
       value: 
       objectReference: {fileID: 1169524698}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[0]
+      value: Honey ! Welcome to the <color=red>Grandma's</color> shop !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[1]
+      value: Do you need some <color=red>recipes</color> ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[2]
+      value: To buy their, you need <color=red>mushrooms</color> ! And because you
+        are my grand child, I will offer you the first one, common don't be shy <color=red>buy
+        it</color> !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[3]
+      value: Do you see that ? Your purchase is <color=red>here</color>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[4]
+      value: When you got <color=red>enough money</color>, you could purchase a <color=red>3
+        ingredients recipe</color> !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[5]
+      value: And even after you could buy a <color=red>4 INGREDIENTS RECIPE</color>
+        !!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogue.Array.data[6]
+      value: It's simple. Visit me when you want sweety !
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32a47c0519746b438a56c7ed42ab90b, type: 2}
   m_IsPrefabParent: 0
