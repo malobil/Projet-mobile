@@ -296,11 +296,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1467464595070464, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1889506332557692, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -341,6 +341,10 @@ Prefab:
         type: 2}
       propertyPath: timerSecondes
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454474062257686, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}

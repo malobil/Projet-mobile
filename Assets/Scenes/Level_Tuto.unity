@@ -205,24 +205,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[2]
-      value: You already have your <color=red>ingredients</color> ! Good ! Slide the
-        <color=red>right one</color> and push it in the cauldron.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[3]
-      value: Alright Sweety ! If you want to finish, use the <color=red>toxic stuff</color>
-        but avoid the <color=red>healthy one</color>.
-      objectReference: {fileID: 0}
-    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
-        type: 2}
-      propertyPath: mamyDialogue.Array.data[5]
-      value: Noooo ! You didn't listen to me ! Look at your <color=red>flask</color>
-        on the right, it <color=red>decreased</color>. Be careful of that.
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
   m_IsPrefabParent: 0

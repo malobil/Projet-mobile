@@ -64,24 +64,30 @@ void Awake ()
 			mamyText.text = mamyDialogue[tutoState] ;
 		}
 
-		if(tutoState == 2 && !isWaiting && !demandeSomething)
+		if(tutoState == 2)
 		{
 			LevelManager.Instance().ShowAnimation() ;
-			demandeSomething = true ;
-			//PopSomething(rigthArrow) ;
+		}
+		else if(tutoState == 3 && !isWaiting)
+		{
 			StartCoroutine(Wait()) ;
-			
+			demandeSomething = true ;
+			mamyLayout.SetActive(false) ;
+			//PopSomething(rigthArrow) ;
 		}
 		else if(tutoState == 4)
 		{			
-			demandeSomething = true ;
-			LevelManager.Instance().EnableForm(0) ;
-			PopSomething(leftArrow) ;
+			mamyLayout.SetActive(true) ;
+			UnPopSomething(rigthArrow) ;
 		}
 		else if(tutoState == 5)
 		{
-			UnPopSomething(leftArrow) ;
-			PopSomething(fioleArrow) ;
+			PopSomething(leftArrow) ;
+			mamyLayout.SetActive(false) ;
+			LevelManager.Instance().EnableForm(0) ;
+			demandeSomething = true ;
+			//UnPopSomething(leftArrow) ;
+			//PopSomething(fioleArrow) ;
 		}
 		else if(tutoState +1 >= mamyDialogue.Length)
 		{
@@ -116,6 +122,11 @@ void Awake ()
 		return demandeSomething ;
 	}
 
+	public int ReturnState()
+	{
+		return tutoState ;
+	}
+
 	public void RequestDone()
 	{
 		Debug.Log("done") ;
@@ -127,7 +138,7 @@ void Awake ()
 	{
 		isWaiting = true ;
 		Debug.Log("Wait") ;
-		yield return new  WaitForSeconds(1.4f) ;
+		yield return new  WaitForSeconds(1.2f) ;
 		PopSomething(rigthArrow) ;
 		LevelManager.Instance().DisableForm(0) ;
 		isWaiting = false ;

@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems ;
+using UnityEngine.SceneManagement; 
 
-public class Drop_Marmitte : MonoBehaviour,IDropHandler {
+public class Drop_Marmitte : MonoBehaviour,IDropHandler 
+{
 
 	// Use this for initialization
 	void Start () 
@@ -18,7 +20,23 @@ public class Drop_Marmitte : MonoBehaviour,IDropHandler {
 
 	public void OnDrop(PointerEventData eventData)
 	{
-		Debug.Log("Drop marmitte") ;
-		eventData.pointerDrag.gameObject.GetComponent<Formes_Et_Ingredients>().AddPoint() ;
+		if(eventData.pointerDrag.gameObject.GetComponent<Formes_Et_Ingredients>() != null)
+		{
+			Debug.Log("Drop marmitte") ;
+			eventData.pointerDrag.gameObject.GetComponent<Formes_Et_Ingredients>().AddPoint() ;
+
+			if(SceneManager.GetActiveScene().name == "Level_Tuto" && TutoManager.Instance().ReturnDemand())
+			{
+				//TutoManager.Instance().RequestDone() ;
+				if(TutoManager.Instance().ReturnState() == 3)
+				{
+					TutoManager.Instance().RequestDone() ;
+				}
+				else if(TutoManager.Instance().ReturnState() == 5)
+				{
+					TutoManager.Instance().RequestDone() ;
+				}
+			}
+		}
 	}
 }
