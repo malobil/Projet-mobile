@@ -286,6 +286,18 @@ Prefab:
       propertyPath: mamyDialogue.Array.data[6]
       value: It's simple. Visit me when you want sweety !
       objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: tutoAchetableList
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f6a61d4be8e56d47adc7506c8a87745,
+        type: 2}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: normalAchetableList
+      value: 
+      objectReference: {fileID: 11400000, guid: 85a4cf1a9213eda498ccbe62b27c3c5d,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32a47c0519746b438a56c7ed42ab90b, type: 2}
   m_IsPrefabParent: 0

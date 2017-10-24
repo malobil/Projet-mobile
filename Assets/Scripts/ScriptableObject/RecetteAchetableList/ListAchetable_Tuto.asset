@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd0aa3d58ad4fb488dbfa6e653d1aba, type: 3}
+  m_Name: ListAchetable_Tuto
+  m_EditorClassIdentifier: 
+  recette2Ingredient:
+  - {fileID: 11400000, guid: 2974d2de01210ca449672bc753b997f5, type: 2}
+  recette3Ingredient: []
+  recette4Ingredient: []

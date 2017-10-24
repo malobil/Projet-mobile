@@ -18,6 +18,25 @@ public class ShopManager : MonoBehaviour
 	private int numberRecetteKnowWith3Ingr = 0 ;
 	private int numberRecetteKnowWith4Ingr = 0 ;
 
+	private static ShopManager instance ;
+    public static ShopManager Instance () 
+    {
+        return instance;
+    }
+
+void Awake ()
+    {
+        if (instance != null)
+        {
+            Destroy (gameObject);
+        }
+
+        else 
+
+        {
+            instance = this;
+        }
+    }
 
 	// Use this for initialization
 	void Start () 
@@ -184,6 +203,11 @@ public class ShopManager : MonoBehaviour
 				numberRecetteKnowWith3Ingr++ ;
 			}
 		}
+	}
+
+	public void ChangeAchetableList(Scriptable_Recette_Achetable newAchetable)
+	{
+		listOfRecipe = newAchetable ;
 	}
 
 }

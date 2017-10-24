@@ -17,6 +17,7 @@ public class LevelSelectManager : MonoBehaviour {
   public string[] mamyDialogue ;
   public GameObject mamyLayout, shopQuitButton, button1,button2,button3, arrowBuy2, arrowBuy3, arrowBuy4, arrowObtain;
   public Text mamyText ;
+  public Scriptable_Recette_Achetable tutoAchetableList, normalAchetableList ;
   private int tutoState = -1 ;
   private bool mamyIsTalking ;
   private bool mamyAskingSomething = false ;
@@ -186,6 +187,7 @@ void Awake ()
         GameManager.Instance().ChampiBank(100f) ;
         arrowBuy2.SetActive(true) ;
         mamyAskingSomething = true ;
+        ShopManager.Instance().ChangeAchetableList(tutoAchetableList) ;
         button1.GetComponent<Button>().interactable = true ;
     }
     else if(tutoState == 3)
@@ -204,6 +206,7 @@ void Awake ()
     {
       arrowBuy3.SetActive(false) ;
       arrowBuy4.SetActive(true) ;
+      ShopManager.Instance().ChangeAchetableList(normalAchetableList) ;
     }
   }
 
