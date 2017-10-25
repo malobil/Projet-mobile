@@ -7,6 +7,8 @@ public class MenuManager : MonoBehaviour {
 
 	public string MainScene;
 
+	public GameObject loadingScreen ;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -25,13 +27,26 @@ public class MenuManager : MonoBehaviour {
 
 	public void PlayMenuAccueil ()
    	{
-        SceneManager.LoadScene (MainScene);
+   		loadingScreen.SetActive(true) ;
+     	StartCoroutine(LoadMyScene()) ;
         GameManager.Instance().LoadGame() ;
    	}
 
    	public void DeleteCurrentSave()
    	{
    		GameManager.Instance().DeleteSave() ;
+   	}
+
+   	IEnumerator LoadMyScene()
+   	{
+   		yield return new WaitForSeconds(5f) ;
+   		
+   		  AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (MainScene);
+
+   		  while(!asyncLoad.isDone)
+   		  {
+   		  	yield return null ;
+   		  }
    	}
 
 }

@@ -24,6 +24,11 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 		
 	}
 
+	void OnBecameInvisible()
+	{
+		Debug.Log("Invisible") ;
+	}
+
 	public void OnBeginDrag(PointerEventData eventData)
 	{
 		//eventData.pointerDrag.gameObject.layer = 10 ;

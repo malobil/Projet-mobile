@@ -40,6 +40,4 @@ public class LevelSelectPanel : MonoBehaviour {
 	{
 		LevelSelectManager.Instance().LoadLevel(lvlNumber) ;
 	}
-
-
 }

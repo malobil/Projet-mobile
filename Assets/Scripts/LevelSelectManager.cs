@@ -10,6 +10,9 @@ public class LevelSelectManager : MonoBehaviour {
 	public GameObject recipeBook, shopLayout, missionLayout, recipeBookButton, shopLayoutButton ;
   public GameObject missionPrefab ;
 	public List<Scriptable_level> levelList = new List<Scriptable_level>() ;
+  ///----Loading----///
+
+  public GameObject loadingScreen ;
 
   ///-----Sound----///
 
@@ -69,9 +72,21 @@ void Awake ()
    	{
    		if (GameManager.Instance().lvlSuccess[levelnumber] == true)
    		{
-   			SceneManager.LoadScene (GameManager.Instance().sceneName[levelnumber]);
+        loadingScreen.SetActive(true) ;
+   			StartCoroutine(WaitLoadLevel(levelnumber)) ; 
    		}
    	}
+
+  IEnumerator WaitLoadLevel(int levelToLoad)
+  {
+        yield return new WaitForSeconds(5f) ;
+       AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(GameManager.Instance().sceneName[levelToLoad]);
+        
+        /*while(!asyncLoad.isDone)
+        {
+          yield return null ;
+        }*/
+  }
 
    	public void PopLevel()
    	{
