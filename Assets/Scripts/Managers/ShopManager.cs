@@ -12,6 +12,11 @@ public class ShopManager : MonoBehaviour
 	public GameObject obtainLayout ;
 	public GameObject prefabRecetteObject ;
 
+	public Button button2, button3,button4 ;
+	public GameObject text2,text3,text4 ;
+
+	public AudioSource shopAudio ;
+
 	private GameObject obtainLayoutObject  ;
 
 	private int numberRecetteKnowWith2Ingr = 0 ;
@@ -42,6 +47,10 @@ void Awake ()
 	void Start () 
 	{
 		SetUpText() ;
+		CheckIfAllBuyRecipe2() ;
+		CheckIfAllBuyRecipe3() ;
+		CheckIfAllBuyRecipe4() ;
+
 	}
 	
 	// Update is called once per frame
@@ -87,6 +96,7 @@ void Awake ()
 					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette2Ingredient[tempRandomValor]) ;
 					GameManager.Instance().ChampiBank(-price01) ;
 					LevelSelectManager.Instance().ChangeChampiText() ;
+					shopAudio.Play() ;
 					GameManager.Instance().SaveGame() ;
 				}
 				else
@@ -94,6 +104,37 @@ void Awake ()
 					BuyRecipe2Ing() ;
 				}
 			}
+			else
+			{
+				CheckIfAllBuyRecipe2() ;
+			}
+		}
+	}
+
+	void CheckIfAllBuyRecipe2()
+	{
+		if(numberRecetteKnowWith2Ingr >= listOfRecipe.recette2Ingredient.Count)
+		{
+			button2.interactable = false ;
+			text2.SetActive(true) ;
+		}
+	}
+
+	void CheckIfAllBuyRecipe3()
+	{
+		if(numberRecetteKnowWith3Ingr >= listOfRecipe.recette3Ingredient.Count)
+		{
+			button3.interactable = false ;
+			text3.SetActive(true) ;
+		}
+	}
+
+	void CheckIfAllBuyRecipe4()
+	{
+		if(numberRecetteKnowWith4Ingr >= listOfRecipe.recette4Ingredient.Count)
+		{
+			button4.interactable = false ;
+			text4.SetActive(true) ;
 		}
 	}
 
@@ -122,12 +163,17 @@ void Awake ()
 					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette3Ingredient[tempRandomValor2]) ;
 					GameManager.Instance().ChampiBank(-price02) ;
 					LevelSelectManager.Instance().ChangeChampiText() ;
+					shopAudio.Play() ;
 					GameManager.Instance().SaveGame() ;
 				}
 				else
 				{
 					BuyRecipe3Ing() ;
 				}
+			}
+			else
+			{
+				CheckIfAllBuyRecipe3() ;
 			}
 		}
 	}
@@ -155,12 +201,17 @@ void Awake ()
 					GameManager.Instance().AddRecetteKnow(listOfRecipe.recette4Ingredient[tempRandomValor3]) ;
 					GameManager.Instance().ChampiBank(-price03) ;
 					LevelSelectManager.Instance().ChangeChampiText() ;
+					shopAudio.Play() ;
 					GameManager.Instance().SaveGame() ;
 				}
 				else
 				{
 					BuyRecipe4Ing() ;
 				}
+			}
+			else
+			{
+				CheckIfAllBuyRecipe4() ;
 			}
 		}
 	}
@@ -188,8 +239,7 @@ void Awake ()
 			{
 				numberRecetteKnowWith2Ingr++ ;
 			}
-		}
-		
+		}		
 	}
 
 	void CheckRecette3Ing()
