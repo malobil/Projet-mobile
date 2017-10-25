@@ -26,6 +26,7 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 
 	public void OnBeginDrag(PointerEventData eventData)
 	{
+		//eventData.pointerDrag.gameObject.layer = 10 ;
 		GetComponent<Image>().raycastTarget = false ;
 		LevelManager.Instance().RetireObjectToList(gameObject) ;
 
@@ -34,8 +35,9 @@ public class Formes_Et_Ingredients : MonoBehaviour, IBeginDragHandler, IDragHand
 	public void OnDrag(PointerEventData eventData)
 	{
 		//Debug.Log("OnBeginDrag") ;
-
-		transform.position = eventData.position ;
+		Vector3 screenPoint = Input.mousePosition ;
+		screenPoint.z = 100f ;
+		transform.position = Camera.main.ScreenToWorldPoint(screenPoint) ;/*eventData.position*/ ;
 		isDrag = true ;	
 	}
 

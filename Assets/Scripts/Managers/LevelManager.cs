@@ -25,6 +25,10 @@ public class LevelManager : MonoBehaviour {
 
 	public Animator littleMeg ;
 
+	///----Feedback----//
+  
+  	public ParticleSystem splash, goodFeedBack, badFeedback ;
+
 	////----Timers (hide)---///
 
 	private float currentTimeHide ;
@@ -265,7 +269,17 @@ void Awake ()
 	{
 		scoreToxic += toxicAdded;
 		PoisonAdded() ;
+		splash.Play() ;
 		Debug.Log(toxicAdded);
+
+		if(toxicAdded < 0)
+		{
+			badFeedback.Play() ;
+		}
+		else if(toxicAdded > 0)
+		{
+			goodFeedBack.Play() ;
+		}
 
 		if(scoreToxic < 0)
 		{
