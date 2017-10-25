@@ -25,9 +25,14 @@ public class LevelManager : MonoBehaviour {
 
 	public Animator littleMeg ;
 
-	///----Feedback----//
+	///----Feedback visu----//
   
   	public ParticleSystem splash, goodFeedBack, badFeedback ;
+
+  	///----Feedback audio---///
+
+  	public AudioSource marmitteAudio ;
+  	public AudioClip splashSound ;
 
 	////----Timers (hide)---///
 
@@ -270,6 +275,8 @@ void Awake ()
 		scoreToxic += toxicAdded;
 		PoisonAdded() ;
 		splash.Play() ;
+		marmitteAudio.clip = splashSound ;
+		marmitteAudio.Play() ;
 		Debug.Log(toxicAdded);
 
 		if(toxicAdded < 0)
