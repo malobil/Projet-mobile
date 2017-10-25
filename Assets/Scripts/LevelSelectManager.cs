@@ -88,7 +88,7 @@ void Awake ()
 
    	public void ChangeChampiText()
    	{
-   		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() + " Mush";
+   		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() ;
    	}
 
    	public void PopMenu(GameObject thingTopop)
