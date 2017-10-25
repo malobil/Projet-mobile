@@ -39,7 +39,7 @@ public class MenuManager : MonoBehaviour {
 
    	IEnumerator LoadMyScene()
    	{
-   		yield return new WaitForSeconds(5f) ;
+   		yield return new WaitForSeconds(3f) ;
    		
    		  AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (MainScene);
 

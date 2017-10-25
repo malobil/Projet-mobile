@@ -79,7 +79,7 @@ void Awake ()
 
   IEnumerator WaitLoadLevel(int levelToLoad)
   {
-        yield return new WaitForSeconds(5f) ;
+        yield return new WaitForSeconds(3f) ;
        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(GameManager.Instance().sceneName[levelToLoad]);
         
         /*while(!asyncLoad.isDone)
@@ -153,7 +153,7 @@ void Awake ()
    	public void BackToSelect(GameObject thingToDepop)
    	{
    		thingToDepop.SetActive(false) ;
-      
+
       if(globalAudioSource.clip == shopAudio)
       {
         ChangeAudio(clasicAudio) ;
