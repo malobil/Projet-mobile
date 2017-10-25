@@ -153,7 +153,12 @@ void Awake ()
    	public void BackToSelect(GameObject thingToDepop)
    	{
    		thingToDepop.SetActive(false) ;
-      ChangeAudio(clasicAudio) ;
+      
+      if(globalAudioSource.clip == shopAudio)
+      {
+        ChangeAudio(clasicAudio) ;
+      }
+      
    	}
 
     public void GoToMainMenu()
