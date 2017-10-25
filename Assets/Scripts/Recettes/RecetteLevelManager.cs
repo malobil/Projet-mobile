@@ -102,7 +102,22 @@ void Awake ()
 							Debug.Log("La recette trouvé contient :" + globalList[i].recetteForme[y].formeImage + "comme ingredient" + y) ;
 							Debug.Log(listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage) ;
 
-							if(globalList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
+							if(globalList[i].recetteForme.Contains(listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual))
+							{
+								Debug.Log("TRUE RECETTE PAS DANS L'ORDRE PUTAIN DE MERDE ") ;
+
+								recetteAscomplish = globalList[i] ;
+								Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
+								ingredientCorrect++ ;
+
+								if(ingredientCorrect == listOfIngredient.Count)
+								{
+									RecetteDone() ;
+									Debug.Log("Recette faite : " + recetteAscomplish) ;
+								}
+							}
+
+							/*if(globalList[i].recetteForme[y].formeImage == listOfIngredient[y].GetComponent<Formes_Et_Ingredients>().formActual.formeImage)
 							{
 								recetteAscomplish = globalList[i] ;
 								Debug.Log("J'ai trouvé un ingrédient au bon endroit !") ;
@@ -112,7 +127,7 @@ void Awake ()
 								{
 									RecetteDone() ;
 								}
-							}
+							}*/
 						}
 						
 					}
