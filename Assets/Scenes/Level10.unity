@@ -218,7 +218,7 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: scoreNeed
-      value: 6500
+      value: 11000
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -228,7 +228,7 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: timeIngredientShow
-      value: 2
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -238,22 +238,22 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: timerSecondes
-      value: 50
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[0]
-      value: 6700
+      value: 10200
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[1]
-      value: 6800
+      value: 10300
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[2]
-      value: 6900
+      value: 10400
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
