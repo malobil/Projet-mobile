@@ -520,7 +520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1472372855135014
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1920344864478630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,15 +2294,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberlvl: 3
+  numberlvl: 8
   potionState: {fileID: 114591866483308092}
-  scoreNeed: 2000
-  timeIngredientShow: 3
+  scoreNeed: 5000
+  timeIngredientShow: 2.5
   timeHide: 0.5
   textEndLevel: {fileID: 114030586968149852}
   timerText: {fileID: 114909790581594640}
   timerMinutes: 1
-  timerSecondes: 20
+  timerSecondes: 5
   littleMeg: {fileID: 95803168246303714}
   splash: {fileID: 198251092142534336}
   goodFeedBack: {fileID: 198946305811837314}
@@ -2315,15 +2315,15 @@ MonoBehaviour:
   scoreEndText: {fileID: 114894205985771696}
   recipeFoundText: {fileID: 0}
   mushGainText: {fileID: 114147641594287038}
-  levelChampiValue: 150
+  levelChampiValue: 200
   palierScore:
-  - 2050
-  - 2100
-  - 2150
+  - 5200
+  - 5250
+  - 5400
   bonusMushByPalier:
-  - 50
-  - 75
   - 100
+  - 150
+  - 200
   listOfobjectPresent: []
   spawnerList:
   - {fileID: 1324191737797622}
@@ -2949,7 +2949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3bedca65c55e046a3f6456ace33163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakAudioSource: {fileID: 0}
+  breakAudioSource: {fileID: 82977037080349928}
 --- !u!114 &114798520823137942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3045,7 +3045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3bedca65c55e046a3f6456ace33163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakAudioSource: {fileID: 0}
+  breakAudioSource: {fileID: 82977037080349928}
 --- !u!114 &114868388425988562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14180,7 +14180,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8605647, y: 0.073615685}
   m_AnchorMax: {x: 0.9856892, y: 0.45000002}
-  m_AnchoredPosition: {x: 0.50439453, y: -0.0008544922}
+  m_AnchoredPosition: {x: 0.50390625, y: -0.0009765625}
   m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224923663516018828
