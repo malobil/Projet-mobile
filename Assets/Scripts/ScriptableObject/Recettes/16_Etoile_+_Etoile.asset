@@ -14,4 +14,4 @@ MonoBehaviour:
   recetteForme:
   - {fileID: 11400000, guid: 963e10f9ee97de2409b526d488853ec6, type: 2}
   - {fileID: 11400000, guid: 963e10f9ee97de2409b526d488853ec6, type: 2}
-  recetteBonus: 400
+  recetteBonus: 800
