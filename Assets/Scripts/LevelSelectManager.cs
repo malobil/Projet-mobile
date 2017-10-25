@@ -11,6 +11,12 @@ public class LevelSelectManager : MonoBehaviour {
   public GameObject missionPrefab ;
 	public List<Scriptable_level> levelList = new List<Scriptable_level>() ;
 
+  ///-----Sound----///
+
+  public AudioSource globalAudioSource ;
+  public AudioClip shopAudio ;
+  public AudioClip clasicAudio ;
+
   //----Tuto Shop----///
 
   public Animator questAnimator, recipeBookAnimator, shopAnimator ;
@@ -111,6 +117,11 @@ void Awake ()
           GameManager.Instance().AddTutoState() ;
           Tuto() ;
         }
+
+        if(thingTopop.name == "Boutique_Layout")
+        {
+          ChangeAudio(shopAudio) ;
+        }
       }
       else if(thingTopop.activeInHierarchy)
       {
@@ -118,9 +129,16 @@ void Awake ()
       }
    	}
 
+    public void ChangeAudio(AudioClip newClip)
+    {
+        globalAudioSource.clip = newClip ;
+        globalAudioSource.Play() ;
+    }
+
    	public void BackToSelect(GameObject thingToDepop)
    	{
    		thingToDepop.SetActive(false) ;
+      ChangeAudio(null) ;
    	}
 
     public void GoToMainMenu()

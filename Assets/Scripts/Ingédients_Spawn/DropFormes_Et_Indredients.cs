@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement ;
 
 public class DropFormes_Et_Indredients : MonoBehaviour, IDropHandler {
 
+public AudioSource breakAudioSource ;
+
 	public void OnDrop(PointerEventData eventData)
 	{	
 		if(eventData.pointerDrag.gameObject.GetComponent<Formes_Et_Ingredients>() != null)
 		{
+			breakAudioSource.Play() ;
 			Debug.Log(eventData.pointerDrag.name) ;
 			if(TutoRecipeManager.Instance() != null && TutoRecipeManager.Instance().ReturnDemand())
 			{

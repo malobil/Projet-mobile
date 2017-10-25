@@ -108,11 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!20 &988998713 stripped
-Camera:
-  m_PrefabParentObject: {fileID: 20763529565405028, guid: 2ac3533e61ccc7f4686bb4066700d141,
-    type: 2}
-  m_PrefabInternal: {fileID: 1651667806}
 --- !u!1001 &1651667806
 Prefab:
   m_ObjectHideFlags: 0
@@ -210,80 +205,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1467464595070464, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 224915362456529882, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5048828
       objectReference: {fileID: 0}
-    - target: {fileID: 1889506332557692, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 224915362456529882, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0007324219
       objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: scoreNeed
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timeIngredientShow
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: bonusMushByPalier.Array.data[1]
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: bonusMushByPalier.Array.data[2]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: palierScore.Array.data[0]
-      value: 2050
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: palierScore.Array.data[1]
-      value: 2100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: palierScore.Array.data[2]
-      value: 2150
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: timerSecondes
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1454474062257686, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: numberlvl
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 223997445576593764, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 988998713}
-    - target: {fileID: 114306542591750086, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateFormList
-      value: 
-      objectReference: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21,
-        type: 2}
-    - target: {fileID: 114521609252645102, guid: 2ac3533e61ccc7f4686bb4066700d141,
-        type: 2}
-      propertyPath: associateFormList
-      value: 
-      objectReference: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}
   m_IsPrefabParent: 0
