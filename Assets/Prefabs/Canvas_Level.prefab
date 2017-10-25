@@ -520,7 +520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1472372855135014
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1920344864478630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,8 +1988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7c2e343a6b7f3488df4f1c34d38156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associateList: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86, type: 2}
-  associateFormList: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09, type: 2}
+  associateList: {fileID: 11400000, guid: 1e98052b68fd3584b994d5a7932529a4, type: 2}
+  associateFormList: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   prefab: {fileID: 1185945485424568, guid: 55f8903b1bf83ae40a298fe1040bf37b, type: 2}
   decalage: 50
   decalageStar: 20
@@ -2183,15 +2183,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberlvl: 2
-  potionState: {fileID: 0}
-  scoreNeed: 1500
+  numberlvl: 6
+  potionState: {fileID: 114591866483308092}
+  scoreNeed: 3500
   timeIngredientShow: 2.5
   timeHide: 0.5
   textEndLevel: {fileID: 114030586968149852}
   timerText: {fileID: 114909790581594640}
   timerMinutes: 1
-  timerSecondes: 10
+  timerSecondes: 5
   littleMeg: {fileID: 95803168246303714}
   splash: {fileID: 198251092142534336}
   goodFeedBack: {fileID: 198946305811837314}
@@ -2204,7 +2204,7 @@ MonoBehaviour:
   scoreEndText: {fileID: 114894205985771696}
   recipeFoundText: {fileID: 0}
   mushGainText: {fileID: 114147641594287038}
-  levelChampiValue: 100
+  levelChampiValue: 150
   palierScore:
   - 1600
   - 1650
@@ -2351,8 +2351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef7c2e343a6b7f3488df4f1c34d38156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associateList: {fileID: 11400000, guid: 8323dad8d785c1547857bf3f8b41fd86, type: 2}
-  associateFormList: {fileID: 11400000, guid: e21992eec7287a045b2cc5e9bb1cea09, type: 2}
+  associateList: {fileID: 11400000, guid: 1e98052b68fd3584b994d5a7932529a4, type: 2}
+  associateFormList: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   prefab: {fileID: 1185945485424568, guid: 55f8903b1bf83ae40a298fe1040bf37b, type: 2}
   decalage: 50
   decalageStar: 20
@@ -13735,7 +13735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8605647, y: 0.073615685}
   m_AnchorMax: {x: 0.9856892, y: 0.45007885}
-  m_AnchoredPosition: {x: 0.49978924, y: -0.00048470497}
+  m_AnchoredPosition: {x: 0.5, y: -0.00048828125}
   m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224477553439709100
@@ -14063,7 +14063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8605647, y: 0.073615685}
   m_AnchorMax: {x: 0.9856892, y: 0.45000002}
-  m_AnchoredPosition: {x: 0.5042105, y: -0.0008788109}
+  m_AnchoredPosition: {x: 0.50439453, y: -0.0008544922}
   m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224923663516018828
@@ -14121,7 +14121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8605647, y: 0.073615685}
   m_AnchorMax: {x: 0.9856892, y: 0.45007885}
-  m_AnchoredPosition: {x: 0.49978924, y: -0.00048470497}
+  m_AnchoredPosition: {x: 0.5, y: -0.00048828125}
   m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224962585133418092
