@@ -134,6 +134,7 @@ public class GameManager : MonoBehaviour {
     public void SaveGame()
     {
     	Debug.Log("SAVE") ;
+
     	PlayerPrefs.SetFloat("PlayerScore", champiBank) ;
 
   		PlayerPrefs.SetInt("HaveSaveRecipe", Convert.ToInt32(hadSaveARecipe)) ;

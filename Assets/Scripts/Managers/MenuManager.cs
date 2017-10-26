@@ -7,7 +7,7 @@ public class MenuManager : MonoBehaviour {
 
 	public string MainScene;
 
-	public GameObject loadingScreen ;
+	public GameObject loadingScreen, storyScreen ;
 
 	// Use this for initialization
 	void Start () {
@@ -27,9 +27,18 @@ public class MenuManager : MonoBehaviour {
 
 	public void PlayMenuAccueil ()
    	{
-   		loadingScreen.SetActive(true) ;
-     	StartCoroutine(LoadMyScene()) ;
-        GameManager.Instance().LoadGame() ;
+   		GameManager.Instance().LoadGame() ;
+
+   		if(GameManager.Instance().ReturnTuto())
+   		{
+   			storyScreen.SetActive(true) ;
+   			StartCoroutine(LoadMyScene(20f)) ;
+   		}
+   		else
+   		{
+   			loadingScreen.SetActive(true) ;
+   			StartCoroutine(LoadMyScene(3f)) ;
+   		}  
    	}
 
    	public void DeleteCurrentSave()
@@ -37,9 +46,9 @@ public class MenuManager : MonoBehaviour {
    		GameManager.Instance().DeleteSave() ;
    	}
 
-   	IEnumerator LoadMyScene()
+   	IEnumerator LoadMyScene(float waitingTime)
    	{
-   		yield return new WaitForSeconds(3f) ;
+   		yield return new WaitForSeconds(waitingTime) ;
    		
    		  AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (MainScene);
 
