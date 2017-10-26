@@ -6,7 +6,7 @@ using UnityEngine.UI ;
 
 public class LevelSelectManager : MonoBehaviour {
 
-	public Text champiText  ;
+	public Text champiText, champiText2,champiText3  ;
 	public GameObject recipeBook, shopLayout, missionLayout, recipeBookButton, shopLayoutButton ;
   public GameObject missionPrefab ;
 	public List<Scriptable_level> levelList = new List<Scriptable_level>() ;
@@ -110,6 +110,8 @@ void Awake ()
    	public void ChangeChampiText()
    	{
    		champiText.text = GameManager.Instance().ReturnChampiBank().ToString() ;
+      champiText2.text =  GameManager.Instance().ReturnChampiBank().ToString()  ;
+      champiText3.text =  GameManager.Instance().ReturnChampiBank().ToString()  ;
    	}
 
    	public void PopMenu(GameObject thingTopop)
