@@ -1137,15 +1137,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Once upon a time, when witch were are their gloriest moment one of them
+  m_Text: 'Once upon a time, when witch were at their gloriest moments, one of them
     decided to open a poison shop...
 
 
     Sorry I mean a "POTION" shop.
 
 
-    40 years have passed and the witch have to find an heir. Her little daugther will
-    be perfect she tought...'
+    40 years have passed and the witch had to find an heir. she tought her little
+    daugther will be perfect ...'
 --- !u!222 &1442245380
 CanvasRenderer:
   m_ObjectHideFlags: 0
