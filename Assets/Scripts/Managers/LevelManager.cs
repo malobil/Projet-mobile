@@ -153,6 +153,7 @@ void Awake ()
 	{
 		endLayout.SetActive(true) ;
 		UnpopObject() ;
+		currentTimeShow = -1 ;
 
 		if(scoreToxic >= scoreNeed && !pointAdded)
 		{	
