@@ -15,6 +15,6 @@ MonoBehaviour:
     can be good reppellant.
   time: '1 : 20'
   toxicNecc: 2000
-  recompense: 50
+  recompense: 25
   Levelname: Creepy Dog
   levelNum: 2
