@@ -231,22 +231,47 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: scoreNeed
-      value: 3000
+      value: 4500
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[0]
-      value: 3050
+      value: 4600
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[1]
-      value: 3100
+      value: 4700
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[2]
-      value: 3150
+      value: 4800
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: timerSecondes
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: levelChampiValue
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[0]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[1]
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
+        type: 2}
+      propertyPath: bonusMushByPalier.Array.data[2]
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac3533e61ccc7f4686bb4066700d141, type: 2}

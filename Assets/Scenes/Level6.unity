@@ -216,7 +216,7 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: scoreNeed
-      value: 3500
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -226,7 +226,7 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: bonusMushByPalier.Array.data[1]
-      value: 100
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -236,17 +236,17 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[0]
-      value: 3600
+      value: 6200
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[1]
-      value: 3750
+      value: 6300
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: palierScore.Array.data[2]
-      value: 3900
+      value: 6400
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
@@ -256,7 +256,7 @@ Prefab:
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
       propertyPath: levelChampiValue
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114396471724365648, guid: 2ac3533e61ccc7f4686bb4066700d141,
         type: 2}
