@@ -74,13 +74,20 @@ void Awake ()
 	{
 		if(!LevelManager.Instance().ReturnLevelEnd())
 		{
-			for(int i = 0 ; i < listOfIngredient.Count ; i++)
+			if(SceneManager.GetActiveScene().name == "Level_Tuto_Recipe" && !TutoRecipeManager.Instance().ReturnTutoState())
 			{
-				Destroy(listOfIngredient[i]) ;
+			
 			}
+			else
+			{
+				for(int i = 0 ; i < listOfIngredient.Count ; i++)
+				{
+					Destroy(listOfIngredient[i]) ;
+				}
 
-			ClearIngredientList() ;
-			Debug.Log("Clear button press") ;
+				ClearIngredientList() ;
+				Debug.Log("Clear button press") ;
+			}
 		}
 	}
 
