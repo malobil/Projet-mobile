@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Grandma need a tonic and one of yours will be perfect.
   time: '1 : 20'
-  toxicNecc: 1000
+  toxicNecc: 2000
   recompense: 25
   Levelname: Heal my back sweety
   levelNum: 1

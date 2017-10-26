@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Hello ! I'm Body Grognart and today I want to challenge my survivors
     with a spiky potions for the rusty nails !
-  time: '0 : 50'
-  toxicNecc: 6500
+  time: '0 : 45'
+  toxicNecc: 11000
   recompense: 400
   Levelname: Ordeal of the posts
   levelNum: 10

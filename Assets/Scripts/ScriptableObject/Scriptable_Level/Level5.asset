@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: My teacher is going to kill me if I fail an other time. Please, I need
     your help.
-  time: '1 : 10'
-  toxicNecc: 4000
-  recompense: 150
+  time: '1 : 05'
+  toxicNecc: 4500
+  recompense: 50
   Levelname: A severus problem
   levelNum: 5

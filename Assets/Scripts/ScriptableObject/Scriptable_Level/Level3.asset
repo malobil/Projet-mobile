@@ -14,6 +14,6 @@ MonoBehaviour:
   description: Grandma will show you how to make potions faster.
   time: '1 : 10'
   toxicNecc: 2500
-  recompense: 100
+  recompense: 50
   Levelname: Let's talk about recipes
   levelNum: 3

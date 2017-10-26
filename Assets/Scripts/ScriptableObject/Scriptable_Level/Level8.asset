@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: I need  Poison !!! Ryuujin
   time: '1 : 00'
-  toxicNecc: 4500
-  recompense: 200
+  toxicNecc: 6000
+  recompense: 150
   Levelname: Overwitch
   levelNum: 8

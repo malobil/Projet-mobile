@@ -15,6 +15,6 @@ MonoBehaviour:
     tasty for my dear friends, the ghouls.
   time: '1 : 10'
   toxicNecc: 3000
-  recompense: 100
+  recompense: 50
   Levelname: The Cooker
   levelNum: 4

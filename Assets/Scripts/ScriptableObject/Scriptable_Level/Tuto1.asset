@@ -14,6 +14,6 @@ MonoBehaviour:
   description: I will teach you the art of potions basics.
   time: '1 : 20'
   toxicNecc: 1000
-  recompense: 50
+  recompense: 25
   Levelname: First Lesson
   levelNum: 0
