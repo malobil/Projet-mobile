@@ -928,6 +928,66 @@ Prefab:
       propertyPath: m_Color.b
       value: 0.14901961
       objectReference: {fileID: 0}
+    - target: {fileID: 1662240103639046, guid: 3b2ee788b704a5c4b86456a1a96f9cf7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114193116719506590, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5f9ef49eda38f3747a3025ad49b20ea5,
+        type: 3}
+    - target: {fileID: 114193116719506590, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.1137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 114193116719506590, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.11764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 114193116719506590, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.2392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 114715217496016964, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114715217496016964, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114715217496016964, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224193108407287630, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b2ee788b704a5c4b86456a1a96f9cf7, type: 2}
   m_IsPrefabParent: 0
