@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour {
    		if(GameManager.Instance().ReturnTuto())
    		{
    			storyScreen.SetActive(true) ;
-   			StartCoroutine(LoadMyScene(20f)) ;
+   			StartCoroutine(LoadMyScene(25f)) ;
    		}
    		else
    		{
