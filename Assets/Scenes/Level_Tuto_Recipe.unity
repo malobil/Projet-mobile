@@ -1003,6 +1003,10 @@ Prefab:
       propertyPath: levelChampiValue
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1669417105274270, guid: bfd06ef9a4cc38f439ce800bd7e52265, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfd06ef9a4cc38f439ce800bd7e52265, type: 2}
   m_IsPrefabParent: 0
