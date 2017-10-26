@@ -160,26 +160,26 @@ void Awake ()
 			if( palierScore.Length > 0 && scoreToxic >= palierScore[0] && scoreToxic < palierScore[1])
 			{
 				mushBonus = bonusMushByPalier[0] ;
-			  	levelChampiValue += bonusMushByPalier[0] ;
+			  	//levelChampiValue += bonusMushByPalier[0] ;
 			  	Debug.Log("Palier1") ;
 			   
 			}
 			else if(palierScore.Length >= 1 && scoreToxic >= palierScore[1] && scoreToxic < palierScore[2])
 			{
-				levelChampiValue += bonusMushByPalier[1] ;
+				//levelChampiValue += bonusMushByPalier[1] ;
 				mushBonus = bonusMushByPalier[1] ;
 				Debug.Log("Palier2") ;
 			}
 			else if(palierScore.Length >= 2 && scoreToxic >= palierScore[2])
 			{
-				levelChampiValue += bonusMushByPalier[2] ;
+				//levelChampiValue += bonusMushByPalier[2] ;
 				mushBonus = bonusMushByPalier[2] ;
 				Debug.Log("Palier3") ;
 			}
 
 			if(GameManager.Instance() != null)
 			{
-				GameManager.Instance().ChampiBank(levelChampiValue) ;
+				GameManager.Instance().ChampiBank(levelChampiValue + mushBonus) ;
 				LvlSucces() ;
 				pointAdded = true ;
 			}
