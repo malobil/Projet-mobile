@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour {
 	public string MainScene;
 
 	public GameObject loadingScreen, storyScreen ;
+	public AudioSource clickAudioSource ;
 
 	// Use this for initialization
 	void Start () {
@@ -22,12 +23,14 @@ public class MenuManager : MonoBehaviour {
 	public void QuitMenuAccueil ()
    	{
         Application.Quit();
+        AudioClick() ;
         Debug.Log("quit game");
     }
 
 	public void PlayMenuAccueil ()
    	{
    		GameManager.Instance().LoadGame() ;
+   		AudioClick() ;
 
    		if(GameManager.Instance().ReturnTuto())
    		{
@@ -44,13 +47,19 @@ public class MenuManager : MonoBehaviour {
    	public void DeleteCurrentSave()
    	{
    		GameManager.Instance().DeleteSave() ;
+   		AudioClick() ;
+   	}
+
+   	void AudioClick()
+   	{
+   		clickAudioSource.Play() ;
    	}
 
    	IEnumerator LoadMyScene(float waitingTime)
    	{
    		yield return new WaitForSeconds(waitingTime) ;
    		
-   		  AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (MainScene);
+   		 AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (MainScene);
 
    		  while(!asyncLoad.isDone)
    		  {
