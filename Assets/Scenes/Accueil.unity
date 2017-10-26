@@ -1139,7 +1139,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Il etait une fois dans l''ouest une loutre geante qui aimait les lama super
     doux de la mort qui tue, seulement elle pouvait detruire l''univer a l''aide de
-    son fidele compagnon : le mouton toxique !'
+    son fidele compagnon : le mouton toxique !
+
+    ... Mais ceci n''a rien a voir ....'
 --- !u!222 &1442245380
 CanvasRenderer:
   m_ObjectHideFlags: 0
