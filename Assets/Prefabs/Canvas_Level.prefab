@@ -2294,15 +2294,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3f4bcd4d7cb3a4194099c301ccfc0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberlvl: 2
+  numberlvl: 10
   potionState: {fileID: 114331124910460210}
-  scoreNeed: 1500
-  timeIngredientShow: 2.5
+  scoreNeed: 2000
+  timeIngredientShow: 3
   timeHide: 0.5
   textEndLevel: {fileID: 114030586968149852}
   timerText: {fileID: 114909790581594640}
-  timerMinutes: 1
-  timerSecondes: 5
+  timerMinutes: 0
+  timerSecondes: 20
   littleMeg: {fileID: 95803168246303714}
   splash: {fileID: 198251092142534336}
   goodFeedBack: {fileID: 198946305811837314}
@@ -2315,15 +2315,15 @@ MonoBehaviour:
   scoreEndText: {fileID: 114894205985771696}
   recipeFoundText: {fileID: 0}
   mushGainText: {fileID: 114147641594287038}
-  levelChampiValue: 200
+  levelChampiValue: 25
   palierScore:
-  - 5200
-  - 5250
-  - 5400
+  - 2100
+  - 2200
+  - 2300
   bonusMushByPalier:
-  - 100
-  - 150
-  - 200
+  - 25
+  - 50
+  - 75
   listOfobjectPresent: []
   spawnerList:
   - {fileID: 1324191737797622}
@@ -13648,10 +13648,10 @@ RectTransform:
   m_Father: {fileID: 224079364144443764}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8605647, y: 0.073615685}
-  m_AnchorMax: {x: 0.9856892, y: 0.45007885}
-  m_AnchoredPosition: {x: 0.5, y: -0.00048828125}
-  m_SizeDelta: {x: 1, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -229, y: -346}
+  m_SizeDelta: {x: 372, y: 542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224139710233192768
 RectTransform:
@@ -13741,8 +13741,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 389.48, y: -109.5}
-  m_SizeDelta: {x: 110.95, y: 111}
+  m_AnchoredPosition: {x: 644, y: -106}
+  m_SizeDelta: {x: 189.2, y: 189.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224341480814426448
 RectTransform:
@@ -13940,10 +13940,10 @@ RectTransform:
   m_Father: {fileID: 224079364144443764}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8605647, y: 0.073615685}
-  m_AnchorMax: {x: 0.9856892, y: 0.45000002}
-  m_AnchoredPosition: {x: 0.50390625, y: -0.0009765625}
-  m_SizeDelta: {x: 1, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -229.00012, y: -345.99994}
+  m_SizeDelta: {x: 372, y: 542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224613479477810650
 RectTransform:
@@ -13994,10 +13994,10 @@ RectTransform:
   m_Father: {fileID: 224079364144443764}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.8605647, y: 0.073615685}
-  m_AnchorMax: {x: 0.9856892, y: 0.45007885}
-  m_AnchoredPosition: {x: 0.5, y: -0.00048828125}
-  m_SizeDelta: {x: 1, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -229.00012, y: -345.99994}
+  m_SizeDelta: {x: 372, y: 542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224656060712344278
 RectTransform:
@@ -14142,8 +14142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258.4, y: -114.40001}
-  m_SizeDelta: {x: 152.9, y: 152.9}
+  m_AnchoredPosition: {x: 327, y: -102}
+  m_SizeDelta: {x: 213.3, y: 213.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224879508747500224
 RectTransform:
