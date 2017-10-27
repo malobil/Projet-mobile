@@ -17,4 +17,7 @@ MonoBehaviour:
   toxicNecc: 2500
   recompense: 25
   Levelname: Creepy Dog
+  descriptionFr: "Un chien assez effrayant me suis tout les jours. J'ai entendu qu'une
+    potion pourrait \xEAtre un bon repulsif."
+  levelnameFr: Chien mechant
   levelNum: 2

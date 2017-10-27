@@ -17,4 +17,7 @@ MonoBehaviour:
   toxicNecc: 3000
   recompense: 50
   Levelname: The Cooker
+  descriptionFr: Le Cooker
+  levelnameFr: "Je suis le Cooker de Rive. Je dois preparer quelque chose de vraiment
+    sp\xE9cial pour mes amis les goules."
   levelNum: 4

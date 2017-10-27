@@ -17,4 +17,7 @@ MonoBehaviour:
   toxicNecc: 6000
   recompense: 100
   Levelname: Gotta test them all !
+  descriptionFr: 'Bonjour, mon nom est Sacha. Et mon but dans la vie est de tester
+    toutes les potions. Peux tu me preparer ta meilleure potion. '
+  levelnameFr: Tester les toutes !
   levelNum: 6

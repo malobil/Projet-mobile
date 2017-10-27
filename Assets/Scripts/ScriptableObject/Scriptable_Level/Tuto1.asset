@@ -16,4 +16,6 @@ MonoBehaviour:
   toxicNecc: 1000
   recompense: 25
   Levelname: First Lesson
+  descriptionFr: Je vais t'apprendre les bases de l'art des potions.
+  levelnameFr: Premier cours
   levelNum: 0

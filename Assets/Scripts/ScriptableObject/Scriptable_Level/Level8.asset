@@ -11,9 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7292603739f2079409daf5527b7906a3, type: 3}
   m_Name: Level8
   m_EditorClassIdentifier: 
-  description: I need  Poison !!! Ryuujin
+  description: I need Potion !!! Ryuujin !
   time: '1 : 00'
   toxicNecc: 6000
   recompense: 150
   Levelname: Overwitch
+  descriptionFr: J'ai besoin d'une potion !!! Ryuujin !
+  levelnameFr: Overwitch
   levelNum: 8

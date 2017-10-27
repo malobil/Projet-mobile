@@ -17,4 +17,7 @@ MonoBehaviour:
   toxicNecc: 7000
   recompense: 200
   Levelname: The Cooker III
+  descriptionFr: "Je dois pr\xE9parer un banquet pour la chasse sauvages. Je voudrais
+    briser la glace."
+  levelnameFr: Le Cooker III
   levelNum: 9

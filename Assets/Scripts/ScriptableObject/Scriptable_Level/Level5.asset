@@ -17,4 +17,7 @@ MonoBehaviour:
   toxicNecc: 4500
   recompense: 50
   Levelname: A severus problem
+  descriptionFr: Mon professeur va me tuer si je rate encore une fois. J'ai besoin
+    de ton aide !
+  levelnameFr: Un Sirius probleme
   levelNum: 5

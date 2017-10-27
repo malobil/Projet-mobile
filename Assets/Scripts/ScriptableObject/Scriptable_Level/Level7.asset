@@ -17,4 +17,8 @@ MonoBehaviour:
   toxicNecc: 5000
   recompense: 100
   Levelname: The Cooker II
+  descriptionFr: "C'est encore moi, le Cooker de Rive. C'est encore moi, le Cooker
+    de Rive. Cette fois, mes client sont tr\xE8s difficile. J'ai besoin de quelque
+    chose pour els envoyer au ciel."
+  levelnameFr: Le Cooker II
   levelNum: 7

@@ -16,4 +16,6 @@ MonoBehaviour:
   toxicNecc: 2500
   recompense: 50
   Levelname: Let's talk about recipes
+  descriptionFr: Mamie veut te montrer comment accelerer ta production de potions.
+  levelnameFr: Parlons des recettes
   levelNum: 3

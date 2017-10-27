@@ -17,4 +17,7 @@ MonoBehaviour:
   toxicNecc: 11000
   recompense: 400
   Levelname: Ordeal of the posts
+  descriptionFr: "Bonjour ! Je suis Boby Grognart et aujourd'hui, je voudrais lancer
+    un defi aux survivants avec quelque chose de plus piquant avec mes clous rouill\xE9s."
+  levelnameFr: L'epreuve des poteaux
   levelNum: 10
