@@ -8,7 +8,9 @@ public class MenuManager : MonoBehaviour {
 
 	public string MainScene;
 
-  public Text playText, delSaveText, quitText ;
+  public Text playText, delSaveText, quitText, storyText ;
+
+  public string storyTextFr ;
 
 	public GameObject loadingScreen, storyScreen ;
 	public AudioSource clickAudioSource ;
@@ -21,6 +23,7 @@ public class MenuManager : MonoBehaviour {
       playText.text = "JOUER" ;
       delSaveText.text = "Supr.Sauv" ;
       quitText.text = "Quitter" ;
+      storyText.text = storyTextFr ;
     }
 	}
 	

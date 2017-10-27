@@ -251,19 +251,22 @@ MonoBehaviour:
   - This is the last time I interrupt you. Good bye honey. Come to my <color=red>shop</color>
     later !
   mamyDialogueFr:
-  - Bonsoir
-  - C'est mamy
-  - Comment tu va ?
+  - Bonjour, c'est encore Mamie !
+  - Tu viens juste d'acheter une recette. Les recettes te permettent d'augmenter la
+    toxicite de tes ingredients.
+  - Fais glisser les elements dans ton esprit; Allez essaye avec celui de gauche !
   - 
-  - bla bal
-  - ah
+  - Parfait, juste dans le nuage !
+  - Maintenant, fais de meme avec l'autre !
   - 
-  - leldodsq
+  - Fusionnons les ! Clique sur le boutton valider.
   - 
-  - Je suis noidmla
-  - sqddsqfeeee
-  - mop
-  - fin
+  - Tu obtiens des points bonus grace aux recettes.
+  - Si tu fais des erreurs, tu peux presser le bouton annuler pour detruire les formes
+    mais tu ne gagneras aucun points.
+  - C'est la derniere fois que je t'interromps. Aurevoir Meggy viens me rendre visite
+    au magasin quand tu veux !
+  - 
   ingredientList: {fileID: 11400000, guid: 1e98052b68fd3584b994d5a7932529a4, type: 2}
   formLevel: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   recipeListArrow: {fileID: 1178341496}
