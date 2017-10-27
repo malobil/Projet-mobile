@@ -1921,6 +1921,21 @@ Prefab:
       propertyPath: clickAudioSource
       value: 
       objectReference: {fileID: 411333314}
+    - target: {fileID: 114567747600336074, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: playText
+      value: 
+      objectReference: {fileID: 1197679803}
+    - target: {fileID: 114567747600336074, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: delSaveText
+      value: 
+      objectReference: {fileID: 1049425161}
+    - target: {fileID: 114567747600336074, guid: b412aab741afb3b46b6d4610ec00d15a,
+        type: 2}
+      propertyPath: quitText
+      value: 
+      objectReference: {fileID: 460435426}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b412aab741afb3b46b6d4610ec00d15a, type: 2}
   m_IsPrefabParent: 0

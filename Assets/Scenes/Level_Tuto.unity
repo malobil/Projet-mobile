@@ -428,42 +428,48 @@ Prefab:
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[0]
-      value: Debut
+      value: Bonjour ma petite Megg. C'est <color=red>Mamie</color> !
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[1]
-      value: ds
+      value: Aujourd'hui, je vais t'apprendre <color=red>l'art des potions</color>
+        ! C'est partie ma cherie.
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[2]
-      value: dsferzr
+      value: Je vois que tu as deja tes <color=red>ingredients</color> ! Bien ! Glisse
+        celui de <color=red>droite</color> directement dans le <color=red>chaudron</color>.
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[3]
-      value: rzear
+      value: Parfait ! Pour finir ta potion, utilise les <color=red>ingredients toxics</color>
+        mais evite les <color=red>ingredients sains</color>.
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[4]
-      value: sdfefggggs
+      value: Au bout d'un moment, ils finissent par <color=red>disparaitre</color>.
+        Attend pour qu'ils changent.
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[6]
-      value: fsdsgsrgrg
+      value: Non ! Tu ne m'as pas entendu ! Regarde ta <color=red>fiole</color> sur
+        la droite, tu as <color=red>perdu de la toxicite</color>. Fais attention
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[7]
-      value: fdcv
+      value: Tu dois finir la potion <color=red>dans les temps</color> mais si ce
+        n'est pas le cas, la potion sera ratee.
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: mamyDialogueFr.Array.data[8]
-      value: qfezqdsc
+      value: Bon travail ! Mamie est fiere de toi. Maintenant fais ta propre potion.
       objectReference: {fileID: 0}
     - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}

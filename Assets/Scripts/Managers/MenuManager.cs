@@ -2,17 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI ;
 
 public class MenuManager : MonoBehaviour {
 
 	public string MainScene;
 
+  public Text playText, delSaveText, quitText ;
+
 	public GameObject loadingScreen, storyScreen ;
 	public AudioSource clickAudioSource ;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start () 
+  {
+		if(!GameManager.Instance().ReturnLanguage())
+    {
+      playText.text = "JOUER" ;
+      delSaveText.text = "Supr.Sauv" ;
+      quitText.text = "Quitter" ;
+    }
 	}
 	
 	// Update is called once per frame

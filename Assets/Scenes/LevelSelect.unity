@@ -245,6 +245,11 @@ Prefab:
       propertyPath: levelList.Array.size
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4218080383589090, guid: a32a47c0519746b438a56c7ed42ab90b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1224.8059
@@ -491,6 +496,45 @@ Prefab:
       propertyPath: champiText3
       value: 
       objectReference: {fileID: 1169524700}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[0]
+      value: Meggy ! Bienvenue au <color=red>magasin de mamy</color>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[1]
+      value: Tu veux quelques <color=red>recettes</color> ? Pour les acheter, tu as
+        besoin de <color=red>Mush</color> ! Tu gagne des mush apres avoir reussi une
+        potion !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[2]
+      value: Puisque tu es ma petite fille, je vais t'offrir la premiere, aller ne
+        soit pas timide <color=red>clique sur le bouton recette a deux ingredients</color>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[3]
+      value: Tu as vu ? Ton achat est <color=red>juste ici</color>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[4]
+      value: Quand tu aura assez de mush, tu pourra acheter des <color=red>recettes
+        a 3 ingredients</color> !
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[5]
+      value: Et apres tu pourra acheter des <color=red> recettes a 4 ingredients !</color>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[6]
+      value: C'est simple ! Reviens quand tu veux ma cherie.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32a47c0519746b438a56c7ed42ab90b, type: 2}
   m_IsPrefabParent: 0

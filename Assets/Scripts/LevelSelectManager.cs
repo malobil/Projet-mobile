@@ -18,12 +18,13 @@ public class LevelSelectManager : MonoBehaviour {
 
   public AudioSource globalAudioSource ;
   public AudioClip shopAudio ;
-  public AudioClip clasicAudio ;
+  public AudioClip clasicAudio ; 
 
   //----Tuto Shop----///
 
   public Animator questAnimator, recipeBookAnimator, shopAnimator ;
   public string[] mamyDialogue ;
+  public string[] mamyDialogueFr ; 
   public GameObject mamyLayout, shopQuitButton, button1,button2,button3, arrowBuy2, arrowBuy3, arrowBuy4, arrowObtain;
   public Text mamyText ;
   public Scriptable_Recette_Achetable tutoAchetableList, normalAchetableList ;
@@ -205,7 +206,14 @@ void Awake ()
     {
       tutoState++ ;
       mamyLayout.SetActive(true) ;
-      mamyText.text = mamyDialogue[tutoState] ;
+      if(GameManager.Instance().ReturnLanguage())
+      {
+        mamyText.text = mamyDialogue[tutoState] ;
+      }
+      else if(!GameManager.Instance().ReturnLanguage())
+      {
+        mamyText.text = mamyDialogueFr[tutoState] ;
+      }
       button1.GetComponent<Button>().interactable = false ;
       button2.GetComponent<Button>().interactable = false ;
       button3.GetComponent<Button>().interactable = false ;
