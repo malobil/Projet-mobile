@@ -2,5 +2,5 @@
 
 function switchLanguage(language : String)
 {
-	Lang.GetInstance().ToggleLanguages();
+	Lang.GetInstance().ToggleLanguages(language);
 }
