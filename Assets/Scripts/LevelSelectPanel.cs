@@ -17,12 +17,27 @@ public class LevelSelectPanel : MonoBehaviour {
 	void Start () 
 	{
 		lvlNumber = level.levelNum ;
-		descriptionText.text = level.description ;
-		timeText.text = "Time : " + level.time ;
-		toxicText.text = "Goal : " + level.toxicNecc ;
-		recompText.text = "Award : " + level.recompense +"mush" ;
-		number.text = lvlNumber.ToString("") ; ;
-		questName.text = level.Levelname ;
+		if(GameManager.Instance().ReturnLanguage())
+		{
+			descriptionText.text = level.description ;
+			timeText.text = "Time : " + level.time ;
+			toxicText.text = "Goal : " + level.toxicNecc ;
+			recompText.text = "Award : " + level.recompense +"mush" ;
+			number.text = lvlNumber.ToString("") ; ;
+			questName.text = level.Levelname ;
+		}
+		else if(!GameManager.Instance().ReturnLanguage())
+		{
+			descriptionText.text = level.descriptionFr ;
+			timeText.text = "Temps : " + level.time ;
+			toxicText.text = "But : " + level.toxicNecc ;
+			recompText.text = "Gain : " + level.recompense +"mush" ;
+			number.text = lvlNumber.ToString("") ; ;
+			questName.text = level.levelnameFr ;
+		}
+
+		
+		
 	}
 
 	void Update()

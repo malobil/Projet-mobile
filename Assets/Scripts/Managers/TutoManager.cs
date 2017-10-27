@@ -11,6 +11,7 @@ public class TutoManager : MonoBehaviour {
 	public GameObject mamyLayout ;
 	public Text mamyText ;
 	public string[] mamyDialogue ;
+	public string[] mamyDialogueFr ;
 	public Scriptable_IngredientList ingredientList ;
 
 	public GameObject rigthArrow, leftArrow, timer,fioleArrow ;
@@ -61,7 +62,15 @@ void Awake ()
 		{
 			tutoState++ ;
 			mamyLayout.SetActive(true) ;
-			mamyText.text = mamyDialogue[tutoState] ;
+			
+			if(GameManager.Instance().ReturnLanguage())
+			{
+				mamyText.text = mamyDialogue[tutoState] ;
+			}
+			else if(!GameManager.Instance().ReturnLanguage())
+			{
+				mamyText.text = mamyDialogueFr[tutoState] ;
+			}
 		}
 
 		if(tutoState == 2)

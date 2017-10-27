@@ -132,6 +132,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 224942512394400860, guid: b7ca094e0c93e0846b8cd089092ece1a,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -420,6 +425,60 @@ Prefab:
       propertyPath: bonusMushByPalier.Array.data[2]
       value: 75
       objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[0]
+      value: Debut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[1]
+      value: ds
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[2]
+      value: dsferzr
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[3]
+      value: rzear
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[4]
+      value: sdfefggggs
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[6]
+      value: fsdsgsrgrg
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[7]
+      value: fdcv
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[8]
+      value: qfezqdsc
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911029745758000, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: mamyDialogueFr.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881033166222864, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114402121376575186, guid: b7ca094e0c93e0846b8cd089092ece1a,
+        type: 2}
+      propertyPath: recetteKnowPanel
+      value: 
+      objectReference: {fileID: 1997843534}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7ca094e0c93e0846b8cd089092ece1a, type: 2}
   m_IsPrefabParent: 0
@@ -606,3 +665,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1997843534 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1881033166222864, guid: b7ca094e0c93e0846b8cd089092ece1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 328871443}

@@ -197,20 +197,43 @@ void Awake ()
 	{
 		endLayout.SetActive(true) ;
 		if(scoreToxic >= scoreNeed)
-		{	
-			stateText.color = Color.green ;
-			stateText.text = "VICTORY" ;
-			timeLeftText.text = "Time left : " + "<b>" + timerMinutes.ToString("f0") + "</b>" + " min " + "<b>" + timerSecondes.ToString("f0")+ "</b>" + " sec" ;
-			scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") +  "</b>" +  " / " + "<b>" + scoreNeed.ToString("") + "</b>" ;
-			mushGainText.text = "Mushroom gain : " + "<b>" + levelChampiValue.ToString("") + "</b>" + " + " + "<b>" +  mushBonus.ToString("") + "</b>" ;
+		{
+			if(GameManager.Instance().ReturnLanguage())
+			{
+				stateText.color = Color.green ;
+				stateText.text = "VICTORY" ;
+				timeLeftText.text = "Time left : " + "<b>" + timerMinutes.ToString("f0") + "</b>" + " min " + "<b>" + timerSecondes.ToString("f0")+ "</b>" + " sec" ;
+				scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") +  "</b>" +  " / " + "<b>" + scoreNeed.ToString("") + "</b>" ;
+				mushGainText.text = "Mush gain : " + "<b>" + levelChampiValue.ToString("") + "</b>" + " + " + "<b>" +  mushBonus.ToString("") + "</b>" ;
+			}
+			else if(!GameManager.Instance().ReturnLanguage())
+			{
+				stateText.color = Color.green ;
+				stateText.text = "VICTOIRE" ;
+				timeLeftText.text = "Temps restant : " + "<b>" + timerMinutes.ToString("f0") + "</b>" + " min " + "<b>" + timerSecondes.ToString("f0")+ "</b>" + " sec" ;
+				scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") +  "</b>" +  " / " + "<b>" + scoreNeed.ToString("") + "</b>" ;
+				mushGainText.text = "Mush gagnés : " + "<b>" + levelChampiValue.ToString("") + "</b>" + " + " + "<b>" +  mushBonus.ToString("") + "</b>" ;
+			}	
 		}
 		else if(scoreToxic < scoreNeed)
 		{
-			stateText.color = Color.red ;
-			stateText.text = "DEFEAT" ;
-			timeLeftText.text = "<b>No time left !</b>" ;
-			scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") + "</b>" + " / " + "<b>" + scoreNeed.ToString("") + "</b>";
-			mushGainText.text = "Mushroom gain : " +  "<b>"+ mushBonus + "</b>" ;
+			if(GameManager.Instance().ReturnLanguage())
+			{
+				stateText.color = Color.red ;
+				stateText.text = "DEFEAT" ;
+				timeLeftText.text = "<b>No time left !</b>" ;
+				scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") + "</b>" + " / " + "<b>" + scoreNeed.ToString("") + "</b>";
+				mushGainText.text = "Mushroom gain : " +  "<b>"+ mushBonus + "</b>" ;
+			}
+			else if(!GameManager.Instance().ReturnLanguage())
+			{
+				stateText.color = Color.red ;
+				stateText.text = "DEFAITE" ;
+				timeLeftText.text = "<b>Pas de temps restant !</b>" ;
+				scoreEndText.text = "Score : " + "<b>" + scoreToxic.ToString("") + "</b>" + " / " + "<b>" + scoreNeed.ToString("") + "</b>";
+				mushGainText.text = "Mush gagnés : " +  "<b>"+ mushBonus + "</b>" ;
+			}
+			
 		}	
 	}
 

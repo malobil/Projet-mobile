@@ -250,6 +250,20 @@ MonoBehaviour:
     button</color> to destroy your shape and you will have no points.
   - This is the last time I interrupt you. Good bye honey. Come to my <color=red>shop</color>
     later !
+  mamyDialogueFr:
+  - Bonsoir
+  - C'est mamy
+  - Comment tu va ?
+  - 
+  - bla bal
+  - ah
+  - 
+  - leldodsq
+  - 
+  - Je suis noidmla
+  - sqddsqfeeee
+  - mop
+  - fin
   ingredientList: {fileID: 11400000, guid: 1e98052b68fd3584b994d5a7932529a4, type: 2}
   formLevel: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   recipeListArrow: {fileID: 1178341496}

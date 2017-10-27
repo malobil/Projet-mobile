@@ -6,6 +6,7 @@ using UnityEngine;
 public class Scriptable_level : ScriptableObject 
 {
 	public string description, time,toxicNecc,recompense, Levelname ;
+	public string descriptionFr, levelnameFr ;
 	public int levelNum ;
 
 }

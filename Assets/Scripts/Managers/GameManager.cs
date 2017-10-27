@@ -16,6 +16,10 @@ public class GameManager : MonoBehaviour {
 
 	public List<Scriptable_Recette> recetteKnow = new List<Scriptable_Recette>() ;
 
+    ///-----Language---////
+
+    private bool isEnglish = true ;
+
 	//------Save recette system ------///
 
 	public List<int> recetteKnowIdx = new List<int>() ;
@@ -239,6 +243,22 @@ public class GameManager : MonoBehaviour {
     public void AddTutoState()
     {
         tutoState++ ;
+    }
+
+    public bool ReturnLanguage()
+    {
+        return isEnglish ;
+    }
+
+    public void ChangeLanguageFr()
+    {
+        isEnglish = false ;
+        GoToAccueil() ;
+    }
+
+    public void GoToAccueil()
+    {
+        SceneManager.LoadScene("Accueil") ;
     }
 
 }

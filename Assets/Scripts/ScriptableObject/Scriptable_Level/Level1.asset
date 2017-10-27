@@ -16,4 +16,6 @@ MonoBehaviour:
   toxicNecc: 2000
   recompense: 25
   Levelname: Heal my back sweety
+  descriptionFr: Soigne mon dos petite
+  levelnameFr: Grand mere a besoin d'un tonique
   levelNum: 1
