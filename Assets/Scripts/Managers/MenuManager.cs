@@ -10,21 +10,19 @@ public class MenuManager : MonoBehaviour {
 
   public Text playText, delSaveText, quitText, storyText ;
 
-  public string storyTextFr ;
 
-	public GameObject loadingScreen, storyScreen ;
+	public GameObject loadingScreen, storyScreen, storyScreenFr ;
 	public AudioSource clickAudioSource ;
 
 	// Use this for initialization
 	void Start () 
   {
 		if(!GameManager.Instance().ReturnLanguage())
-    {
-      playText.text = "JOUER" ;
-      delSaveText.text = "Supr.Sauv" ;
-      quitText.text = "Quitter" ;
-      storyText.text = storyTextFr ;
-    }
+    	{
+	      playText.text = "JOUER" ;
+	      delSaveText.text = "Supr.Sauv" ;
+	      quitText.text = "Quitter" ;
+    	}
 	}
 	
 	// Update is called once per frame
@@ -46,7 +44,15 @@ public class MenuManager : MonoBehaviour {
 
    		if(GameManager.Instance().ReturnTuto())
    		{
-   			storyScreen.SetActive(true) ;
+   			if(GameManager.Instance().ReturnLanguage())
+   			{
+   				storyScreen.SetActive(true) ;
+   			}
+   			else if(!GameManager.Instance().ReturnLanguage())
+   			{
+   				storyScreenFr.SetActive(true) ;
+   			}
+   			
    			StartCoroutine(LoadMyScene(25f)) ;
    		}
    		else
