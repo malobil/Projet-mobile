@@ -251,22 +251,25 @@ MonoBehaviour:
   - This is the last time I interrupt you. Good bye honey. Come to my <color=red>shop</color>
     later !
   mamyDialogueFr:
-  - Bonjour, c'est encore Mamie !
-  - Tu viens juste d'acheter une recette. Les recettes te permettent d'augmenter la
-    toxicite de tes ingredients.
-  - Fais glisser les elements dans ton esprit; Allez essaye avec celui de gauche !
+  - Bonjour, c'est encore  <color=red>Mamie</color> !
+  - Tu viens juste d'acheter une <color=red>recette</color>. Les recettes <color=red>te
+    permettent d'augmenter la toxicite de tes ingredients</color>.
+  - Fais glisser les elements dans ton esprit; Allez essaye avec celui de gauche <color=red>Fais
+    glisser les formes</color>dans ton esprit; Allez essaye avec celui de <color=red>gauche</color>
+    !
   - 
-  - Parfait, juste dans le nuage !
-  - Maintenant, fais de meme avec l'autre !
+  - Parfait, juste dans <color=red>le nuage</color> !
+  - Maintenant, fais de meme avec <color=red>l'autre </color>!
   - 
-  - Fusionnons les ! Clique sur le boutton valider.
+  - <color=red>Fusionnons les </color>! Clique sur le <color=red>boutton valider</color>.
   - 
-  - Tu obtiens des points bonus grace aux recettes.
-  - Si tu fais des erreurs, tu peux presser le bouton annuler pour detruire les formes
-    mais tu ne gagneras aucun points.
+  - Tu obtiens des <color=red>points bonus</color> grace aux recettes.
+  - Fais attention, si tu glisses des <color=red>objets sain</color> dans tes recettes,
+    cela peut <color=red>affaiblir ta potion</color> !
+  - Si tu fais <color=red>des erreurs</color>, tu peux <color=red>presser le bouton
+    annuler</color> pour detruire les formes mais tu ne gagneras aucun points.
   - C'est la derniere fois que je t'interromps. Aurevoir Meggy viens me rendre visite
-    au magasin quand tu veux !
-  - 
+    <color=red>au magasin</color> quand tu veux !
   ingredientList: {fileID: 11400000, guid: 1e98052b68fd3584b994d5a7932529a4, type: 2}
   formLevel: {fileID: 11400000, guid: 566ca0d548b2ed242bb04eb3665d4f21, type: 2}
   recipeListArrow: {fileID: 1178341496}

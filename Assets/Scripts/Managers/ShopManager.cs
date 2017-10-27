@@ -7,6 +7,8 @@ public class ShopManager : MonoBehaviour
 {
 
 	public Text priceText01,priceText02,priceText03 ;
+	public Text recipe2Text,recipe3Text,recipe4Text, titleText, obtainText ;
+	public string frText2,frText3,frText4, titleTextFr, obtainTextFr ;
 	public int price01, price02, price03 ;
 	public Scriptable_Recette_Achetable listOfRecipe ;
 	public GameObject obtainLayout ;
@@ -50,6 +52,16 @@ void Awake ()
 		CheckIfAllBuyRecipe2() ;
 		CheckIfAllBuyRecipe3() ;
 		CheckIfAllBuyRecipe4() ;
+
+		if(!GameManager.Instance().ReturnLanguage())
+		{
+			recipe2Text.text = frText2 ;
+			recipe3Text.text = frText3 ;
+			recipe4Text.text = frText4 ;
+			titleText.text = titleTextFr ;
+			obtainText.text = obtainTextFr ;
+
+		}
 
 	}
 	

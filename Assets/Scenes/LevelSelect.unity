@@ -1085,6 +1085,56 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 5f9ef49eda38f3747a3025ad49b20ea5,
         type: 3}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: frText2
+      value: Recettes 2 formes
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: frText3
+      value: Recettes 3 formes
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: frText4
+      value: Recettes 4 formes
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: recipe2Text
+      value: 
+      objectReference: {fileID: 1169524702}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: recipe3Text
+      value: 
+      objectReference: {fileID: 1169524703}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: titleText
+      value: 
+      objectReference: {fileID: 1169524705}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: recipe4Text
+      value: 
+      objectReference: {fileID: 1169524704}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: titleTextFr
+      value: Boutique
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: obtainText
+      value: 
+      objectReference: {fileID: 1169524706}
+    - target: {fileID: 114862005295876756, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+        type: 2}
+      propertyPath: obtainTextFr
+      value: 'Obtenu :'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b2ee788b704a5c4b86456a1a96f9cf7, type: 2}
   m_IsPrefabParent: 0
@@ -1109,6 +1159,36 @@ GameObject:
   m_PrefabParentObject: {fileID: 1488775200026126, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
     type: 2}
   m_PrefabInternal: {fileID: 1169524697}
+--- !u!114 &1169524702 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114500248914011250, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169524697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1169524703 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114902624049428718, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169524697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1169524704 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114422955199630590, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169524697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1169524705 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114715217496016964, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169524697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1169524706 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114734136610214504, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169524697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &1332216390 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114188505065705330, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
