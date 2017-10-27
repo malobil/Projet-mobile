@@ -888,9 +888,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Je suis un text fr
-
-'
+  m_Text: "Il etait une fois, quand les sorcieres etaient \xE0 leurs apogees, l\u2019une
+    d\u2019entre elles d\xE9cida d\u2019ouvrir une boutique de poison ...\r\n\r\nEnfin,
+    de \"POTION\".\r\n\r\n40 ans passerent et la sorci\xE8re se faisant vieille, chercha
+    une h\xE9riti\xE8re.  Megg, sa petite fille serait parfaite.\r"
 --- !u!222 &1145122947
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1300,15 +1301,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Once upon a time, when witch were at their gloriest moments, one of them
-    decided to open a poison shop...
-
-
-    Sorry I mean a "POTION" shop.
-
-
-    40 years have passed and the witch had to find an heir. she tought her little
-    daugther will be perfect ...'
+  m_Text: "Once upon a time, when witch were at their glorious moments, one of them
+    decided to open a poison shop...\r\n\r\nSorry I mean a \"POTION\" shop.\r\n\r\n40
+    years have passed, and the witch had to find an heir. she thought her granddaughter
+    will be perfect ...\r"
 --- !u!222 &1442245380
 CanvasRenderer:
   m_ObjectHideFlags: 0
