@@ -890,8 +890,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Il etait une fois, quand les sorcieres etaient a leurs apogees, l\u2019une
     d\u2019entre elles decida d\u2019ouvrir une boutique de poison ...\r\n\r\nEnfin,
-    de \"POTION\".\r\n\r\n40 ans passerent et la sorciere se faisant vieille, chercha
-    une h\xE9riti\xE8re.  Megg, sa petite fille serait parfaite.\r"
+    de \"POTION\".\r\n\r\n40 ans passerent et la sorciere se faisant vieille, elle
+    chercha une heritiere.  Megg, sa petite fille serait parfaite.\r"
 --- !u!222 &1145122947
 CanvasRenderer:
   m_ObjectHideFlags: 0

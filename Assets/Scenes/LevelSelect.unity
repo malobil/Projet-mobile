@@ -535,6 +535,11 @@ Prefab:
       propertyPath: mamyDialogueFr.Array.data[6]
       value: C'est simple ! Reviens quand tu veux ma cherie.
       objectReference: {fileID: 0}
+    - target: {fileID: 114577719801173668, guid: a32a47c0519746b438a56c7ed42ab90b,
+        type: 2}
+      propertyPath: questText
+      value: 
+      objectReference: {fileID: 1169524707}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32a47c0519746b438a56c7ed42ab90b, type: 2}
   m_IsPrefabParent: 0
@@ -1186,6 +1191,12 @@ MonoBehaviour:
 --- !u!114 &1169524706 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114734136610214504, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1169524697}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1169524707 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114298937043544666, guid: 3b2ee788b704a5c4b86456a1a96f9cf7,
     type: 2}
   m_PrefabInternal: {fileID: 1169524697}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}

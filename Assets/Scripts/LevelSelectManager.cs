@@ -20,6 +20,10 @@ public class LevelSelectManager : MonoBehaviour {
   public AudioClip shopAudio ;
   public AudioClip clasicAudio ; 
 
+  ///--- Trad ---///
+
+  public Text questText ;
+
   //----Tuto Shop----///
 
   public Animator questAnimator, recipeBookAnimator, shopAnimator ;
@@ -57,7 +61,8 @@ void Awake ()
 	{
 		ChangeChampiText() ;
 		PopLevel() ;
-    Tuto() ;
+    	Tuto() ;
+    	questText.text = "QUETE" ;
 	}
 	
 	// Update is called once per frame
